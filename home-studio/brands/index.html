@@ -16,13 +16,10 @@
 
     <meta name="robots" content="all, follow" />
 
-
-    <!-- These are the little icons that show up next to the title of the URL in the browser tab. For these to work, you must include a favicon.png file in the root of your website directory. This can also be favicon.jpg if you prefer, you just need to change the link in the href to favicon.jpg for it to work -->
     <link rel="shortcut icon" href="favicon.png">
     <link rel="icon" href="favicon.png" type="image/x-icon" />
 
-    <!-- Social Media stuff. This all makes your links look much nicer and more shareable on Facebook and Twitter -->
-    <!-- Facebook meta links - OG stands for OpenGraph by the way! -->
+    <!-- Facebook meta links -->
     <meta property="og:locale" content="en_GB" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="indeXall.io | List of Home Studio companies" />
@@ -37,1143 +34,956 @@
     <meta name="twitter:title" content="List of Home Studio brands | indeXall" />
     <meta name="twitter:image" content="https://indexall.io/indeXall.svg" />
 
-    <!-- Your CSS link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://indexall.io/indeXall.css" rel="stylesheet">
 
 </head>
 
 <body>
 
-<!-- <p style="text-align: left; font-family: 'Lato';">indexall.io</p> -->
-<!-- Inline indeXall logo -->
-<!-- <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" style="fill:#fff"/><path d="M462.05,191.91c46.72,1.2,42.92,68.54-8.48,150.41l-.59.93,38,44.49H453.05L436.17,368C385.51,437.43,317.62,489.46,275.9,488.4c-37.49-1-42.44-44.53-16.36-104h6.2c-17.5,39.46-15,67.1,10.06,67.78,33.49.9,95.05-46.81,140.13-107.88l-45.36-53.12H408.5l24.25,28.4c34.92-56.14,39.09-99.77,7.57-100.62-27.56-.74-74.13,31.44-114.89,76.89h-11c48.86-61,109.3-104.9,147.64-103.92Zm86.76,115.82H497.68a1.89,1.89,0,0,0-2.13,2.13v9.95a1.88,1.88,0,0,0,2.13,2.13h49.47a28,28,0,0,1,6.39.59,9.07,9.07,0,0,1,3.91,1.83,6.7,6.7,0,0,1,2,3.26,17.53,17.53,0,0,1,.59,4.85v2.25H511.88a31.58,31.58,0,0,0-8.7,1,13.49,13.49,0,0,0-5.62,3,11.07,11.07,0,0,0-3,4.92,22.44,22.44,0,0,0-.89,6.56v5.69a28.54,28.54,0,0,0,.89,7.57,11,11,0,0,0,3,5.21,13.62,13.62,0,0,0,5.62,3,32,32,0,0,0,8.7,1h56.34a18.47,18.47,0,0,0,4.26-.41,5.38,5.38,0,0,0,2.66-1.48,6,6,0,0,0,1.42-2.9,21.5,21.5,0,0,0,.42-4.68V331.76a37.32,37.32,0,0,0-1.42-10.95,16.19,16.19,0,0,0-4.68-7.45,20.06,20.06,0,0,0-8.7-4.26,55.88,55.88,0,0,0-13.37-1.37Zm7.81,52H516.73c-2.44,0-4.16-.49-5.14-1.48s-1.48-2.54-1.48-4.67v-2.49a5.85,5.85,0,0,1,1.48-4.32c1-1,2.7-1.48,5.14-1.48h43.32v10.42a4.9,4.9,0,0,1-.77,3.14,3.38,3.38,0,0,1-2.66.88ZM604,284a2.3,2.3,0,0,1,2.61,2.6v83.56a2.3,2.3,0,0,1-2.61,2.6h-11.6a2.3,2.3,0,0,1-2.6-2.6V286.55a2.3,2.3,0,0,1,2.6-2.6Zm32,0a2.3,2.3,0,0,1,2.6,2.6v83.56a2.3,2.3,0,0,1-2.6,2.6h-11.6a2.3,2.3,0,0,1-2.61-2.6V286.55a2.3,2.3,0,0,1,2.61-2.6ZM56.12,307.73c1.73,0,2.6.91,2.6,2.73v59.65a2.3,2.3,0,0,1-2.6,2.6H44.52a2.3,2.3,0,0,1-2.61-2.6V310.46q0-2.73,2.61-2.73Zm0-24a2.3,2.3,0,0,1,2.6,2.6v11.25c0,1.81-.87,2.72-2.6,2.72H44.52a2.41,2.41,0,0,1-2.73-2.72V286.31c0-1.73.91-2.6,2.73-2.6Zm79.41,24a55.76,55.76,0,0,1,13.37,1.37,20.06,20.06,0,0,1,8.7,4.26,16.19,16.19,0,0,1,4.68,7.45,37,37,0,0,1,1.42,10.95v38.35a2.3,2.3,0,0,1-2.6,2.6H149.5a2.3,2.3,0,0,1-2.61-2.6V335.78a34.3,34.3,0,0,0-.47-6.21,8,8,0,0,0-1.83-4,7.69,7.69,0,0,0-3.73-2.13,23.63,23.63,0,0,0-6.16-.65H103.22a25,25,0,0,0-6.27.65,8.48,8.48,0,0,0-4,2.13,8.24,8.24,0,0,0-2.07,4,28.19,28.19,0,0,0-.59,6.21v34.33a2.3,2.3,0,0,1-2.6,2.6H76.12c-1.82,0-2.72-.87-2.72-2.6V331.76a37,37,0,0,1,1.42-10.95,16.09,16.09,0,0,1,4.67-7.45,20,20,0,0,1,8.64-4.26,55.72,55.72,0,0,1,13.43-1.37Zm114.45,0h-44.5a55.66,55.66,0,0,0-13.43,1.37,20,20,0,0,0-8.64,4.26,16.19,16.19,0,0,0-4.68,7.45,37,37,0,0,0-1.42,10.95v17a36.94,36.94,0,0,0,1.42,10.95,16.27,16.27,0,0,0,4.68,7.46,19.76,19.76,0,0,0,8.64,4.2,58.18,58.18,0,0,0,13.43,1.3h33.14a58.4,58.4,0,0,0,13.37-1.3,19.79,19.79,0,0,0,8.7-4.2,16.27,16.27,0,0,0,4.68-7.46,37.27,37.27,0,0,0,1.42-10.95V286.55a2.3,2.3,0,0,0-2.61-2.6h-11.6a2.3,2.3,0,0,0-2.6,2.6v21.18Zm-13,50.78a26.06,26.06,0,0,0,6.39-.65,8.66,8.66,0,0,0,4-2.13,8.24,8.24,0,0,0,2.07-4,27.89,27.89,0,0,0,.59-6.27V321.94H207.14a25.06,25.06,0,0,0-6.28.65,8.44,8.44,0,0,0-4,2.13,8.07,8.07,0,0,0-2.07,4,27.57,27.57,0,0,0-.6,6.22v10.53a27.25,27.25,0,0,0,.6,6.27,8.07,8.07,0,0,0,2.07,4,8.62,8.62,0,0,0,4,2.13,25.54,25.54,0,0,0,6.28.65ZM341.7,307.73H307a55.75,55.75,0,0,0-13.44,1.37,20,20,0,0,0-8.64,4.26,16.17,16.17,0,0,0-4.67,7.45,37,37,0,0,0-1.42,10.95v17a36.94,36.94,0,0,0,1.42,10.95,16.25,16.25,0,0,0,4.67,7.46,19.76,19.76,0,0,0,8.64,4.2,58.27,58.27,0,0,0,13.44,1.3h51a1.88,1.88,0,0,0,2.13-2.13v-9.94a1.88,1.88,0,0,0-2.13-2.13H308.68c-5.12,0-8.58-.83-10.35-2.49s-2.67-4.34-2.67-8v-2.85h59.77a7.49,7.49,0,0,0,5.09-1.47q1.67-1.49,1.66-5.27V327.15a37.36,37.36,0,0,0-.95-9.06,12.79,12.79,0,0,0-3.25-6,13.34,13.34,0,0,0-6.27-3.31,41.66,41.66,0,0,0-10-1Zm-46,26.87H343.6a1.78,1.78,0,0,0,2-2v-5c0-2.45-.51-4.18-1.54-5.21s-2.92-1.54-5.68-1.54H308.68c-5.12,0-8.58.81-10.35,2.43s-2.67,4.32-2.67,8.11Z" style="fill:#231f20;fill-rule:evenodd"/></svg> -->
-
-<a href = "https://indexall.io" target = "_self"> 
-    <img src="https://indexall.io/indeXall.svg" alt="indeXall.io" width="100" height="100" /> 
- </a>
-<p></p>
-<h1>List of 114 Home Studio brands</h1>
-<p></p>
-
-<!-- <br>
-<button type="button" class="btn btn-primary btn-sm" onclick="tableToCSV()">
-    Download CSV
-</button>
-<br>
-<br> -->
-
-<table class="table table-hover table-sm">
-  <tr>
-    <th scope="col"></th>
-    <th scope="col">Website</th>
-    <th scope="col">Country</th>
-    <th scope="col">Est.</th>
-    <th scope="col">Products</th>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">12 Gauge Microphones<h2></td> -->
-    <td>12 Gauge Microphones</td>
-    <td><a href="https://www.12gaugemicrophones.com/" target="_blank" id="12gaugemicrophones.com">12gaugemicrophones.com</a></td>
-    <td>US</td>
-    <td>2011</td>
-    <td>Audio</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Ableton<h2></td> -->
-    <td>Ableton</td>
-    <td><a href="https://www.ableton.com" target="_blank" id="ableton.com">ableton.com</a></td>
-    <td>Germany</td>
-    <td>1999</td>
-    <td>Software, Controller (Studio)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Adam Audio<h2></td> -->
-    <td>Adam Audio</td>
-    <td><a href="https://www.adam-audio.com/" target="_blank" id="adam-audio.com">adam-audio.com</a></td>
-    <td>Germany</td>
-    <td>1999</td>
-    <td>Audio</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Akai<h2></td> -->
-    <td>Akai</td>
-    <td><a href="http://www.akai.com/" target="_blank" id="akai.com">akai.com</a></td>
-    <td>Japan</td>
-    <td>1929</td>
-    <td>Audio</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">AKG <h2></td> -->
-    <td>AKG </td>
-    <td><a href="https://www.akg.com/" target="_blank" id="akg.com">akg.com</a></td>
-    <td>Austria</td>
-    <td>1947</td>
-    <td>Software, Audio</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">alesis<h2></td> -->
-    <td>alesis</td>
-    <td><a href="https://www.alesis.com/" target="_blank" id="alesis.com">alesis.com</a></td>
-    <td>US</td>
-    <td>1980</td>
-    <td>Audio, Controller (Studio)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Alpine<h2></td> -->
-    <td>Alpine</td>
-    <td><a href="https://www.alpinehearingprotection.com/" target="_blank" id="alpinehearingprotection.com">alpinehearingprotection.com</a></td>
-    <td>Netherlands</td>
-    <td>1994</td>
-    <td>Audio</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">API (Automated Processes Incorporated)<h2></td> -->
-    <td>API (Automated Processes Incorporated)</td>
-    <td><a href="http://apiaudio.com/" target="_blank" id="apiaudio.com">apiaudio.com</a></td>
-    <td>US</td>
-    <td>1969</td>
-    <td>Audio, Controller (Studio)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">apogeedigital<h2></td> -->
-    <td>apogeedigital</td>
-    <td><a href="https://apogeedigital.com/" target="_blank" id="apogeedigital.com">apogeedigital.com</a></td>
-    <td>US</td>
-    <td>1985</td>
-    <td>Audio, Controller (Studio)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Apple<h2></td> -->
-    <td>Apple</td>
-    <td><a href="https://www.apple.com/" target="_blank" id="apple.com">apple.com</a></td>
-    <td>US</td>
-    <td>1976</td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Aputure<h2></td> -->
-    <td>Aputure</td>
-    <td><a href="https://www.aputure.com/" target="_blank" id="aputure.com">aputure.com</a></td>
-    <td>China</td>
-    <td>2005</td>
-    <td>Light</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">ART<h2></td> -->
-    <td>ART</td>
-    <td><a href="http://www.artproaudio.com/" target="_blank" id="artproaudio.com">artproaudio.com</a></td>
-    <td>US</td>
-    <td>1984</td>
-    <td>Audio, Controller (Studio)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">ARTURIA<h2></td> -->
-    <td>ARTURIA</td>
-    <td><a href="https://www.arturia.com/" target="_blank" id="arturia.com">arturia.com</a></td>
-    <td>France</td>
-    <td>1999</td>
-    <td>Audio, Controller (Studio)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">ASHDOWN<h2></td> -->
-    <td>ASHDOWN</td>
-    <td><a href="https://ashdownmusic.com/" target="_blank" id="ashdownmusic.com">ashdownmusic.com</a></td>
-    <td>UK</td>
-    <td>1997</td>
-    <td>Audio, Controller (Studio)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">ASTON<h2></td> -->
-    <td>ASTON</td>
-    <td><a href="https://www.astonmics.com/" target="_blank" id="astonmics.com">astonmics.com</a></td>
-    <td>UK</td>
-    <td></td>
-    <td>Audio</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Audient<h2></td> -->
-    <td>Audient</td>
-    <td><a href="https://audient.com/" target="_blank" id="audient.com">audient.com</a></td>
-    <td>UK</td>
-    <td>1997</td>
-    <td>Software, Audio</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Audio-Technica<h2></td> -->
-    <td>Audio-Technica</td>
-    <td><a href="https://www.audio-technica.com/" target="_blank" id="audio-technica.com">audio-technica.com</a></td>
-    <td>Japan</td>
-    <td>1963</td>
-    <td>Audio</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">AUDIX<h2></td> -->
-    <td>AUDIX</td>
-    <td><a href="https://audixusa.com/" target="_blank" id="audixusa.com">audixusa.com</a></td>
-    <td>US</td>
-    <td>1984</td>
-    <td>Audio</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">AVANTONE<h2></td> -->
-    <td>AVANTONE</td>
-    <td><a href="http://www.avantonepro.com/" target="_blank" id="avantonepro.com">avantonepro.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Audio</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">behringer<h2></td> -->
-    <td>behringer</td>
-    <td><a href="https://www.behringer.com/" target="_blank" id="behringer.com">behringer.com</a></td>
-    <td>Germany</td>
-    <td>1989</td>
-    <td>Audio, Controller (Studio)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">BENRO<h2></td> -->
-    <td>BENRO</td>
-    <td><a href="https://www.benroeu.com/" target="_blank" id="benroeu.com">benroeu.com</a></td>
-    <td>China</td>
-    <td>1996</td>
-    <td>Video</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Beyerdynamic<h2></td> -->
-    <td>Beyerdynamic</td>
-    <td><a href="http://www.beyerdynamic.com" target="_blank" id="beyerdynamic.com">beyerdynamic.com</a></td>
-    <td>Germany</td>
-    <td>1924</td>
-    <td>Audio, Controller (Studio)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Brüel & Kjær<h2></td> -->
-    <td>Brüel & Kjær</td>
-    <td><a href="http://www.bksv.com/" target="_blank" id="bksv.com">bksv.com</a></td>
-    <td>Denmark</td>
-    <td>1942</td>
-    <td>Audio</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Black Magic Design<h2></td> -->
-    <td>Black Magic Design</td>
-    <td><a href="https://www.blackmagicdesign.com" target="_blank" id="blackmagicdesign.com">blackmagicdesign.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Controller (Studio), Video, Camera</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">bolt flashes<h2></td> -->
-    <td>bolt flashes</td>
-    <td><a href="https://www.boltflashes.com/" target="_blank" id="boltflashes.com">boltflashes.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Light</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">BOYA<h2></td> -->
-    <td>BOYA</td>
-    <td><a href="http://www.boya-mic.com/" target="_blank" id="boya-mic.com">boya-mic.com</a></td>
-    <td>China</td>
-    <td>2007</td>
-    <td>Camera, Audio</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Brauner<h2></td> -->
-    <td>Brauner</td>
-    <td><a href="http://brauner-microphones.de" target="_blank" id="brauner-microphones.de">brauner-microphones.de</a></td>
-    <td>Germany</td>
-    <td>1993</td>
-    <td>Audio</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Broncolor<h2></td> -->
-    <td>Broncolor</td>
-    <td><a href="https://broncolor.swiss/" target="_blank" id="broncolor.swiss">broncolor.swiss</a></td>
-    <td>Switzerland</td>
-    <td>1958</td>
-    <td>Light</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Core Sound LLC<h2></td> -->
-    <td>Core Sound LLC</td>
-    <td><a href="http://www.core-sound.com" target="_blank" id="core-sound.com">core-sound.com</a></td>
-    <td>US</td>
-    <td>1990</td>
-    <td>Audio</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Dynalite<h2></td> -->
-    <td>Dynalite</td>
-    <td><a href="https://www.dynalite.org/" target="_blank" id="dynalite.org">dynalite.org</a></td>
-    <td>Australia</td>
-    <td>2009</td>
-    <td>Light</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Electro Harmonix<h2></td> -->
-    <td>Electro Harmonix</td>
-    <td><a href="http://www.ehx.com" target="_blank" id="ehx.com">ehx.com</a></td>
-    <td>US</td>
-    <td>1968</td>
-    <td>Controller (Studio)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Electro-Voice<h2></td> -->
-    <td>Electro-Voice</td>
-    <td><a href="http://www.electrovoice.com" target="_blank" id="electrovoice.com">electrovoice.com</a></td>
-    <td>US</td>
-    <td>1930</td>
-    <td>Audio, Controller (Studio)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Elgato<h2></td> -->
-    <td>Elgato</td>
-    <td><a href="https://www.elgato.com/en" target="_blank" id="elgato.com">elgato.com</a></td>
-    <td>Germany</td>
-    <td>2012</td>
-    <td>Light, Audio, Controller (Studio), Video</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">ELINCHROM<h2></td> -->
-    <td>ELINCHROM</td>
-    <td><a href="https://www.elinchrom.com/" target="_blank" id="elinchrom.com">elinchrom.com</a></td>
-    <td>Switzerland</td>
-    <td>1962</td>
-    <td>Light</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Nanlite<h2></td> -->
-    <td>Nanlite</td>
-    <td><a href="http://en.nanlite.com/" target="_blank" id="en.nanlite.com">en.nanlite.com</a></td>
-    <td>China</td>
-    <td>1992</td>
-    <td>Light, Tripod and Support</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Eventide Inc.<h2></td> -->
-    <td>Eventide Inc.</td>
-    <td><a href="http://www.eventide.com" target="_blank" id="eventide.com">eventide.com</a></td>
-    <td>US</td>
-    <td>1971</td>
-    <td>Controller (Studio)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Freestyle Music<h2></td> -->
-    <td>Freestyle Music</td>
-    <td><a href="https://freestylemusic.co.uk/" target="_blank" id="freestylemusic.co.uk">freestylemusic.co.uk</a></td>
-    <td>UK</td>
-    <td></td>
-    <td>Audio</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Gauge Precision Instruments Inc.<h2></td> -->
-    <td>Gauge Precision Instruments Inc.</td>
-    <td><a href="https://www.gauge-usa.com/" target="_blank" id="gauge-usa.com">gauge-usa.com</a></td>
-    <td>US</td>
-    <td>2008</td>
-    <td>Audio</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Glide Gear<h2></td> -->
-    <td>Glide Gear</td>
-    <td><a href="https://glidegear.net/collections/teleprompters" target="_blank" id="glidegear.net">glidegear.net</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Video</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Canon<h2></td> -->
-    <td>Canon</td>
-    <td><a href="https://global.canon/" target="_blank" id="global.canon">global.canon</a></td>
-    <td>Japan</td>
-    <td>1937</td>
-    <td>Bag & Case, Camera, Camera Lens, Lens Filter, Video</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Godox<h2></td> -->
-    <td>Godox</td>
-    <td><a href="http://www.godox.com/EN/" target="_blank" id="godox.com">godox.com</a></td>
-    <td>China</td>
-    <td></td>
-    <td>Light</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">havox<h2></td> -->
-    <td>havox</td>
-    <td><a href="https://www.havox.com/" target="_blank" id="havox.com">havox.com</a></td>
-    <td>France</td>
-    <td></td>
-    <td>Light</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Heil Sound<h2></td> -->
-    <td>Heil Sound</td>
-    <td><a href="http://www.heilsound.com/" target="_blank" id="heilsound.com">heilsound.com</a></td>
-    <td>US</td>
-    <td>1966</td>
-    <td>Audio</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Hensel<h2></td> -->
-    <td>Hensel</td>
-    <td><a href="https://hensel.eu/en/" target="_blank" id="hensel.eu">hensel.eu</a></td>
-    <td>Germany</td>
-    <td>1963</td>
-    <td>Light</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">iConnectivity<h2></td> -->
-    <td>iConnectivity</td>
-    <td><a href="https://www.iconnectivity.com/" target="_blank" id="iconnectivity.com">iconnectivity.com</a></td>
-    <td>Canada</td>
-    <td></td>
-    <td>Controller (Studio)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">iFootage<h2></td> -->
-    <td>iFootage</td>
-    <td><a href="https://www.ifootagegear.com/" target="_blank" id="ifootagegear.com">ifootagegear.com</a></td>
-    <td>US</td>
-    <td>2011</td>
-    <td>Tripod and Support, Video</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Ikan<h2></td> -->
-    <td>Ikan</td>
-    <td><a href="https://ikancorp.com/" target="_blank" id="ikancorp.com">ikancorp.com</a></td>
-    <td>US</td>
-    <td>2005</td>
-    <td>Light, Tripod and Support, Video</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">JBL<h2></td> -->
-    <td>JBL</td>
-    <td><a href="http://www.jbl.com" target="_blank" id="jbl.com">jbl.com</a></td>
-    <td>US</td>
-    <td>1964</td>
-    <td>Audio</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Jupio<h2></td> -->
-    <td>Jupio</td>
-    <td><a href="http://www.jupio.com" target="_blank" id="jupio.com">jupio.com</a></td>
-    <td>Netherlands</td>
-    <td>2006</td>
-    <td>Video</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">JZ Microphones<h2></td> -->
-    <td>JZ Microphones</td>
-    <td><a href="http://www.jzmic.com/" target="_blank" id="jzmic.com">jzmic.com</a></td>
-    <td>Latvia</td>
-    <td>2007</td>
-    <td>Audio</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Kenko<h2></td> -->
-    <td>Kenko</td>
-    <td><a href="https://kenkoglobal.com/" target="_blank" id="kenkoglobal.com">kenkoglobal.com</a></td>
-    <td>Japan</td>
-    <td>1957</td>
-    <td>Camera Lens, Light, Video</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Kino Flo<h2></td> -->
-    <td>Kino Flo</td>
-    <td><a href="https://www.kinoflo.com/" target="_blank" id="kinoflo.com">kinoflo.com</a></td>
-    <td>US</td>
-    <td>1987</td>
-    <td>Light, Video</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">KORG<h2></td> -->
-    <td>KORG</td>
-    <td><a href="https://www.korg.com/" target="_blank" id="korg.com">korg.com</a></td>
-    <td>Japan</td>
-    <td>1963</td>
-    <td>Audio, Controller (Studio)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Lauten Audio<h2></td> -->
-    <td>Lauten Audio</td>
-    <td><a href="https://www.lautenaudio.com/" target="_blank" id="lautenaudio.com">lautenaudio.com</a></td>
-    <td>US</td>
-    <td>2006</td>
-    <td>Audio</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Line 6<h2></td> -->
-    <td>Line 6</td>
-    <td><a href="http://www.line6.com" target="_blank" id="line6.com">line6.com</a></td>
-    <td>US</td>
-    <td>1996</td>
-    <td>Controller (Studio)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Luxli<h2></td> -->
-    <td>Luxli</td>
-    <td><a href="http://www.luxlilight.com" target="_blank" id="luxlilight.com">luxlilight.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Light</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">M-Audio<h2></td> -->
-    <td>M-Audio</td>
-    <td><a href="https://www.m-audio.com/" target="_blank" id="m-audio.com">m-audio.com</a></td>
-    <td>US</td>
-    <td>1988</td>
-    <td>Audio, Controller (Studio)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Mackie<h2></td> -->
-    <td>Mackie</td>
-    <td><a href="https://mackie.com/" target="_blank" id="mackie.com">mackie.com</a></td>
-    <td>US</td>
-    <td>1989</td>
-    <td>Controller (Studio)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Manley Laboratories<h2></td> -->
-    <td>Manley Laboratories</td>
-    <td><a href="http://www.manley.com" target="_blank" id="manley.com">manley.com</a></td>
-    <td>US</td>
-    <td>1988</td>
-    <td>Audio</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Marantz<h2></td> -->
-    <td>Marantz</td>
-    <td><a href="http://www.marantz.com" target="_blank" id="marantz.com">marantz.com</a></td>
-    <td>US</td>
-    <td>1953</td>
-    <td>Audio, Controller (Studio)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Mevo<h2></td> -->
-    <td>Mevo</td>
-    <td><a href="https://mevo.com" target="_blank" id="mevo.com">mevo.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Video</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Microtech Gefell<h2></td> -->
-    <td>Microtech Gefell</td>
-    <td><a href="http://www.microtechgefell.de/" target="_blank" id="microtechgefell.de">microtechgefell.de</a></td>
-    <td>Germany</td>
-    <td>1928</td>
-    <td>Audio</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">MIPRO<h2></td> -->
-    <td>MIPRO</td>
-    <td><a href="http://www.mipro.com.tw/" target="_blank" id="mipro.com.tw">mipro.com.tw</a></td>
-    <td>Taiwan</td>
-    <td>1995</td>
-    <td>Audio</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Meike<h2></td> -->
-    <td>Meike</td>
-    <td><a href="http://www.mkgrip.com" target="_blank" id="mkgrip.com">mkgrip.com</a></td>
-    <td>Hong Kong</td>
-    <td></td>
-    <td>Light, Video</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">MOTU<h2></td> -->
-    <td>MOTU</td>
-    <td><a href="http://www.motu.com" target="_blank" id="motu.com">motu.com</a></td>
-    <td>US</td>
-    <td>1980</td>
-    <td>Audio, Controller (Studio)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Nady Systems<h2></td> -->
-    <td>Nady Systems</td>
-    <td><a href="https://nady.com/" target="_blank" id="nady.com">nady.com</a></td>
-    <td>US</td>
-    <td>1978</td>
-    <td>Audio</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Native Instruments<h2></td> -->
-    <td>Native Instruments</td>
-    <td><a href="https://www.native-instruments.com" target="_blank" id="native-instruments.com">native-instruments.com</a></td>
-    <td>Germany</td>
-    <td>1996</td>
-    <td>Controller (Studio)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">neewer<h2></td> -->
-    <td>neewer</td>
-    <td><a href="http://www.neewer.com" target="_blank" id="neewer.com">neewer.com</a></td>
-    <td>China</td>
-    <td>2010</td>
-    <td>Audio, Light, Video</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Neumann<h2></td> -->
-    <td>Neumann</td>
-    <td><a href="http://www.neumann.com" target="_blank" id="neumann.com">neumann.com</a></td>
-    <td>Germany</td>
-    <td>1928</td>
-    <td>Audio</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Nevaton<h2></td> -->
-    <td>Nevaton</td>
-    <td><a href="http://nevatonmics.ru/" target="_blank" id="nevatonmics.ru">nevatonmics.ru</a></td>
-    <td>Russia</td>
-    <td>1947</td>
-    <td>Audio</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Nikon<h2></td> -->
-    <td>Nikon</td>
-    <td><a href="https://www.nikonusa.com/" target="_blank" id="nikonusa.com">nikonusa.com</a></td>
-    <td>Japan</td>
-    <td>1917</td>
-    <td>Camera, Camera Lens, Lens Filter, Light, Tripod and Support, Video</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">NTi Audio<h2></td> -->
-    <td>NTi Audio</td>
-    <td><a href="https://www.nti-audio.com/" target="_blank" id="nti-audio.com">nti-audio.com</a></td>
-    <td>Liechtenstein</td>
-    <td>2000</td>
-    <td>Audio</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Numark<h2></td> -->
-    <td>Numark</td>
-    <td><a href="https://www.numark.com/" target="_blank" id="numark.com">numark.com</a></td>
-    <td>US</td>
-    <td>1971</td>
-    <td>Controller (Studio)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">PCB Piezotronics<h2></td> -->
-    <td>PCB Piezotronics</td>
-    <td><a href="https://www.pcb.com/" target="_blank" id="pcb.com">pcb.com</a></td>
-    <td>US</td>
-    <td>1967</td>
-    <td>Audio</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Peak Design<h2></td> -->
-    <td>Peak Design</td>
-    <td><a href="https://www.peakdesign.com/" target="_blank" id="peakdesign.com">peakdesign.com</a></td>
-    <td>US</td>
-    <td>2010</td>
-    <td>Camera Tripod and Support, Video</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Phottix<h2></td> -->
-    <td>Phottix</td>
-    <td><a href="http://www.phottix.com/" target="_blank" id="phottix.com">phottix.com</a></td>
-    <td>Hong Kong</td>
-    <td>2007</td>
-    <td>Light</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">pioneer electronics<h2></td> -->
-    <td>pioneer electronics</td>
-    <td><a href="http://www.pioneerelectronics.com" target="_blank" id="pioneerelectronics.com">pioneerelectronics.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Audio</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Presonus<h2></td> -->
-    <td>Presonus</td>
-    <td><a href="https://www.presonus.com/" target="_blank" id="presonus.com">presonus.com</a></td>
-    <td>US</td>
-    <td>1995</td>
-    <td>Audio, Controller (Studio)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Profoto<h2></td> -->
-    <td>Profoto</td>
-    <td><a href="https://profoto.com/" target="_blank" id="profoto.com">profoto.com</a></td>
-    <td>Sweden</td>
-    <td>1968</td>
-    <td>Light</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">prolights<h2></td> -->
-    <td>prolights</td>
-    <td><a href="http://www.prolights.it" target="_blank" id="prolights.it">prolights.it</a></td>
-    <td>Italy</td>
-    <td>2001</td>
-    <td>Light</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">QSC<h2></td> -->
-    <td>QSC</td>
-    <td><a href="https://www.qsc.com/" target="_blank" id="qsc.com">qsc.com</a></td>
-    <td>US</td>
-    <td>1968</td>
-    <td>Controller (Studio)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Razer<h2></td> -->
-    <td>Razer</td>
-    <td><a href="https://www.razer.com/" target="_blank" id="razer.com">razer.com</a></td>
-    <td>US</td>
-    <td>2005</td>
-    <td>Chair, Desk, Keyboard, Monitor, Mouse, Mouse Pad, Audio, Audio, Controller (Studio)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">RCF<h2></td> -->
-    <td>RCF</td>
-    <td><a href="https://www.rcf.it/" target="_blank" id="rcf.it">rcf.it</a></td>
-    <td>Italy</td>
-    <td>1949</td>
-    <td>Controller (Studio)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">RME audio<h2></td> -->
-    <td>RME audio</td>
-    <td><a href="http://www.rme-audio.de/" target="_blank" id="rme-audio.de">rme-audio.de</a></td>
-    <td>Germany</td>
-    <td>1996</td>
-    <td>Controller (Studio)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">RODE<h2></td> -->
-    <td>RODE</td>
-    <td><a href="http://www.rode.com" target="_blank" id="rode.com">rode.com</a></td>
-    <td>Australia</td>
-    <td>1967</td>
-    <td>Audio</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">roland<h2></td> -->
-    <td>roland</td>
-    <td><a href="http://www.roland.com" target="_blank" id="roland.com">roland.com</a></td>
-    <td>Japan</td>
-    <td>1972</td>
-    <td>Controller (Studio), Amplifier</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Royer Labs<h2></td> -->
-    <td>Royer Labs</td>
-    <td><a href="http://www.royerlabs.com" target="_blank" id="royerlabs.com">royerlabs.com</a></td>
-    <td>US</td>
-    <td>1998</td>
-    <td>Audio</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Hartke<h2></td> -->
-    <td>Hartke</td>
-    <td><a href="http://www.samsontech.com/hartke/" target="_blank" id="samsontech.com">samsontech.com</a></td>
-    <td>US</td>
-    <td>1980</td>
-    <td>Amplifier, Guitar Effects / Pedals, Audio</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">sE Electronics<h2></td> -->
-    <td>sE Electronics</td>
-    <td><a href="https://www.seelectronics.com/" target="_blank" id="seelectronics.com">seelectronics.com</a></td>
-    <td>China</td>
-    <td>2000</td>
-    <td>Audio</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">sennheiser<h2></td> -->
-    <td>sennheiser</td>
-    <td><a href="http://www.sennheiser.com" target="_blank" id="sennheiser.com">sennheiser.com</a></td>
-    <td>Germany</td>
-    <td>1945</td>
-    <td>Audio, Controller (Studio)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Shure<h2></td> -->
-    <td>Shure</td>
-    <td><a href="http://www.shure.com/" target="_blank" id="shure.com">shure.com</a></td>
-    <td>US</td>
-    <td>1925</td>
-    <td>Audio</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">slrmagic<h2></td> -->
-    <td>slrmagic</td>
-    <td><a href="http://www.slrmagic.info" target="_blank" id="slrmagic.info">slrmagic.info</a></td>
-    <td>Hong Kong</td>
-    <td></td>
-    <td>Video</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Small Rig<h2></td> -->
-    <td>Small Rig</td>
-    <td><a href="https://www.smallrig.com/" target="_blank" id="smallrig.com">smallrig.com</a></td>
-    <td>China</td>
-    <td>2009</td>
-    <td>Light, Tripod and Support</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Softube<h2></td> -->
-    <td>Softube</td>
-    <td><a href="http://www.softube.com" target="_blank" id="softube.com">softube.com</a></td>
-    <td>Sweden</td>
-    <td>2003</td>
-    <td>Controller (Studio)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Solid State Logic<h2></td> -->
-    <td>Solid State Logic</td>
-    <td><a href="https://www.solidstatelogic.com/" target="_blank" id="solidstatelogic.com">solidstatelogic.com</a></td>
-    <td>UK</td>
-    <td>1969</td>
-    <td>Audio, Controller (Studio)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">sontronics<h2></td> -->
-    <td>sontronics</td>
-    <td><a href="http://www.sontronics.com/" target="_blank" id="sontronics.com">sontronics.com</a></td>
-    <td>UK</td>
-    <td>2005</td>
-    <td>Audio</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">SOUND TOWN<h2></td> -->
-    <td>SOUND TOWN</td>
-    <td><a href="https://www.soundtown.com/" target="_blank" id="soundtown.com">soundtown.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Audio</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Stagg<h2></td> -->
-    <td>Stagg</td>
-    <td><a href="http://www.staggmusic.com" target="_blank" id="staggmusic.com">staggmusic.com</a></td>
-    <td>Belgium</td>
-    <td>1995</td>
-    <td>Audio</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Steinberg<h2></td> -->
-    <td>Steinberg</td>
-    <td><a href="https://www.steinberg.net/" target="_blank" id="steinberg.net">steinberg.net</a></td>
-    <td>Germany</td>
-    <td>1984</td>
-    <td>Controller (Studio)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Tascam<h2></td> -->
-    <td>Tascam</td>
-    <td><a href="http://tascam.com" target="_blank" id="tascam.com">tascam.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Audio, Controller (Studio)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">TC Helicon<h2></td> -->
-    <td>TC Helicon</td>
-    <td><a href="https://www.tc-helicon.com/" target="_blank" id="tc-helicon.com">tc-helicon.com</a></td>
-    <td>Canada</td>
-    <td></td>
-    <td>Audio</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Tokina<h2></td> -->
-    <td>Tokina</td>
-    <td><a href="https://tokinalens.com/" target="_blank" id="tokinalens.com">tokinalens.com</a></td>
-    <td>Japan</td>
-    <td>1950</td>
-    <td>Lens, Video</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">TONOR<h2></td> -->
-    <td>TONOR</td>
-    <td><a href="https://www.tonormic.com/" target="_blank" id="tonormic.com">tonormic.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Audio</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">TourBox Tech<h2></td> -->
-    <td>TourBox Tech</td>
-    <td><a href="https://www.tourboxtech.com" target="_blank" id="tourboxtech.com">tourboxtech.com</a></td>
-    <td></td>
-    <td>2016</td>
-    <td>Controller (Studio)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">townsend labs<h2></td> -->
-    <td>townsend labs</td>
-    <td><a href="http://www.townsendlabs.com" target="_blank" id="townsendlabs.com">townsendlabs.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Audio</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Universal Audio<h2></td> -->
-    <td>Universal Audio</td>
-    <td><a href="https://www.uaudio.com/" target="_blank" id="uaudio.com">uaudio.com</a></td>
-    <td>US</td>
-    <td>1958</td>
-    <td>Controller (Studio)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">V-Moda<h2></td> -->
-    <td>V-Moda</td>
-    <td><a href="https://www.v-moda.com/" target="_blank" id="v-moda.com">v-moda.com</a></td>
-    <td>US</td>
-    <td>2004</td>
-    <td>Audio</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Vanguard Audio Labs<h2></td> -->
-    <td>Vanguard Audio Labs</td>
-    <td><a href="http://www.vanguardaudiolabs.com" target="_blank" id="vanguardaudiolabs.com">vanguardaudiolabs.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Audio</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Warm Audio<h2></td> -->
-    <td>Warm Audio</td>
-    <td><a href="http://www.warmaudio.com" target="_blank" id="warmaudio.com">warmaudio.com</a></td>
-    <td>US</td>
-    <td>2011</td>
-    <td>Audio, Controller (Studio)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Weifeng<h2></td> -->
-    <td>Weifeng</td>
-    <td><a href="http://www.weifengchina.com" target="_blank" id="weifengchina.com">weifengchina.com</a></td>
-    <td>China</td>
-    <td></td>
-    <td>Light, Video</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Yamaha<h2></td> -->
-    <td>Yamaha</td>
-    <td><a href="https://www.yamaha.com" target="_blank" id="yamaha.com">yamaha.com</a></td>
-    <td>Japan</td>
-    <td>1887</td>
-    <td>Audio, Amplifier, Guitar Case / Bags, Guitars</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">YoloLiv<h2></td> -->
-    <td>YoloLiv</td>
-    <td><a href="http://www.yololiv.com" target="_blank" id="yololiv.com">yololiv.com</a></td>
-    <td>Canada</td>
-    <td>2017</td>
-    <td>Controller (Studio), Streaming</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">zhiyun-tech<h2></td> -->
-    <td>zhiyun-tech</td>
-    <td><a href="http://www.zhiyun-tech.com" target="_blank" id="zhiyun-tech.com">zhiyun-tech.com</a></td>
-    <td>China</td>
-    <td>2014</td>
-    <td>Video</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Zoom<h2></td> -->
-    <td>Zoom</td>
-    <td><a href="http://www.zoomcorp.com" target="_blank" id="zoomcorp.com">zoomcorp.com</a></td>
-    <td>Japan</td>
-    <td>1983</td>
-    <td>Audio</td>
-  </tr>
-
-
-</table>
-
-<br>
-
-    <!-- <script type="text/javascript">
-        function tableToCSV() {
-
-            // Variable to store the final csv data
-            var csv_data = [];
-
-            // Get each row data
-            var rows = document.getElementsByTagName('tr');
-            for (var i = 0; i < rows.length; i++) {
-
-                // Get each column data
-                var cols = rows[i].querySelectorAll('td,th');
-
-                // Stores each csv row data
-                var csvrow = [];
-                for (var j = 0; j < cols.length; j++) {
-
-                    // Get the text data of each cell
-                    // of a row and push it to csvrow
-                    csvrow.push(cols[j].innerHTML);
-                }
-
-                // Combine each column value with comma
-                csv_data.push(csvrow.join(","));
-            }
-
-            // Combine each row data with new line character
-            csv_data = csv_data.join('\n');
-
-            // Call this function to download csv file
-            downloadCSVFile(csv_data);
-
-        }
-
-        function downloadCSVFile(csv_data) {
-
-            // Create CSV file object and feed
-            // our csv_data into it
-            CSVFile = new Blob([csv_data], {
-                type: "text/csv"
-            });
-
-            // Create to temporary link to initiate
-            // download process
-            var temp_link = document.createElement('a');
-
-            // Download csv file
-            temp_link.download = ;
-            var url = window.URL.createObjectURL(CSVFile);
-            temp_link.href = url;
-
-            // This link should not be displayed
-            temp_link.style.display = "none";
-            document.body.appendChild(temp_link);
-
-            // Automatically click the link to
-            // trigger download
-            temp_link.click();
-            document.body.removeChild(temp_link);
-        }
-    </script> -->
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-<p></p>
-<p></p>
-<hr>
-<p style="text-align: left; font-family: 'Lato';">114 brands indexed</p>
-<p style="text-align: left; font-family: 'Lato';">Last updated 8 May 2022 23:37</p>
-<p style="text-align: left; font-family: 'Lato';">Side project</p>
-<p style="text-align: left; font-family: 'Lato';">Interested to contribute? Contact me: n1c [@] indexall.io</p>
+    <div class="header">
+        <a href = "https://indexall.io" target = "_self"> 
+            <img src="https://indexall.io/indeXall_white.svg" alt="indeXall.io" width="100" height="100" /> 
+         </a>
+    </div>
+    
+    
+    <h1 class="h1">List of 230 Archery brands</h1>
+
+    <table class="table table-hoverable table-bordered">
+        
+    <tr>
+        <th scope="col"></th>
+        <th scope="col">Website</th>
+        <th scope="col">Country</th>
+        <th scope="col">Est.</th>
+        <th scope="col">Products</th>
+    </tr>
+
+    
+    <tr>
+        <td>12 Gauge Microphones</td>
+        <td><a href="https://www.12gaugemicrophones.com/" target="_blank" id="12gaugemicrophones.com">12gaugemicrophones.com</a></td>
+        <td class="nowrap">US</td>
+        <td>2011</td>
+        <td>Audio</td>
+    </tr>
+    
+    <tr>
+        <td>Ableton</td>
+        <td><a href="https://www.ableton.com" target="_blank" id="ableton.com">ableton.com</a></td>
+        <td class="nowrap">Germany</td>
+        <td>1999</td>
+        <td>Software, Controller (Studio)</td>
+    </tr>
+    
+    <tr>
+        <td>Adam Audio</td>
+        <td><a href="https://www.adam-audio.com/" target="_blank" id="adam-audio.com">adam-audio.com</a></td>
+        <td class="nowrap">Germany</td>
+        <td>1999</td>
+        <td>Audio</td>
+    </tr>
+    
+    <tr>
+        <td>Akai</td>
+        <td><a href="http://www.akai.com/" target="_blank" id="akai.com">akai.com</a></td>
+        <td class="nowrap">Japan</td>
+        <td>1929</td>
+        <td>Audio</td>
+    </tr>
+    
+    <tr>
+        <td>AKG </td>
+        <td><a href="https://www.akg.com/" target="_blank" id="akg.com">akg.com</a></td>
+        <td class="nowrap">Austria</td>
+        <td>1947</td>
+        <td>Software, Audio</td>
+    </tr>
+    
+    <tr>
+        <td>alesis</td>
+        <td><a href="https://www.alesis.com/" target="_blank" id="alesis.com">alesis.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1980</td>
+        <td>Audio, Controller (Studio)</td>
+    </tr>
+    
+    <tr>
+        <td>Alpine</td>
+        <td><a href="https://www.alpinehearingprotection.com/" target="_blank" id="alpinehearingprotection.com">alpinehearingprotection.com</a></td>
+        <td class="nowrap">Netherlands</td>
+        <td>1994</td>
+        <td>Audio</td>
+    </tr>
+    
+    <tr>
+        <td>API (Automated Processes Incorporated)</td>
+        <td><a href="http://apiaudio.com/" target="_blank" id="apiaudio.com">apiaudio.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1969</td>
+        <td>Audio, Controller (Studio)</td>
+    </tr>
+    
+    <tr>
+        <td>apogeedigital</td>
+        <td><a href="https://apogeedigital.com/" target="_blank" id="apogeedigital.com">apogeedigital.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1985</td>
+        <td>Audio, Controller (Studio)</td>
+    </tr>
+    
+    <tr>
+        <td>Apple</td>
+        <td><a href="https://www.apple.com/" target="_blank" id="apple.com">apple.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1976</td>
+        <td></td>
+    </tr>
+    
+    <tr>
+        <td>Aputure</td>
+        <td><a href="https://www.aputure.com/" target="_blank" id="aputure.com">aputure.com</a></td>
+        <td class="nowrap">China</td>
+        <td>2005</td>
+        <td>Light</td>
+    </tr>
+    
+    <tr>
+        <td>ART</td>
+        <td><a href="http://www.artproaudio.com/" target="_blank" id="artproaudio.com">artproaudio.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1984</td>
+        <td>Audio, Controller (Studio)</td>
+    </tr>
+    
+    <tr>
+        <td>ARTURIA</td>
+        <td><a href="https://www.arturia.com/" target="_blank" id="arturia.com">arturia.com</a></td>
+        <td class="nowrap">France</td>
+        <td>1999</td>
+        <td>Audio, Controller (Studio)</td>
+    </tr>
+    
+    <tr>
+        <td>ASHDOWN</td>
+        <td><a href="https://ashdownmusic.com/" target="_blank" id="ashdownmusic.com">ashdownmusic.com</a></td>
+        <td class="nowrap">UK</td>
+        <td>1997</td>
+        <td>Audio, Controller (Studio)</td>
+    </tr>
+    
+    <tr>
+        <td>ASTON</td>
+        <td><a href="https://www.astonmics.com/" target="_blank" id="astonmics.com">astonmics.com</a></td>
+        <td class="nowrap">UK</td>
+        <td></td>
+        <td>Audio</td>
+    </tr>
+    
+    <tr>
+        <td>Audient</td>
+        <td><a href="https://audient.com/" target="_blank" id="audient.com">audient.com</a></td>
+        <td class="nowrap">UK</td>
+        <td>1997</td>
+        <td>Software, Audio</td>
+    </tr>
+    
+    <tr>
+        <td>Audio-Technica</td>
+        <td><a href="https://www.audio-technica.com/" target="_blank" id="audio-technica.com">audio-technica.com</a></td>
+        <td class="nowrap">Japan</td>
+        <td>1963</td>
+        <td>Audio</td>
+    </tr>
+    
+    <tr>
+        <td>AUDIX</td>
+        <td><a href="https://audixusa.com/" target="_blank" id="audixusa.com">audixusa.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1984</td>
+        <td>Audio</td>
+    </tr>
+    
+    <tr>
+        <td>AVANTONE</td>
+        <td><a href="http://www.avantonepro.com/" target="_blank" id="avantonepro.com">avantonepro.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Audio</td>
+    </tr>
+    
+    <tr>
+        <td>behringer</td>
+        <td><a href="https://www.behringer.com/" target="_blank" id="behringer.com">behringer.com</a></td>
+        <td class="nowrap">Germany</td>
+        <td>1989</td>
+        <td>Audio, Controller (Studio)</td>
+    </tr>
+    
+    <tr>
+        <td>BENRO</td>
+        <td><a href="https://www.benroeu.com/" target="_blank" id="benroeu.com">benroeu.com</a></td>
+        <td class="nowrap">China</td>
+        <td>1996</td>
+        <td>Video</td>
+    </tr>
+    
+    <tr>
+        <td>Beyerdynamic</td>
+        <td><a href="http://www.beyerdynamic.com" target="_blank" id="beyerdynamic.com">beyerdynamic.com</a></td>
+        <td class="nowrap">Germany</td>
+        <td>1924</td>
+        <td>Audio, Controller (Studio)</td>
+    </tr>
+    
+    <tr>
+        <td>Brüel & Kjær</td>
+        <td><a href="http://www.bksv.com/" target="_blank" id="bksv.com">bksv.com</a></td>
+        <td class="nowrap">Denmark</td>
+        <td>1942</td>
+        <td>Audio</td>
+    </tr>
+    
+    <tr>
+        <td>Black Magic Design</td>
+        <td><a href="https://www.blackmagicdesign.com" target="_blank" id="blackmagicdesign.com">blackmagicdesign.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Controller (Studio), Video, Camera</td>
+    </tr>
+    
+    <tr>
+        <td>bolt flashes</td>
+        <td><a href="https://www.boltflashes.com/" target="_blank" id="boltflashes.com">boltflashes.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Light</td>
+    </tr>
+    
+    <tr>
+        <td>BOYA</td>
+        <td><a href="http://www.boya-mic.com/" target="_blank" id="boya-mic.com">boya-mic.com</a></td>
+        <td class="nowrap">China</td>
+        <td>2007</td>
+        <td>Camera, Audio</td>
+    </tr>
+    
+    <tr>
+        <td>Brauner</td>
+        <td><a href="http://brauner-microphones.de" target="_blank" id="brauner-microphones.de">brauner-microphones.de</a></td>
+        <td class="nowrap">Germany</td>
+        <td>1993</td>
+        <td>Audio</td>
+    </tr>
+    
+    <tr>
+        <td>Broncolor</td>
+        <td><a href="https://broncolor.swiss/" target="_blank" id="broncolor.swiss">broncolor.swiss</a></td>
+        <td class="nowrap">Switzerland</td>
+        <td>1958</td>
+        <td>Light</td>
+    </tr>
+    
+    <tr>
+        <td>Core Sound LLC</td>
+        <td><a href="http://www.core-sound.com" target="_blank" id="core-sound.com">core-sound.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1990</td>
+        <td>Audio</td>
+    </tr>
+    
+    <tr>
+        <td>Dynalite</td>
+        <td><a href="https://www.dynalite.org/" target="_blank" id="dynalite.org">dynalite.org</a></td>
+        <td class="nowrap">Australia</td>
+        <td>2009</td>
+        <td>Light</td>
+    </tr>
+    
+    <tr>
+        <td>Electro Harmonix</td>
+        <td><a href="http://www.ehx.com" target="_blank" id="ehx.com">ehx.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1968</td>
+        <td>Controller (Studio)</td>
+    </tr>
+    
+    <tr>
+        <td>Electro-Voice</td>
+        <td><a href="http://www.electrovoice.com" target="_blank" id="electrovoice.com">electrovoice.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1930</td>
+        <td>Audio, Controller (Studio)</td>
+    </tr>
+    
+    <tr>
+        <td>Elgato</td>
+        <td><a href="https://www.elgato.com/en" target="_blank" id="elgato.com">elgato.com</a></td>
+        <td class="nowrap">Germany</td>
+        <td>2012</td>
+        <td>Light, Audio, Controller (Studio), Video</td>
+    </tr>
+    
+    <tr>
+        <td>ELINCHROM</td>
+        <td><a href="https://www.elinchrom.com/" target="_blank" id="elinchrom.com">elinchrom.com</a></td>
+        <td class="nowrap">Switzerland</td>
+        <td>1962</td>
+        <td>Light</td>
+    </tr>
+    
+    <tr>
+        <td>Nanlite</td>
+        <td><a href="http://en.nanlite.com/" target="_blank" id="en.nanlite.com">en.nanlite.com</a></td>
+        <td class="nowrap">China</td>
+        <td>1992</td>
+        <td>Light, Tripod and Support</td>
+    </tr>
+    
+    <tr>
+        <td>Eventide Inc.</td>
+        <td><a href="http://www.eventide.com" target="_blank" id="eventide.com">eventide.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1971</td>
+        <td>Controller (Studio)</td>
+    </tr>
+    
+    <tr>
+        <td>Freestyle Music</td>
+        <td><a href="https://freestylemusic.co.uk/" target="_blank" id="freestylemusic.co.uk">freestylemusic.co.uk</a></td>
+        <td class="nowrap">UK</td>
+        <td></td>
+        <td>Audio</td>
+    </tr>
+    
+    <tr>
+        <td>Gauge Precision Instruments Inc.</td>
+        <td><a href="https://www.gauge-usa.com/" target="_blank" id="gauge-usa.com">gauge-usa.com</a></td>
+        <td class="nowrap">US</td>
+        <td>2008</td>
+        <td>Audio</td>
+    </tr>
+    
+    <tr>
+        <td>Glide Gear</td>
+        <td><a href="https://glidegear.net/collections/teleprompters" target="_blank" id="glidegear.net">glidegear.net</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Video</td>
+    </tr>
+    
+    <tr>
+        <td>Canon</td>
+        <td><a href="https://global.canon/" target="_blank" id="global.canon">global.canon</a></td>
+        <td class="nowrap">Japan</td>
+        <td>1937</td>
+        <td>Bag & Case, Camera, Camera Lens, Lens Filter, Video</td>
+    </tr>
+    
+    <tr>
+        <td>Godox</td>
+        <td><a href="http://www.godox.com/EN/" target="_blank" id="godox.com">godox.com</a></td>
+        <td class="nowrap">China</td>
+        <td></td>
+        <td>Light</td>
+    </tr>
+    
+    <tr>
+        <td>havox</td>
+        <td><a href="https://www.havox.com/" target="_blank" id="havox.com">havox.com</a></td>
+        <td class="nowrap">France</td>
+        <td></td>
+        <td>Light</td>
+    </tr>
+    
+    <tr>
+        <td>Heil Sound</td>
+        <td><a href="http://www.heilsound.com/" target="_blank" id="heilsound.com">heilsound.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1966</td>
+        <td>Audio</td>
+    </tr>
+    
+    <tr>
+        <td>Hensel</td>
+        <td><a href="https://hensel.eu/en/" target="_blank" id="hensel.eu">hensel.eu</a></td>
+        <td class="nowrap">Germany</td>
+        <td>1963</td>
+        <td>Light</td>
+    </tr>
+    
+    <tr>
+        <td>iConnectivity</td>
+        <td><a href="https://www.iconnectivity.com/" target="_blank" id="iconnectivity.com">iconnectivity.com</a></td>
+        <td class="nowrap">Canada</td>
+        <td></td>
+        <td>Controller (Studio)</td>
+    </tr>
+    
+    <tr>
+        <td>iFootage</td>
+        <td><a href="https://www.ifootagegear.com/" target="_blank" id="ifootagegear.com">ifootagegear.com</a></td>
+        <td class="nowrap">US</td>
+        <td>2011</td>
+        <td>Tripod and Support, Video</td>
+    </tr>
+    
+    <tr>
+        <td>Ikan</td>
+        <td><a href="https://ikancorp.com/" target="_blank" id="ikancorp.com">ikancorp.com</a></td>
+        <td class="nowrap">US</td>
+        <td>2005</td>
+        <td>Light, Tripod and Support, Video</td>
+    </tr>
+    
+    <tr>
+        <td>JBL</td>
+        <td><a href="http://www.jbl.com" target="_blank" id="jbl.com">jbl.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1964</td>
+        <td>Audio</td>
+    </tr>
+    
+    <tr>
+        <td>Jupio</td>
+        <td><a href="http://www.jupio.com" target="_blank" id="jupio.com">jupio.com</a></td>
+        <td class="nowrap">Netherlands</td>
+        <td>2006</td>
+        <td>Video</td>
+    </tr>
+    
+    <tr>
+        <td>JZ Microphones</td>
+        <td><a href="http://www.jzmic.com/" target="_blank" id="jzmic.com">jzmic.com</a></td>
+        <td class="nowrap">Latvia</td>
+        <td>2007</td>
+        <td>Audio</td>
+    </tr>
+    
+    <tr>
+        <td>Kenko</td>
+        <td><a href="https://kenkoglobal.com/" target="_blank" id="kenkoglobal.com">kenkoglobal.com</a></td>
+        <td class="nowrap">Japan</td>
+        <td>1957</td>
+        <td>Camera Lens, Light, Video</td>
+    </tr>
+    
+    <tr>
+        <td>Kino Flo</td>
+        <td><a href="https://www.kinoflo.com/" target="_blank" id="kinoflo.com">kinoflo.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1987</td>
+        <td>Light, Video</td>
+    </tr>
+    
+    <tr>
+        <td>KORG</td>
+        <td><a href="https://www.korg.com/" target="_blank" id="korg.com">korg.com</a></td>
+        <td class="nowrap">Japan</td>
+        <td>1963</td>
+        <td>Audio, Controller (Studio)</td>
+    </tr>
+    
+    <tr>
+        <td>Lauten Audio</td>
+        <td><a href="https://www.lautenaudio.com/" target="_blank" id="lautenaudio.com">lautenaudio.com</a></td>
+        <td class="nowrap">US</td>
+        <td>2006</td>
+        <td>Audio</td>
+    </tr>
+    
+    <tr>
+        <td>Line 6</td>
+        <td><a href="http://www.line6.com" target="_blank" id="line6.com">line6.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1996</td>
+        <td>Controller (Studio)</td>
+    </tr>
+    
+    <tr>
+        <td>Luxli</td>
+        <td><a href="http://www.luxlilight.com" target="_blank" id="luxlilight.com">luxlilight.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Light</td>
+    </tr>
+    
+    <tr>
+        <td>M-Audio</td>
+        <td><a href="https://www.m-audio.com/" target="_blank" id="m-audio.com">m-audio.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1988</td>
+        <td>Audio, Controller (Studio)</td>
+    </tr>
+    
+    <tr>
+        <td>Mackie</td>
+        <td><a href="https://mackie.com/" target="_blank" id="mackie.com">mackie.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1989</td>
+        <td>Controller (Studio)</td>
+    </tr>
+    
+    <tr>
+        <td>Manley Laboratories</td>
+        <td><a href="http://www.manley.com" target="_blank" id="manley.com">manley.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1988</td>
+        <td>Audio</td>
+    </tr>
+    
+    <tr>
+        <td>Marantz</td>
+        <td><a href="http://www.marantz.com" target="_blank" id="marantz.com">marantz.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1953</td>
+        <td>Audio, Controller (Studio)</td>
+    </tr>
+    
+    <tr>
+        <td>Mevo</td>
+        <td><a href="https://mevo.com" target="_blank" id="mevo.com">mevo.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Video</td>
+    </tr>
+    
+    <tr>
+        <td>Microtech Gefell</td>
+        <td><a href="http://www.microtechgefell.de/" target="_blank" id="microtechgefell.de">microtechgefell.de</a></td>
+        <td class="nowrap">Germany</td>
+        <td>1928</td>
+        <td>Audio</td>
+    </tr>
+    
+    <tr>
+        <td>MIPRO</td>
+        <td><a href="http://www.mipro.com.tw/" target="_blank" id="mipro.com.tw">mipro.com.tw</a></td>
+        <td class="nowrap">Taiwan</td>
+        <td>1995</td>
+        <td>Audio</td>
+    </tr>
+    
+    <tr>
+        <td>Meike</td>
+        <td><a href="http://www.mkgrip.com" target="_blank" id="mkgrip.com">mkgrip.com</a></td>
+        <td class="nowrap">Hong Kong</td>
+        <td></td>
+        <td>Light, Video</td>
+    </tr>
+    
+    <tr>
+        <td>MOTU</td>
+        <td><a href="http://www.motu.com" target="_blank" id="motu.com">motu.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1980</td>
+        <td>Audio, Controller (Studio)</td>
+    </tr>
+    
+    <tr>
+        <td>Nady Systems</td>
+        <td><a href="https://nady.com/" target="_blank" id="nady.com">nady.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1978</td>
+        <td>Audio</td>
+    </tr>
+    
+    <tr>
+        <td>Native Instruments</td>
+        <td><a href="https://www.native-instruments.com" target="_blank" id="native-instruments.com">native-instruments.com</a></td>
+        <td class="nowrap">Germany</td>
+        <td>1996</td>
+        <td>Controller (Studio)</td>
+    </tr>
+    
+    <tr>
+        <td>neewer</td>
+        <td><a href="http://www.neewer.com" target="_blank" id="neewer.com">neewer.com</a></td>
+        <td class="nowrap">China</td>
+        <td>2010</td>
+        <td>Audio, Light, Video</td>
+    </tr>
+    
+    <tr>
+        <td>Neumann</td>
+        <td><a href="http://www.neumann.com" target="_blank" id="neumann.com">neumann.com</a></td>
+        <td class="nowrap">Germany</td>
+        <td>1928</td>
+        <td>Audio</td>
+    </tr>
+    
+    <tr>
+        <td>Nevaton</td>
+        <td><a href="http://nevatonmics.ru/" target="_blank" id="nevatonmics.ru">nevatonmics.ru</a></td>
+        <td class="nowrap">Russia</td>
+        <td>1947</td>
+        <td>Audio</td>
+    </tr>
+    
+    <tr>
+        <td>Nikon</td>
+        <td><a href="https://www.nikonusa.com/" target="_blank" id="nikonusa.com">nikonusa.com</a></td>
+        <td class="nowrap">Japan</td>
+        <td>1917</td>
+        <td>Camera, Camera Lens, Lens Filter, Light, Tripod and Support, Video</td>
+    </tr>
+    
+    <tr>
+        <td>NTi Audio</td>
+        <td><a href="https://www.nti-audio.com/" target="_blank" id="nti-audio.com">nti-audio.com</a></td>
+        <td class="nowrap">Liechtenstein</td>
+        <td>2000</td>
+        <td>Audio</td>
+    </tr>
+    
+    <tr>
+        <td>Numark</td>
+        <td><a href="https://www.numark.com/" target="_blank" id="numark.com">numark.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1971</td>
+        <td>Controller (Studio)</td>
+    </tr>
+    
+    <tr>
+        <td>PCB Piezotronics</td>
+        <td><a href="https://www.pcb.com/" target="_blank" id="pcb.com">pcb.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1967</td>
+        <td>Audio</td>
+    </tr>
+    
+    <tr>
+        <td>Peak Design</td>
+        <td><a href="https://www.peakdesign.com/" target="_blank" id="peakdesign.com">peakdesign.com</a></td>
+        <td class="nowrap">US</td>
+        <td>2010</td>
+        <td>Camera Tripod and Support, Video</td>
+    </tr>
+    
+    <tr>
+        <td>Phottix</td>
+        <td><a href="http://www.phottix.com/" target="_blank" id="phottix.com">phottix.com</a></td>
+        <td class="nowrap">Hong Kong</td>
+        <td>2007</td>
+        <td>Light</td>
+    </tr>
+    
+    <tr>
+        <td>pioneer electronics</td>
+        <td><a href="http://www.pioneerelectronics.com" target="_blank" id="pioneerelectronics.com">pioneerelectronics.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Audio</td>
+    </tr>
+    
+    <tr>
+        <td>Presonus</td>
+        <td><a href="https://www.presonus.com/" target="_blank" id="presonus.com">presonus.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1995</td>
+        <td>Audio, Controller (Studio)</td>
+    </tr>
+    
+    <tr>
+        <td>Profoto</td>
+        <td><a href="https://profoto.com/" target="_blank" id="profoto.com">profoto.com</a></td>
+        <td class="nowrap">Sweden</td>
+        <td>1968</td>
+        <td>Light</td>
+    </tr>
+    
+    <tr>
+        <td>prolights</td>
+        <td><a href="http://www.prolights.it" target="_blank" id="prolights.it">prolights.it</a></td>
+        <td class="nowrap">Italy</td>
+        <td>2001</td>
+        <td>Light</td>
+    </tr>
+    
+    <tr>
+        <td>QSC</td>
+        <td><a href="https://www.qsc.com/" target="_blank" id="qsc.com">qsc.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1968</td>
+        <td>Controller (Studio)</td>
+    </tr>
+    
+    <tr>
+        <td>Razer</td>
+        <td><a href="https://www.razer.com/" target="_blank" id="razer.com">razer.com</a></td>
+        <td class="nowrap">US</td>
+        <td>2005</td>
+        <td>Chair, Desk, Keyboard, Monitor, Mouse, Mouse Pad, Audio, Audio, Controller (Studio)</td>
+    </tr>
+    
+    <tr>
+        <td>RCF</td>
+        <td><a href="https://www.rcf.it/" target="_blank" id="rcf.it">rcf.it</a></td>
+        <td class="nowrap">Italy</td>
+        <td>1949</td>
+        <td>Controller (Studio)</td>
+    </tr>
+    
+    <tr>
+        <td>RME audio</td>
+        <td><a href="http://www.rme-audio.de/" target="_blank" id="rme-audio.de">rme-audio.de</a></td>
+        <td class="nowrap">Germany</td>
+        <td>1996</td>
+        <td>Controller (Studio)</td>
+    </tr>
+    
+    <tr>
+        <td>RODE</td>
+        <td><a href="http://www.rode.com" target="_blank" id="rode.com">rode.com</a></td>
+        <td class="nowrap">Australia</td>
+        <td>1967</td>
+        <td>Audio</td>
+    </tr>
+    
+    <tr>
+        <td>roland</td>
+        <td><a href="http://www.roland.com" target="_blank" id="roland.com">roland.com</a></td>
+        <td class="nowrap">Japan</td>
+        <td>1972</td>
+        <td>Controller (Studio), Amplifier</td>
+    </tr>
+    
+    <tr>
+        <td>Royer Labs</td>
+        <td><a href="http://www.royerlabs.com" target="_blank" id="royerlabs.com">royerlabs.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1998</td>
+        <td>Audio</td>
+    </tr>
+    
+    <tr>
+        <td>Hartke</td>
+        <td><a href="http://www.samsontech.com/hartke/" target="_blank" id="samsontech.com">samsontech.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1980</td>
+        <td>Amplifier, Guitar Effects / Pedals, Audio</td>
+    </tr>
+    
+    <tr>
+        <td>sE Electronics</td>
+        <td><a href="https://www.seelectronics.com/" target="_blank" id="seelectronics.com">seelectronics.com</a></td>
+        <td class="nowrap">China</td>
+        <td>2000</td>
+        <td>Audio</td>
+    </tr>
+    
+    <tr>
+        <td>sennheiser</td>
+        <td><a href="http://www.sennheiser.com" target="_blank" id="sennheiser.com">sennheiser.com</a></td>
+        <td class="nowrap">Germany</td>
+        <td>1945</td>
+        <td>Audio, Controller (Studio)</td>
+    </tr>
+    
+    <tr>
+        <td>Shure</td>
+        <td><a href="http://www.shure.com/" target="_blank" id="shure.com">shure.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1925</td>
+        <td>Audio</td>
+    </tr>
+    
+    <tr>
+        <td>slrmagic</td>
+        <td><a href="http://www.slrmagic.info" target="_blank" id="slrmagic.info">slrmagic.info</a></td>
+        <td class="nowrap">Hong Kong</td>
+        <td></td>
+        <td>Video</td>
+    </tr>
+    
+    <tr>
+        <td>Small Rig</td>
+        <td><a href="https://www.smallrig.com/" target="_blank" id="smallrig.com">smallrig.com</a></td>
+        <td class="nowrap">China</td>
+        <td>2009</td>
+        <td>Light, Tripod and Support</td>
+    </tr>
+    
+    <tr>
+        <td>Softube</td>
+        <td><a href="http://www.softube.com" target="_blank" id="softube.com">softube.com</a></td>
+        <td class="nowrap">Sweden</td>
+        <td>2003</td>
+        <td>Controller (Studio)</td>
+    </tr>
+    
+    <tr>
+        <td>Solid State Logic</td>
+        <td><a href="https://www.solidstatelogic.com/" target="_blank" id="solidstatelogic.com">solidstatelogic.com</a></td>
+        <td class="nowrap">UK</td>
+        <td>1969</td>
+        <td>Audio, Controller (Studio)</td>
+    </tr>
+    
+    <tr>
+        <td>sontronics</td>
+        <td><a href="http://www.sontronics.com/" target="_blank" id="sontronics.com">sontronics.com</a></td>
+        <td class="nowrap">UK</td>
+        <td>2005</td>
+        <td>Audio</td>
+    </tr>
+    
+    <tr>
+        <td>SOUND TOWN</td>
+        <td><a href="https://www.soundtown.com/" target="_blank" id="soundtown.com">soundtown.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Audio</td>
+    </tr>
+    
+    <tr>
+        <td>Stagg</td>
+        <td><a href="http://www.staggmusic.com" target="_blank" id="staggmusic.com">staggmusic.com</a></td>
+        <td class="nowrap">Belgium</td>
+        <td>1995</td>
+        <td>Audio</td>
+    </tr>
+    
+    <tr>
+        <td>Steinberg</td>
+        <td><a href="https://www.steinberg.net/" target="_blank" id="steinberg.net">steinberg.net</a></td>
+        <td class="nowrap">Germany</td>
+        <td>1984</td>
+        <td>Controller (Studio)</td>
+    </tr>
+    
+    <tr>
+        <td>Tascam</td>
+        <td><a href="http://tascam.com" target="_blank" id="tascam.com">tascam.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Audio, Controller (Studio)</td>
+    </tr>
+    
+    <tr>
+        <td>TC Helicon</td>
+        <td><a href="https://www.tc-helicon.com/" target="_blank" id="tc-helicon.com">tc-helicon.com</a></td>
+        <td class="nowrap">Canada</td>
+        <td></td>
+        <td>Audio</td>
+    </tr>
+    
+    <tr>
+        <td>Tokina</td>
+        <td><a href="https://tokinalens.com/" target="_blank" id="tokinalens.com">tokinalens.com</a></td>
+        <td class="nowrap">Japan</td>
+        <td>1950</td>
+        <td>Lens, Video</td>
+    </tr>
+    
+    <tr>
+        <td>TONOR</td>
+        <td><a href="https://www.tonormic.com/" target="_blank" id="tonormic.com">tonormic.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Audio</td>
+    </tr>
+    
+    <tr>
+        <td>TourBox Tech</td>
+        <td><a href="https://www.tourboxtech.com" target="_blank" id="tourboxtech.com">tourboxtech.com</a></td>
+        <td class="nowrap"></td>
+        <td>2016</td>
+        <td>Controller (Studio)</td>
+    </tr>
+    
+    <tr>
+        <td>townsend labs</td>
+        <td><a href="http://www.townsendlabs.com" target="_blank" id="townsendlabs.com">townsendlabs.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Audio</td>
+    </tr>
+    
+    <tr>
+        <td>Universal Audio</td>
+        <td><a href="https://www.uaudio.com/" target="_blank" id="uaudio.com">uaudio.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1958</td>
+        <td>Controller (Studio)</td>
+    </tr>
+    
+    <tr>
+        <td>V-Moda</td>
+        <td><a href="https://www.v-moda.com/" target="_blank" id="v-moda.com">v-moda.com</a></td>
+        <td class="nowrap">US</td>
+        <td>2004</td>
+        <td>Audio</td>
+    </tr>
+    
+    <tr>
+        <td>Vanguard Audio Labs</td>
+        <td><a href="http://www.vanguardaudiolabs.com" target="_blank" id="vanguardaudiolabs.com">vanguardaudiolabs.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Audio</td>
+    </tr>
+    
+    <tr>
+        <td>Warm Audio</td>
+        <td><a href="http://www.warmaudio.com" target="_blank" id="warmaudio.com">warmaudio.com</a></td>
+        <td class="nowrap">US</td>
+        <td>2011</td>
+        <td>Audio, Controller (Studio)</td>
+    </tr>
+    
+    <tr>
+        <td>Weifeng</td>
+        <td><a href="http://www.weifengchina.com" target="_blank" id="weifengchina.com">weifengchina.com</a></td>
+        <td class="nowrap">China</td>
+        <td></td>
+        <td>Light, Video</td>
+    </tr>
+    
+    <tr>
+        <td>Yamaha</td>
+        <td><a href="https://www.yamaha.com" target="_blank" id="yamaha.com">yamaha.com</a></td>
+        <td class="nowrap">Japan</td>
+        <td>1887</td>
+        <td>Audio, Amplifier, Guitar Case / Bags, Guitars</td>
+    </tr>
+    
+    <tr>
+        <td>YoloLiv</td>
+        <td><a href="http://www.yololiv.com" target="_blank" id="yololiv.com">yololiv.com</a></td>
+        <td class="nowrap">Canada</td>
+        <td>2017</td>
+        <td>Controller (Studio), Streaming</td>
+    </tr>
+    
+    <tr>
+        <td>zhiyun-tech</td>
+        <td><a href="http://www.zhiyun-tech.com" target="_blank" id="zhiyun-tech.com">zhiyun-tech.com</a></td>
+        <td class="nowrap">China</td>
+        <td>2014</td>
+        <td>Video</td>
+    </tr>
+    
+    <tr>
+        <td>Zoom</td>
+        <td><a href="http://www.zoomcorp.com" target="_blank" id="zoomcorp.com">zoomcorp.com</a></td>
+        <td class="nowrap">Japan</td>
+        <td>1983</td>
+        <td>Audio</td>
+    </tr>
+    
+
+    </table>
+
+    <div class="footer small">
+
+        <p>114 Home Studio brands indexed</p>
+        <p>Last updated 9 May 2022 11:25</p>
+        <p>Side project</p>
+        <p>Interested to contribute?</p>
+        <p>Contact me: n1c [@] indexall.io</p>
+    
+    </div>
 
 </body>
 

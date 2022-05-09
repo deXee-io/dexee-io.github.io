@@ -16,13 +16,10 @@
 
     <meta name="robots" content="all, follow" />
 
-
-    <!-- These are the little icons that show up next to the title of the URL in the browser tab. For these to work, you must include a favicon.png file in the root of your website directory. This can also be favicon.jpg if you prefer, you just need to change the link in the href to favicon.jpg for it to work -->
     <link rel="shortcut icon" href="favicon.png">
     <link rel="icon" href="favicon.png" type="image/x-icon" />
 
-    <!-- Social Media stuff. This all makes your links look much nicer and more shareable on Facebook and Twitter -->
-    <!-- Facebook meta links - OG stands for OpenGraph by the way! -->
+    <!-- Facebook meta links -->
     <meta property="og:locale" content="en_GB" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="indeXall.io | List of Airsoft companies" />
@@ -37,909 +34,748 @@
     <meta name="twitter:title" content="List of Airsoft brands | indeXall" />
     <meta name="twitter:image" content="https://indexall.io/indeXall.svg" />
 
-    <!-- Your CSS link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://indexall.io/indeXall.css" rel="stylesheet">
 
 </head>
 
 <body>
 
-<!-- <p style="text-align: left; font-family: 'Lato';">indexall.io</p> -->
-<!-- Inline indeXall logo -->
-<!-- <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" style="fill:#fff"/><path d="M462.05,191.91c46.72,1.2,42.92,68.54-8.48,150.41l-.59.93,38,44.49H453.05L436.17,368C385.51,437.43,317.62,489.46,275.9,488.4c-37.49-1-42.44-44.53-16.36-104h6.2c-17.5,39.46-15,67.1,10.06,67.78,33.49.9,95.05-46.81,140.13-107.88l-45.36-53.12H408.5l24.25,28.4c34.92-56.14,39.09-99.77,7.57-100.62-27.56-.74-74.13,31.44-114.89,76.89h-11c48.86-61,109.3-104.9,147.64-103.92Zm86.76,115.82H497.68a1.89,1.89,0,0,0-2.13,2.13v9.95a1.88,1.88,0,0,0,2.13,2.13h49.47a28,28,0,0,1,6.39.59,9.07,9.07,0,0,1,3.91,1.83,6.7,6.7,0,0,1,2,3.26,17.53,17.53,0,0,1,.59,4.85v2.25H511.88a31.58,31.58,0,0,0-8.7,1,13.49,13.49,0,0,0-5.62,3,11.07,11.07,0,0,0-3,4.92,22.44,22.44,0,0,0-.89,6.56v5.69a28.54,28.54,0,0,0,.89,7.57,11,11,0,0,0,3,5.21,13.62,13.62,0,0,0,5.62,3,32,32,0,0,0,8.7,1h56.34a18.47,18.47,0,0,0,4.26-.41,5.38,5.38,0,0,0,2.66-1.48,6,6,0,0,0,1.42-2.9,21.5,21.5,0,0,0,.42-4.68V331.76a37.32,37.32,0,0,0-1.42-10.95,16.19,16.19,0,0,0-4.68-7.45,20.06,20.06,0,0,0-8.7-4.26,55.88,55.88,0,0,0-13.37-1.37Zm7.81,52H516.73c-2.44,0-4.16-.49-5.14-1.48s-1.48-2.54-1.48-4.67v-2.49a5.85,5.85,0,0,1,1.48-4.32c1-1,2.7-1.48,5.14-1.48h43.32v10.42a4.9,4.9,0,0,1-.77,3.14,3.38,3.38,0,0,1-2.66.88ZM604,284a2.3,2.3,0,0,1,2.61,2.6v83.56a2.3,2.3,0,0,1-2.61,2.6h-11.6a2.3,2.3,0,0,1-2.6-2.6V286.55a2.3,2.3,0,0,1,2.6-2.6Zm32,0a2.3,2.3,0,0,1,2.6,2.6v83.56a2.3,2.3,0,0,1-2.6,2.6h-11.6a2.3,2.3,0,0,1-2.61-2.6V286.55a2.3,2.3,0,0,1,2.61-2.6ZM56.12,307.73c1.73,0,2.6.91,2.6,2.73v59.65a2.3,2.3,0,0,1-2.6,2.6H44.52a2.3,2.3,0,0,1-2.61-2.6V310.46q0-2.73,2.61-2.73Zm0-24a2.3,2.3,0,0,1,2.6,2.6v11.25c0,1.81-.87,2.72-2.6,2.72H44.52a2.41,2.41,0,0,1-2.73-2.72V286.31c0-1.73.91-2.6,2.73-2.6Zm79.41,24a55.76,55.76,0,0,1,13.37,1.37,20.06,20.06,0,0,1,8.7,4.26,16.19,16.19,0,0,1,4.68,7.45,37,37,0,0,1,1.42,10.95v38.35a2.3,2.3,0,0,1-2.6,2.6H149.5a2.3,2.3,0,0,1-2.61-2.6V335.78a34.3,34.3,0,0,0-.47-6.21,8,8,0,0,0-1.83-4,7.69,7.69,0,0,0-3.73-2.13,23.63,23.63,0,0,0-6.16-.65H103.22a25,25,0,0,0-6.27.65,8.48,8.48,0,0,0-4,2.13,8.24,8.24,0,0,0-2.07,4,28.19,28.19,0,0,0-.59,6.21v34.33a2.3,2.3,0,0,1-2.6,2.6H76.12c-1.82,0-2.72-.87-2.72-2.6V331.76a37,37,0,0,1,1.42-10.95,16.09,16.09,0,0,1,4.67-7.45,20,20,0,0,1,8.64-4.26,55.72,55.72,0,0,1,13.43-1.37Zm114.45,0h-44.5a55.66,55.66,0,0,0-13.43,1.37,20,20,0,0,0-8.64,4.26,16.19,16.19,0,0,0-4.68,7.45,37,37,0,0,0-1.42,10.95v17a36.94,36.94,0,0,0,1.42,10.95,16.27,16.27,0,0,0,4.68,7.46,19.76,19.76,0,0,0,8.64,4.2,58.18,58.18,0,0,0,13.43,1.3h33.14a58.4,58.4,0,0,0,13.37-1.3,19.79,19.79,0,0,0,8.7-4.2,16.27,16.27,0,0,0,4.68-7.46,37.27,37.27,0,0,0,1.42-10.95V286.55a2.3,2.3,0,0,0-2.61-2.6h-11.6a2.3,2.3,0,0,0-2.6,2.6v21.18Zm-13,50.78a26.06,26.06,0,0,0,6.39-.65,8.66,8.66,0,0,0,4-2.13,8.24,8.24,0,0,0,2.07-4,27.89,27.89,0,0,0,.59-6.27V321.94H207.14a25.06,25.06,0,0,0-6.28.65,8.44,8.44,0,0,0-4,2.13,8.07,8.07,0,0,0-2.07,4,27.57,27.57,0,0,0-.6,6.22v10.53a27.25,27.25,0,0,0,.6,6.27,8.07,8.07,0,0,0,2.07,4,8.62,8.62,0,0,0,4,2.13,25.54,25.54,0,0,0,6.28.65ZM341.7,307.73H307a55.75,55.75,0,0,0-13.44,1.37,20,20,0,0,0-8.64,4.26,16.17,16.17,0,0,0-4.67,7.45,37,37,0,0,0-1.42,10.95v17a36.94,36.94,0,0,0,1.42,10.95,16.25,16.25,0,0,0,4.67,7.46,19.76,19.76,0,0,0,8.64,4.2,58.27,58.27,0,0,0,13.44,1.3h51a1.88,1.88,0,0,0,2.13-2.13v-9.94a1.88,1.88,0,0,0-2.13-2.13H308.68c-5.12,0-8.58-.83-10.35-2.49s-2.67-4.34-2.67-8v-2.85h59.77a7.49,7.49,0,0,0,5.09-1.47q1.67-1.49,1.66-5.27V327.15a37.36,37.36,0,0,0-.95-9.06,12.79,12.79,0,0,0-3.25-6,13.34,13.34,0,0,0-6.27-3.31,41.66,41.66,0,0,0-10-1Zm-46,26.87H343.6a1.78,1.78,0,0,0,2-2v-5c0-2.45-.51-4.18-1.54-5.21s-2.92-1.54-5.68-1.54H308.68c-5.12,0-8.58.81-10.35,2.43s-2.67,4.32-2.67,8.11Z" style="fill:#231f20;fill-rule:evenodd"/></svg> -->
-
-<a href = "https://indexall.io" target = "_self"> 
-    <img src="https://indexall.io/indeXall.svg" alt="indeXall.io" width="100" height="100" /> 
- </a>
-<p></p>
-<h1>List of 88 Airsoft brands</h1>
-<p></p>
-
-<!-- <br>
-<button type="button" class="btn btn-primary btn-sm" onclick="tableToCSV()">
-    Download CSV
-</button>
-<br>
-<br> -->
-
-<table class="table table-hover table-sm">
-  <tr>
-    <th scope="col"></th>
-    <th scope="col">Website</th>
-    <th scope="col">Country</th>
-    <th scope="col">Est.</th>
-    <th scope="col">Products</th>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">3M<h2></td> -->
-    <td>3M</td>
-    <td><a href="https://www.3m.com/" target="_blank" id="3m.com">3m.com</a></td>
-    <td></td>
-    <td>1902</td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">5.11 Tactical<h2></td> -->
-    <td>5.11 Tactical</td>
-    <td><a href="https://www.511tactical.com/" target="_blank" id="511tactical.com">511tactical.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Tactical Gear</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">5ive Star Gear<h2></td> -->
-    <td>5ive Star Gear</td>
-    <td><a href="https://www.5ivestargear.com/" target="_blank" id="5ivestargear.com">5ivestargear.com</a></td>
-    <td></td>
-    <td>1950</td>
-    <td>Tactical Gear</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">6mmProShop<h2></td> -->
-    <td>6mmProShop</td>
-    <td><a href="http://www.6mmprocom/" target="_blank" id="6mmprocom">6mmprocom</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Gun, Part, Tactical Gear</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">7.62 Design<h2></td> -->
-    <td>7.62 Design</td>
-    <td><a href="https://www.7point62design.com/" target="_blank" id="7point62design.com">7point62design.com</a></td>
-    <td>US</td>
-    <td>1997</td>
-    <td>Tactical Gear</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">AceBeam<h2></td> -->
-    <td>AceBeam</td>
-    <td><a href="https://www.acebeam.com/" target="_blank" id="acebeam.com">acebeam.com</a></td>
-    <td>China</td>
-    <td></td>
-    <td>Tactical Gear</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">ACETECH<h2></td> -->
-    <td>ACETECH</td>
-    <td><a href="https://www.acetk.com/" target="_blank" id="acetk.com">acetk.com</a></td>
-    <td>Taiwan</td>
-    <td></td>
-    <td>Tactical Gear</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Action Army<h2></td> -->
-    <td>Action Army</td>
-    <td><a href="http://www.action-army.com/" target="_blank" id="action-army.com">action-army.com</a></td>
-    <td>Taiwan</td>
-    <td></td>
-    <td>Tactical Gear</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">ASG<h2></td> -->
-    <td>ASG</td>
-    <td><a href="https://actionsportgames.com/" target="_blank" id="actionsportgames.com">actionsportgames.com</a></td>
-    <td>Denmark</td>
-    <td>2012</td>
-    <td>Gun, Part</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Adaptive Armament<h2></td> -->
-    <td>Adaptive Armament</td>
-    <td><a href="https://www.adaptivearmament.com/" target="_blank" id="adaptivearmament.com">adaptivearmament.com</a></td>
-    <td>Canada</td>
-    <td></td>
-    <td>Gun</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">AimCam<h2></td> -->
-    <td>AimCam</td>
-    <td><a href="https://www.aimcam.com/" target="_blank" id="aimcam.com">aimcam.com</a></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Aim Sports<h2></td> -->
-    <td>Aim Sports</td>
-    <td><a href="https://www.aimsportsinc.com/" target="_blank" id="aimsportsinc.com">aimsportsinc.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Gun, Part, Tactical Gear</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Airsoft Innovations<h2></td> -->
-    <td>Airsoft Innovations</td>
-    <td><a href="https://www.airsoft-innovations.com/" target="_blank" id="airsoft-innovations.com">airsoft-innovations.com</a></td>
-    <td></td>
-    <td>2004</td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Air Venturi<h2></td> -->
-    <td>Air Venturi</td>
-    <td><a href="https://www.airventuri.com/av/" target="_blank" id="airventuri.com">airventuri.com</a></td>
-    <td>US</td>
-    <td>2010</td>
-    <td>Gun, Part</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">A&K<h2></td> -->
-    <td>A&K</td>
-    <td><a href="http://www.akairsoft.com/" target="_blank" id="akairsoft.com">akairsoft.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Gun, Part</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Alta Industries<h2></td> -->
-    <td>Alta Industries</td>
-    <td><a href="https://altaindustries.com/" target="_blank" id="altaindustries.com">altaindustries.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Tactical Gear</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Altama<h2></td> -->
-    <td>Altama</td>
-    <td><a href="https://altama.com/" target="_blank" id="altama.com">altama.com</a></td>
-    <td>US</td>
-    <td>1969</td>
-    <td>Tactical Gear</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Angel Custom<h2></td> -->
-    <td>Angel Custom</td>
-    <td><a href="http://www.angelcustom.com/" target="_blank" id="angelcustom.com">angelcustom.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Gun, Part</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Aprilla Design Group<h2></td> -->
-    <td>Aprilla Design Group</td>
-    <td><a href="https://aprilladesign.com/" target="_blank" id="aprilladesign.com">aprilladesign.com</a></td>
-    <td></td>
-    <td>2014</td>
-    <td>Tactical Gear</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">APS<h2></td> -->
-    <td>APS</td>
-    <td><a href="http://www.aps-concept.com/" target="_blank" id="aps-concept.com">aps-concept.com</a></td>
-    <td>Hong Kong</td>
-    <td>2001</td>
-    <td>Gun, Part</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">AR500 Armor<h2></td> -->
-    <td>AR500 Armor</td>
-    <td><a href="https://www.ar500armor.com/" target="_blank" id="ar500armor.com">ar500armor.com</a></td>
-    <td>US</td>
-    <td>2012</td>
-    <td>Tactical Gear</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Archon Firearms<h2></td> -->
-    <td>Archon Firearms</td>
-    <td><a href="https://archonfirearms.us/" target="_blank" id="archonfirearms.us">archonfirearms.us</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Gun</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Custom Gun Rails<h2></td> -->
-    <td>Custom Gun Rails</td>
-    <td><a href="https://www.arcustoms.com/" target="_blank" id="arcustoms.com">arcustoms.com</a></td>
-    <td>US</td>
-    <td>2014</td>
-    <td>Tactical Gear</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Ardent Outdoors<h2></td> -->
-    <td>Ardent Outdoors</td>
-    <td><a href="https://ardentoutdoors.com/" target="_blank" id="ardentoutdoors.com">ardentoutdoors.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Arena Tactical<h2></td> -->
-    <td>Arena Tactical</td>
-    <td><a href="http://www.arenatactical.com/" target="_blank" id="arenatactical.com">arenatactical.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Tactical Gear</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">ARES<h2></td> -->
-    <td>ARES</td>
-    <td><a href="http://www.aresairsoft.com/" target="_blank" id="aresairsoft.com">aresairsoft.com</a></td>
-    <td>Hong Kong</td>
-    <td>2010</td>
-    <td>Gun</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Armored Claw<h2></td> -->
-    <td>Armored Claw</td>
-    <td><a href="https://armoredclaw.com/" target="_blank" id="armoredclaw.com">armoredclaw.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Tactical Gear</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">AW Custom<h2></td> -->
-    <td>AW Custom</td>
-    <td><a href="https://www.armorerworks.com/airsoft" target="_blank" id="armorerworks.com">armorerworks.com</a></td>
-    <td></td>
-    <td>2015</td>
-    <td>Gun, Part</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">ATN Corp<h2></td> -->
-    <td>ATN Corp</td>
-    <td><a href="https://www.atncorp.com/" target="_blank" id="atncorp.com">atncorp.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Tactical Gear</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Avatar Grenade<h2></td> -->
-    <td>Avatar Grenade</td>
-    <td><a href="https://avatar-grenade.com/" target="_blank" id="avatar-grenade.com">avatar-grenade.com</a></td>
-    <td>France</td>
-    <td></td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Axeon Optics<h2></td> -->
-    <td>Axeon Optics</td>
-    <td><a href="https://www.axeonoptics.com/" target="_blank" id="axeonoptics.com">axeonoptics.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Tactical Gear</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">BaoFeng<h2></td> -->
-    <td>BaoFeng</td>
-    <td><a href="https://www.baofengradio.com/" target="_blank" id="baofengradio.com">baofengradio.com</a></td>
-    <td>China</td>
-    <td>2001</td>
-    <td>Tactical Gear</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Barrett<h2></td> -->
-    <td>Barrett</td>
-    <td><a href="https://barrett.net/" target="_blank" id="barrett.net">barrett.net</a></td>
-    <td>US</td>
-    <td>1982</td>
-    <td>Gun, Part</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Beez Combat Systems<h2></td> -->
-    <td>Beez Combat Systems</td>
-    <td><a href="https://www.beezcombatsystems.com/" target="_blank" id="beezcombatsystems.com">beezcombatsystems.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Tactical Gear</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Big Bang Air Guns<h2></td> -->
-    <td>Big Bang Air Guns</td>
-    <td><a href="http://bigbangairguns.com/" target="_blank" id="bigbangairguns.com">bigbangairguns.com</a></td>
-    <td></td>
-    <td></td>
-    <td>Gun</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Birdz Eyewear<h2></td> -->
-    <td>Birdz Eyewear</td>
-    <td><a href="https://birdzeyewear.com/" target="_blank" id="birdzeyewear.com">birdzeyewear.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Tactical Gear</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Blackhawk<h2></td> -->
-    <td>Blackhawk</td>
-    <td><a href="https://blackhawk.com/" target="_blank" id="blackhawk.com">blackhawk.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Tactical Gear</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Black Owl Gear<h2></td> -->
-    <td>Black Owl Gear</td>
-    <td><a href="https://www.blackowlgear.com/" target="_blank" id="blackowlgear.com">blackowlgear.com</a></td>
-    <td></td>
-    <td></td>
-    <td>Tactical Gear</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Black Rain Ordnance<h2></td> -->
-    <td>Black Rain Ordnance</td>
-    <td><a href="https://blackrainordnance.com/" target="_blank" id="blackrainordnance.com">blackrainordnance.com</a></td>
-    <td>US</td>
-    <td>2009</td>
-    <td>Gun, Part</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Black Sheep Arms<h2></td> -->
-    <td>Black Sheep Arms</td>
-    <td><a href="https://www.blacksheeparms.com/" target="_blank" id="blacksheeparms.com">blacksheeparms.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Blade Tech<h2></td> -->
-    <td>Blade Tech</td>
-    <td><a href="https://blade-tech.com/" target="_blank" id="blade-tech.com">blade-tech.com</a></td>
-    <td>US</td>
-    <td>1995</td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Blue Force Gear<h2></td> -->
-    <td>Blue Force Gear</td>
-    <td><a href="https://www.blueforcegear.com/" target="_blank" id="blueforcegear.com">blueforcegear.com</a></td>
-    <td>US</td>
-    <td>2004</td>
-    <td>Tactical Gear</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">BlueGuns<h2></td> -->
-    <td>BlueGuns</td>
-    <td><a href="https://www.blueguns.com/" target="_blank" id="blueguns.com">blueguns.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Gun</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Body Armor Vent<h2></td> -->
-    <td>Body Armor Vent</td>
-    <td><a href="https://www.bodyarmorvent.com/" target="_blank" id="bodyarmorvent.com">bodyarmorvent.com</a></td>
-    <td></td>
-    <td></td>
-    <td>Tactical Gear</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Bolle Safety<h2></td> -->
-    <td>Bolle Safety</td>
-    <td><a href="https://www.bolle-safety.com/" target="_blank" id="bolle-safety.com">bolle-safety.com</a></td>
-    <td></td>
-    <td>1888</td>
-    <td>Tactical Gear</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Bolt<h2></td> -->
-    <td>Bolt</td>
-    <td><a href="https://www.bolt.tw/" target="_blank" id="bolt.tw">bolt.tw</a></td>
-    <td>Taiwan</td>
-    <td>2010</td>
-    <td>Gun</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">BO Manufacture<h2></td> -->
-    <td>BO Manufacture</td>
-    <td><a href="https://bomanufacture.com/" target="_blank" id="bomanufacture.com">bomanufacture.com</a></td>
-    <td>France</td>
-    <td>2013</td>
-    <td>Gun, Part</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">BrainExploder<h2></td> -->
-    <td>BrainExploder</td>
-    <td><a href="https://www.brainexplodermerch.com/" target="_blank" id="brainexplodermerch.com">brainexplodermerch.com</a></td>
-    <td></td>
-    <td></td>
-    <td>Tactical Gear</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Brinyte<h2></td> -->
-    <td>Brinyte</td>
-    <td><a href="http://www.brinyte.com/" target="_blank" id="brinyte.com">brinyte.com</a></td>
-    <td>China</td>
-    <td>2006</td>
-    <td>Tactical Gear</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Burn Proof Gear<h2></td> -->
-    <td>Burn Proof Gear</td>
-    <td><a href="https://www.burnproofgear.com/" target="_blank" id="burnproofgear.com">burnproofgear.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Tactical Gear</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Allen Company<h2></td> -->
-    <td>Allen Company</td>
-    <td><a href="https://byallen.com/" target="_blank" id="byallen.com">byallen.com</a></td>
-    <td>US</td>
-    <td>1970</td>
-    <td>Tactical Gear</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Command Arms (CAA)<h2></td> -->
-    <td>Command Arms (CAA)</td>
-    <td><a href="https://caagearup.com/" target="_blank" id="caagearup.com">caagearup.com</a></td>
-    <td>Israel</td>
-    <td>2004</td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Cannae Pro Gear<h2></td> -->
-    <td>Cannae Pro Gear</td>
-    <td><a href="https://cannaeprogear.com/" target="_blank" id="cannaeprogear.com">cannaeprogear.com</a></td>
-    <td></td>
-    <td></td>
-    <td>Tactical Gear</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Centurion Arms<h2></td> -->
-    <td>Centurion Arms</td>
-    <td><a href="https://centurionarms.com/" target="_blank" id="centurionarms.com">centurionarms.com</a></td>
-    <td>US</td>
-    <td>2008</td>
-    <td>Gun, Part</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">CheyTac USA<h2></td> -->
-    <td>CheyTac USA</td>
-    <td><a href="https://cheytac.com/" target="_blank" id="cheytac.com">cheytac.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Gun</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Classic Army<h2></td> -->
-    <td>Classic Army</td>
-    <td><a href="http://www.classicarmy.com/" target="_blank" id="classicarmy.com">classicarmy.com</a></td>
-    <td></td>
-    <td></td>
-    <td>Gun, Part</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Clenzoil<h2></td> -->
-    <td>Clenzoil</td>
-    <td><a href="https://clenzoil.com/" target="_blank" id="clenzoil.com">clenzoil.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Code Red Headsets<h2></td> -->
-    <td>Code Red Headsets</td>
-    <td><a href="https://www.coderedheadsets.com/" target="_blank" id="coderedheadsets.com">coderedheadsets.com</a></td>
-    <td>US</td>
-    <td>1999</td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Comp-Tac<h2></td> -->
-    <td>Comp-Tac</td>
-    <td><a href="https://comp-tac.com/" target="_blank" id="comp-tac.com">comp-tac.com</a></td>
-    <td>US</td>
-    <td>2001</td>
-    <td>Tactical Gear</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Costa Del Mar<h2></td> -->
-    <td>Costa Del Mar</td>
-    <td><a href="https://www.costadelmar.com/" target="_blank" id="costadelmar.com">costadelmar.com</a></td>
-    <td>US</td>
-    <td>1983</td>
-    <td>Tactical Gear</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">CowCow Technology<h2></td> -->
-    <td>CowCow Technology</td>
-    <td><a href="https://www.cowcowtechnology.com/" target="_blank" id="cowcowtechnology.com">cowcowtechnology.com</a></td>
-    <td></td>
-    <td>2018</td>
-    <td>Tactical Gear</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Crimson Trace<h2></td> -->
-    <td>Crimson Trace</td>
-    <td><a href="https://www.crimsontrace.com/" target="_blank" id="crimsontrace.com">crimsontrace.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Tactical Gear</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Crosman<h2></td> -->
-    <td>Crosman</td>
-    <td><a href="https://www.crosman.com/" target="_blank" id="crosman.com">crosman.com</a></td>
-    <td>US</td>
-    <td>1923</td>
-    <td>Gun, Part</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Crye Precision<h2></td> -->
-    <td>Crye Precision</td>
-    <td><a href="https://www.cryeprecision.com/" target="_blank" id="cryeprecision.com">cryeprecision.com</a></td>
-    <td></td>
-    <td></td>
-    <td>Tactical Gear</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Cyalume Technologies<h2></td> -->
-    <td>Cyalume Technologies</td>
-    <td><a href="https://www.cyalume.com/" target="_blank" id="cyalume.com">cyalume.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Tactical Gear</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Cybergun<h2></td> -->
-    <td>Cybergun</td>
-    <td><a href="https://cybergun.com/" target="_blank" id="cybergun.com">cybergun.com</a></td>
-    <td></td>
-    <td></td>
-    <td>Gun, Part</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">CYMA<h2></td> -->
-    <td>CYMA</td>
-    <td><a href="https://www.cymagun.com/" target="_blank" id="cymagun.com">cymagun.com</a></td>
-    <td></td>
-    <td>2000</td>
-    <td>Gun</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">CYTAC<h2></td> -->
-    <td>CYTAC</td>
-    <td><a href="https://www.cytac.com/" target="_blank" id="cytac.com">cytac.com</a></td>
-    <td>China</td>
-    <td>2008</td>
-    <td>Tactical Gear</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">CZ<h2></td> -->
-    <td>CZ</td>
-    <td><a href="https://www.czub.cz/" target="_blank" id="czub.cz">czub.cz</a></td>
-    <td>Czech Republic</td>
-    <td>1936</td>
-    <td>Gun, Part</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Daisy<h2></td> -->
-    <td>Daisy</td>
-    <td><a href="https://www.daisy.com/" target="_blank" id="daisy.com">daisy.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Gun</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Daniel Defense<h2></td> -->
-    <td>Daniel Defense</td>
-    <td><a href="https://danieldefense.com/" target="_blank" id="danieldefense.com">danieldefense.com</a></td>
-    <td>US</td>
-    <td>2001</td>
-    <td>Gun, Part</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Dan Wesson<h2></td> -->
-    <td>Dan Wesson</td>
-    <td><a href="https://danwessonfirearms.com/" target="_blank" id="danwessonfirearms.com">danwessonfirearms.com</a></td>
-    <td>US</td>
-    <td>1968</td>
-    <td>Gun</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Deepfire<h2></td> -->
-    <td>Deepfire</td>
-    <td><a href="http://www.deepfire.com.hk/" target="_blank" id="deepfire.com.hk">deepfire.com.hk</a></td>
-    <td>Hong Kong</td>
-    <td></td>
-    <td>Gun, Part</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Defcon Gear<h2></td> -->
-    <td>Defcon Gear</td>
-    <td><a href="https://www.defcon5italy.com/" target="_blank" id="defcon5italy.com">defcon5italy.com</a></td>
-    <td>Italy</td>
-    <td></td>
-    <td>Tactical Gear</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Desert Tech<h2></td> -->
-    <td>Desert Tech</td>
-    <td><a href="https://deserttech.com/" target="_blank" id="deserttech.com">deserttech.com</a></td>
-    <td>US</td>
-    <td>2007</td>
-    <td>Gun, Part</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Devil Dog Concepts<h2></td> -->
-    <td>Devil Dog Concepts</td>
-    <td><a href="https://devildogconcepts.com/" target="_blank" id="devildogconcepts.com">devildogconcepts.com</a></td>
-    <td>US</td>
-    <td>2013</td>
-    <td>Tactical Gear</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">DoubleStar<h2></td> -->
-    <td>DoubleStar</td>
-    <td><a href="https://doublestarusa.com/" target="_blank" id="doublestarusa.com">doublestarusa.com</a></td>
-    <td>US</td>
-    <td>1978</td>
-    <td>Gun, Part</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">DYTAC<h2></td> -->
-    <td>DYTAC</td>
-    <td><a href="http://www.dytac.hk/" target="_blank" id="dytac.hk">dytac.hk</a></td>
-    <td>Hong Kong</td>
-    <td>2007</td>
-    <td>Gun</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Elite Force, Umarex<h2></td> -->
-    <td>Elite Force, Umarex</td>
-    <td><a href="https://www.eliteforceairsoft.com/" target="_blank" id="eliteforceairsoft.com">eliteforceairsoft.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Gun, Part</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">EMG (Evike Manufacturing Group)<h2></td> -->
-    <td>EMG (Evike Manufacturing Group)</td>
-    <td><a href="https://www.emgarms.com/" target="_blank" id="emgarms.com">emgarms.com</a></td>
-    <td>US</td>
-    <td>2001</td>
-    <td>Gun, Part</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Enola Gaye<h2></td> -->
-    <td>Enola Gaye</td>
-    <td><a href="https://enolagaye.com/" target="_blank" id="enolagaye.com">enolagaye.com</a></td>
-    <td>US</td>
-    <td>2011</td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Evike<h2></td> -->
-    <td>Evike</td>
-    <td><a href="https://www.evike.com/brands/15/Evike-Custom-Guns/" target="_blank" id="evike.com">evike.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Gun</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">F4 Defense<h2></td> -->
-    <td>F4 Defense</td>
-    <td><a href="https://www.f4defense.com/" target="_blank" id="f4defense.com">f4defense.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Gun</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">G&P<h2></td> -->
-    <td>G&P</td>
-    <td><a href="http://www.gp-web.com/" target="_blank" id="gp-web.com">gp-web.com</a></td>
-    <td>Hong Kong</td>
-    <td>1995</td>
-    <td>Gun</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">G&G<h2></td> -->
-    <td>G&G</td>
-    <td><a href="https://www.guay2.com/" target="_blank" id="guay2.com">guay2.com</a></td>
-    <td>Taiwan</td>
-    <td>1986</td>
-    <td>Gun</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">JAG, ECHO1<h2></td> -->
-    <td>JAG, ECHO1</td>
-    <td><a href="https://jagprecision.com/" target="_blank" id="jagprecision.com">jagprecision.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Gun, Part</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Arcturus<h2></td> -->
-    <td>Arcturus</td>
-    <td><a href="http://www.mos-manufacture.com/" target="_blank" id="mos-manufacture.com">mos-manufacture.com</a></td>
-    <td>Hong Kong</td>
-    <td>2015</td>
-    <td>Gun, Part</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Bone Yard<h2></td> -->
-    <td>Bone Yard</td>
-    <td><a href="https://www.salientarmsinternational.com/shop/proshop/brands/280/" target="_blank" id="salientarmsinternational.com">salientarmsinternational.com</a></td>
-    <td></td>
-    <td></td>
-    <td>Gun</td>
-  </tr>
-
-
-</table>
-
-<br>
-
-    <!-- <script type="text/javascript">
-        function tableToCSV() {
-
-            // Variable to store the final csv data
-            var csv_data = [];
-
-            // Get each row data
-            var rows = document.getElementsByTagName('tr');
-            for (var i = 0; i < rows.length; i++) {
-
-                // Get each column data
-                var cols = rows[i].querySelectorAll('td,th');
-
-                // Stores each csv row data
-                var csvrow = [];
-                for (var j = 0; j < cols.length; j++) {
-
-                    // Get the text data of each cell
-                    // of a row and push it to csvrow
-                    csvrow.push(cols[j].innerHTML);
-                }
-
-                // Combine each column value with comma
-                csv_data.push(csvrow.join(","));
-            }
-
-            // Combine each row data with new line character
-            csv_data = csv_data.join('\n');
-
-            // Call this function to download csv file
-            downloadCSVFile(csv_data);
-
-        }
-
-        function downloadCSVFile(csv_data) {
-
-            // Create CSV file object and feed
-            // our csv_data into it
-            CSVFile = new Blob([csv_data], {
-                type: "text/csv"
-            });
-
-            // Create to temporary link to initiate
-            // download process
-            var temp_link = document.createElement('a');
-
-            // Download csv file
-            temp_link.download = ;
-            var url = window.URL.createObjectURL(CSVFile);
-            temp_link.href = url;
-
-            // This link should not be displayed
-            temp_link.style.display = "none";
-            document.body.appendChild(temp_link);
-
-            // Automatically click the link to
-            // trigger download
-            temp_link.click();
-            document.body.removeChild(temp_link);
-        }
-    </script> -->
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-<p></p>
-<p></p>
-<hr>
-<p style="text-align: left; font-family: 'Lato';">88 brands indexed</p>
-<p style="text-align: left; font-family: 'Lato';">Last updated 8 May 2022 23:37</p>
-<p style="text-align: left; font-family: 'Lato';">Side project</p>
-<p style="text-align: left; font-family: 'Lato';">Interested to contribute? Contact me: n1c [@] indexall.io</p>
+    <div class="header">
+        <a href = "https://indexall.io" target = "_self"> 
+            <img src="https://indexall.io/indeXall_white.svg" alt="indeXall.io" width="100" height="100" /> 
+         </a>
+    </div>
+    
+    
+    <h1 class="h1">List of 230 Archery brands</h1>
+
+    <table class="table table-hoverable table-bordered">
+        
+    <tr>
+        <th scope="col"></th>
+        <th scope="col">Website</th>
+        <th scope="col">Country</th>
+        <th scope="col">Est.</th>
+        <th scope="col">Products</th>
+    </tr>
+
+    
+    <tr>
+        <td>3M</td>
+        <td><a href="https://www.3m.com/" target="_blank" id="3m.com">3m.com</a></td>
+        <td class="nowrap"></td>
+        <td>1902</td>
+        <td></td>
+    </tr>
+    
+    <tr>
+        <td>5.11 Tactical</td>
+        <td><a href="https://www.511tactical.com/" target="_blank" id="511tactical.com">511tactical.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Tactical Gear</td>
+    </tr>
+    
+    <tr>
+        <td>5ive Star Gear</td>
+        <td><a href="https://www.5ivestargear.com/" target="_blank" id="5ivestargear.com">5ivestargear.com</a></td>
+        <td class="nowrap"></td>
+        <td>1950</td>
+        <td>Tactical Gear</td>
+    </tr>
+    
+    <tr>
+        <td>6mmProShop</td>
+        <td><a href="http://www.6mmprocom/" target="_blank" id="6mmprocom">6mmprocom</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Gun, Part, Tactical Gear</td>
+    </tr>
+    
+    <tr>
+        <td>7.62 Design</td>
+        <td><a href="https://www.7point62design.com/" target="_blank" id="7point62design.com">7point62design.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1997</td>
+        <td>Tactical Gear</td>
+    </tr>
+    
+    <tr>
+        <td>AceBeam</td>
+        <td><a href="https://www.acebeam.com/" target="_blank" id="acebeam.com">acebeam.com</a></td>
+        <td class="nowrap">China</td>
+        <td></td>
+        <td>Tactical Gear</td>
+    </tr>
+    
+    <tr>
+        <td>ACETECH</td>
+        <td><a href="https://www.acetk.com/" target="_blank" id="acetk.com">acetk.com</a></td>
+        <td class="nowrap">Taiwan</td>
+        <td></td>
+        <td>Tactical Gear</td>
+    </tr>
+    
+    <tr>
+        <td>Action Army</td>
+        <td><a href="http://www.action-army.com/" target="_blank" id="action-army.com">action-army.com</a></td>
+        <td class="nowrap">Taiwan</td>
+        <td></td>
+        <td>Tactical Gear</td>
+    </tr>
+    
+    <tr>
+        <td>ASG</td>
+        <td><a href="https://actionsportgames.com/" target="_blank" id="actionsportgames.com">actionsportgames.com</a></td>
+        <td class="nowrap">Denmark</td>
+        <td>2012</td>
+        <td>Gun, Part</td>
+    </tr>
+    
+    <tr>
+        <td>Adaptive Armament</td>
+        <td><a href="https://www.adaptivearmament.com/" target="_blank" id="adaptivearmament.com">adaptivearmament.com</a></td>
+        <td class="nowrap">Canada</td>
+        <td></td>
+        <td>Gun</td>
+    </tr>
+    
+    <tr>
+        <td>AimCam</td>
+        <td><a href="https://www.aimcam.com/" target="_blank" id="aimcam.com">aimcam.com</a></td>
+        <td class="nowrap"></td>
+        <td></td>
+        <td></td>
+    </tr>
+    
+    <tr>
+        <td>Aim Sports</td>
+        <td><a href="https://www.aimsportsinc.com/" target="_blank" id="aimsportsinc.com">aimsportsinc.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Gun, Part, Tactical Gear</td>
+    </tr>
+    
+    <tr>
+        <td>Airsoft Innovations</td>
+        <td><a href="https://www.airsoft-innovations.com/" target="_blank" id="airsoft-innovations.com">airsoft-innovations.com</a></td>
+        <td class="nowrap"></td>
+        <td>2004</td>
+        <td></td>
+    </tr>
+    
+    <tr>
+        <td>Air Venturi</td>
+        <td><a href="https://www.airventuri.com/av/" target="_blank" id="airventuri.com">airventuri.com</a></td>
+        <td class="nowrap">US</td>
+        <td>2010</td>
+        <td>Gun, Part</td>
+    </tr>
+    
+    <tr>
+        <td>A&K</td>
+        <td><a href="http://www.akairsoft.com/" target="_blank" id="akairsoft.com">akairsoft.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Gun, Part</td>
+    </tr>
+    
+    <tr>
+        <td>Alta Industries</td>
+        <td><a href="https://altaindustries.com/" target="_blank" id="altaindustries.com">altaindustries.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Tactical Gear</td>
+    </tr>
+    
+    <tr>
+        <td>Altama</td>
+        <td><a href="https://altama.com/" target="_blank" id="altama.com">altama.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1969</td>
+        <td>Tactical Gear</td>
+    </tr>
+    
+    <tr>
+        <td>Angel Custom</td>
+        <td><a href="http://www.angelcustom.com/" target="_blank" id="angelcustom.com">angelcustom.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Gun, Part</td>
+    </tr>
+    
+    <tr>
+        <td>Aprilla Design Group</td>
+        <td><a href="https://aprilladesign.com/" target="_blank" id="aprilladesign.com">aprilladesign.com</a></td>
+        <td class="nowrap"></td>
+        <td>2014</td>
+        <td>Tactical Gear</td>
+    </tr>
+    
+    <tr>
+        <td>APS</td>
+        <td><a href="http://www.aps-concept.com/" target="_blank" id="aps-concept.com">aps-concept.com</a></td>
+        <td class="nowrap">Hong Kong</td>
+        <td>2001</td>
+        <td>Gun, Part</td>
+    </tr>
+    
+    <tr>
+        <td>AR500 Armor</td>
+        <td><a href="https://www.ar500armor.com/" target="_blank" id="ar500armor.com">ar500armor.com</a></td>
+        <td class="nowrap">US</td>
+        <td>2012</td>
+        <td>Tactical Gear</td>
+    </tr>
+    
+    <tr>
+        <td>Archon Firearms</td>
+        <td><a href="https://archonfirearms.us/" target="_blank" id="archonfirearms.us">archonfirearms.us</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Gun</td>
+    </tr>
+    
+    <tr>
+        <td>Custom Gun Rails</td>
+        <td><a href="https://www.arcustoms.com/" target="_blank" id="arcustoms.com">arcustoms.com</a></td>
+        <td class="nowrap">US</td>
+        <td>2014</td>
+        <td>Tactical Gear</td>
+    </tr>
+    
+    <tr>
+        <td>Ardent Outdoors</td>
+        <td><a href="https://ardentoutdoors.com/" target="_blank" id="ardentoutdoors.com">ardentoutdoors.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td></td>
+    </tr>
+    
+    <tr>
+        <td>Arena Tactical</td>
+        <td><a href="http://www.arenatactical.com/" target="_blank" id="arenatactical.com">arenatactical.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Tactical Gear</td>
+    </tr>
+    
+    <tr>
+        <td>ARES</td>
+        <td><a href="http://www.aresairsoft.com/" target="_blank" id="aresairsoft.com">aresairsoft.com</a></td>
+        <td class="nowrap">Hong Kong</td>
+        <td>2010</td>
+        <td>Gun</td>
+    </tr>
+    
+    <tr>
+        <td>Armored Claw</td>
+        <td><a href="https://armoredclaw.com/" target="_blank" id="armoredclaw.com">armoredclaw.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Tactical Gear</td>
+    </tr>
+    
+    <tr>
+        <td>AW Custom</td>
+        <td><a href="https://www.armorerworks.com/airsoft" target="_blank" id="armorerworks.com">armorerworks.com</a></td>
+        <td class="nowrap"></td>
+        <td>2015</td>
+        <td>Gun, Part</td>
+    </tr>
+    
+    <tr>
+        <td>ATN Corp</td>
+        <td><a href="https://www.atncorp.com/" target="_blank" id="atncorp.com">atncorp.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Tactical Gear</td>
+    </tr>
+    
+    <tr>
+        <td>Avatar Grenade</td>
+        <td><a href="https://avatar-grenade.com/" target="_blank" id="avatar-grenade.com">avatar-grenade.com</a></td>
+        <td class="nowrap">France</td>
+        <td></td>
+        <td></td>
+    </tr>
+    
+    <tr>
+        <td>Axeon Optics</td>
+        <td><a href="https://www.axeonoptics.com/" target="_blank" id="axeonoptics.com">axeonoptics.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Tactical Gear</td>
+    </tr>
+    
+    <tr>
+        <td>BaoFeng</td>
+        <td><a href="https://www.baofengradio.com/" target="_blank" id="baofengradio.com">baofengradio.com</a></td>
+        <td class="nowrap">China</td>
+        <td>2001</td>
+        <td>Tactical Gear</td>
+    </tr>
+    
+    <tr>
+        <td>Barrett</td>
+        <td><a href="https://barrett.net/" target="_blank" id="barrett.net">barrett.net</a></td>
+        <td class="nowrap">US</td>
+        <td>1982</td>
+        <td>Gun, Part</td>
+    </tr>
+    
+    <tr>
+        <td>Beez Combat Systems</td>
+        <td><a href="https://www.beezcombatsystems.com/" target="_blank" id="beezcombatsystems.com">beezcombatsystems.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Tactical Gear</td>
+    </tr>
+    
+    <tr>
+        <td>Big Bang Air Guns</td>
+        <td><a href="http://bigbangairguns.com/" target="_blank" id="bigbangairguns.com">bigbangairguns.com</a></td>
+        <td class="nowrap"></td>
+        <td></td>
+        <td>Gun</td>
+    </tr>
+    
+    <tr>
+        <td>Birdz Eyewear</td>
+        <td><a href="https://birdzeyewear.com/" target="_blank" id="birdzeyewear.com">birdzeyewear.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Tactical Gear</td>
+    </tr>
+    
+    <tr>
+        <td>Blackhawk</td>
+        <td><a href="https://blackhawk.com/" target="_blank" id="blackhawk.com">blackhawk.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Tactical Gear</td>
+    </tr>
+    
+    <tr>
+        <td>Black Owl Gear</td>
+        <td><a href="https://www.blackowlgear.com/" target="_blank" id="blackowlgear.com">blackowlgear.com</a></td>
+        <td class="nowrap"></td>
+        <td></td>
+        <td>Tactical Gear</td>
+    </tr>
+    
+    <tr>
+        <td>Black Rain Ordnance</td>
+        <td><a href="https://blackrainordnance.com/" target="_blank" id="blackrainordnance.com">blackrainordnance.com</a></td>
+        <td class="nowrap">US</td>
+        <td>2009</td>
+        <td>Gun, Part</td>
+    </tr>
+    
+    <tr>
+        <td>Black Sheep Arms</td>
+        <td><a href="https://www.blacksheeparms.com/" target="_blank" id="blacksheeparms.com">blacksheeparms.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td></td>
+    </tr>
+    
+    <tr>
+        <td>Blade Tech</td>
+        <td><a href="https://blade-tech.com/" target="_blank" id="blade-tech.com">blade-tech.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1995</td>
+        <td></td>
+    </tr>
+    
+    <tr>
+        <td>Blue Force Gear</td>
+        <td><a href="https://www.blueforcegear.com/" target="_blank" id="blueforcegear.com">blueforcegear.com</a></td>
+        <td class="nowrap">US</td>
+        <td>2004</td>
+        <td>Tactical Gear</td>
+    </tr>
+    
+    <tr>
+        <td>BlueGuns</td>
+        <td><a href="https://www.blueguns.com/" target="_blank" id="blueguns.com">blueguns.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Gun</td>
+    </tr>
+    
+    <tr>
+        <td>Body Armor Vent</td>
+        <td><a href="https://www.bodyarmorvent.com/" target="_blank" id="bodyarmorvent.com">bodyarmorvent.com</a></td>
+        <td class="nowrap"></td>
+        <td></td>
+        <td>Tactical Gear</td>
+    </tr>
+    
+    <tr>
+        <td>Bolle Safety</td>
+        <td><a href="https://www.bolle-safety.com/" target="_blank" id="bolle-safety.com">bolle-safety.com</a></td>
+        <td class="nowrap"></td>
+        <td>1888</td>
+        <td>Tactical Gear</td>
+    </tr>
+    
+    <tr>
+        <td>Bolt</td>
+        <td><a href="https://www.bolt.tw/" target="_blank" id="bolt.tw">bolt.tw</a></td>
+        <td class="nowrap">Taiwan</td>
+        <td>2010</td>
+        <td>Gun</td>
+    </tr>
+    
+    <tr>
+        <td>BO Manufacture</td>
+        <td><a href="https://bomanufacture.com/" target="_blank" id="bomanufacture.com">bomanufacture.com</a></td>
+        <td class="nowrap">France</td>
+        <td>2013</td>
+        <td>Gun, Part</td>
+    </tr>
+    
+    <tr>
+        <td>BrainExploder</td>
+        <td><a href="https://www.brainexplodermerch.com/" target="_blank" id="brainexplodermerch.com">brainexplodermerch.com</a></td>
+        <td class="nowrap"></td>
+        <td></td>
+        <td>Tactical Gear</td>
+    </tr>
+    
+    <tr>
+        <td>Brinyte</td>
+        <td><a href="http://www.brinyte.com/" target="_blank" id="brinyte.com">brinyte.com</a></td>
+        <td class="nowrap">China</td>
+        <td>2006</td>
+        <td>Tactical Gear</td>
+    </tr>
+    
+    <tr>
+        <td>Burn Proof Gear</td>
+        <td><a href="https://www.burnproofgear.com/" target="_blank" id="burnproofgear.com">burnproofgear.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Tactical Gear</td>
+    </tr>
+    
+    <tr>
+        <td>Allen Company</td>
+        <td><a href="https://byallen.com/" target="_blank" id="byallen.com">byallen.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1970</td>
+        <td>Tactical Gear</td>
+    </tr>
+    
+    <tr>
+        <td>Command Arms (CAA)</td>
+        <td><a href="https://caagearup.com/" target="_blank" id="caagearup.com">caagearup.com</a></td>
+        <td class="nowrap">Israel</td>
+        <td>2004</td>
+        <td></td>
+    </tr>
+    
+    <tr>
+        <td>Cannae Pro Gear</td>
+        <td><a href="https://cannaeprogear.com/" target="_blank" id="cannaeprogear.com">cannaeprogear.com</a></td>
+        <td class="nowrap"></td>
+        <td></td>
+        <td>Tactical Gear</td>
+    </tr>
+    
+    <tr>
+        <td>Centurion Arms</td>
+        <td><a href="https://centurionarms.com/" target="_blank" id="centurionarms.com">centurionarms.com</a></td>
+        <td class="nowrap">US</td>
+        <td>2008</td>
+        <td>Gun, Part</td>
+    </tr>
+    
+    <tr>
+        <td>CheyTac USA</td>
+        <td><a href="https://cheytac.com/" target="_blank" id="cheytac.com">cheytac.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Gun</td>
+    </tr>
+    
+    <tr>
+        <td>Classic Army</td>
+        <td><a href="http://www.classicarmy.com/" target="_blank" id="classicarmy.com">classicarmy.com</a></td>
+        <td class="nowrap"></td>
+        <td></td>
+        <td>Gun, Part</td>
+    </tr>
+    
+    <tr>
+        <td>Clenzoil</td>
+        <td><a href="https://clenzoil.com/" target="_blank" id="clenzoil.com">clenzoil.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td></td>
+    </tr>
+    
+    <tr>
+        <td>Code Red Headsets</td>
+        <td><a href="https://www.coderedheadsets.com/" target="_blank" id="coderedheadsets.com">coderedheadsets.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1999</td>
+        <td></td>
+    </tr>
+    
+    <tr>
+        <td>Comp-Tac</td>
+        <td><a href="https://comp-tac.com/" target="_blank" id="comp-tac.com">comp-tac.com</a></td>
+        <td class="nowrap">US</td>
+        <td>2001</td>
+        <td>Tactical Gear</td>
+    </tr>
+    
+    <tr>
+        <td>Costa Del Mar</td>
+        <td><a href="https://www.costadelmar.com/" target="_blank" id="costadelmar.com">costadelmar.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1983</td>
+        <td>Tactical Gear</td>
+    </tr>
+    
+    <tr>
+        <td>CowCow Technology</td>
+        <td><a href="https://www.cowcowtechnology.com/" target="_blank" id="cowcowtechnology.com">cowcowtechnology.com</a></td>
+        <td class="nowrap"></td>
+        <td>2018</td>
+        <td>Tactical Gear</td>
+    </tr>
+    
+    <tr>
+        <td>Crimson Trace</td>
+        <td><a href="https://www.crimsontrace.com/" target="_blank" id="crimsontrace.com">crimsontrace.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Tactical Gear</td>
+    </tr>
+    
+    <tr>
+        <td>Crosman</td>
+        <td><a href="https://www.crosman.com/" target="_blank" id="crosman.com">crosman.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1923</td>
+        <td>Gun, Part</td>
+    </tr>
+    
+    <tr>
+        <td>Crye Precision</td>
+        <td><a href="https://www.cryeprecision.com/" target="_blank" id="cryeprecision.com">cryeprecision.com</a></td>
+        <td class="nowrap"></td>
+        <td></td>
+        <td>Tactical Gear</td>
+    </tr>
+    
+    <tr>
+        <td>Cyalume Technologies</td>
+        <td><a href="https://www.cyalume.com/" target="_blank" id="cyalume.com">cyalume.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Tactical Gear</td>
+    </tr>
+    
+    <tr>
+        <td>Cybergun</td>
+        <td><a href="https://cybergun.com/" target="_blank" id="cybergun.com">cybergun.com</a></td>
+        <td class="nowrap"></td>
+        <td></td>
+        <td>Gun, Part</td>
+    </tr>
+    
+    <tr>
+        <td>CYMA</td>
+        <td><a href="https://www.cymagun.com/" target="_blank" id="cymagun.com">cymagun.com</a></td>
+        <td class="nowrap"></td>
+        <td>2000</td>
+        <td>Gun</td>
+    </tr>
+    
+    <tr>
+        <td>CYTAC</td>
+        <td><a href="https://www.cytac.com/" target="_blank" id="cytac.com">cytac.com</a></td>
+        <td class="nowrap">China</td>
+        <td>2008</td>
+        <td>Tactical Gear</td>
+    </tr>
+    
+    <tr>
+        <td>CZ</td>
+        <td><a href="https://www.czub.cz/" target="_blank" id="czub.cz">czub.cz</a></td>
+        <td class="nowrap">Czech Republic</td>
+        <td>1936</td>
+        <td>Gun, Part</td>
+    </tr>
+    
+    <tr>
+        <td>Daisy</td>
+        <td><a href="https://www.daisy.com/" target="_blank" id="daisy.com">daisy.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Gun</td>
+    </tr>
+    
+    <tr>
+        <td>Daniel Defense</td>
+        <td><a href="https://danieldefense.com/" target="_blank" id="danieldefense.com">danieldefense.com</a></td>
+        <td class="nowrap">US</td>
+        <td>2001</td>
+        <td>Gun, Part</td>
+    </tr>
+    
+    <tr>
+        <td>Dan Wesson</td>
+        <td><a href="https://danwessonfirearms.com/" target="_blank" id="danwessonfirearms.com">danwessonfirearms.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1968</td>
+        <td>Gun</td>
+    </tr>
+    
+    <tr>
+        <td>Deepfire</td>
+        <td><a href="http://www.deepfire.com.hk/" target="_blank" id="deepfire.com.hk">deepfire.com.hk</a></td>
+        <td class="nowrap">Hong Kong</td>
+        <td></td>
+        <td>Gun, Part</td>
+    </tr>
+    
+    <tr>
+        <td>Defcon Gear</td>
+        <td><a href="https://www.defcon5italy.com/" target="_blank" id="defcon5italy.com">defcon5italy.com</a></td>
+        <td class="nowrap">Italy</td>
+        <td></td>
+        <td>Tactical Gear</td>
+    </tr>
+    
+    <tr>
+        <td>Desert Tech</td>
+        <td><a href="https://deserttech.com/" target="_blank" id="deserttech.com">deserttech.com</a></td>
+        <td class="nowrap">US</td>
+        <td>2007</td>
+        <td>Gun, Part</td>
+    </tr>
+    
+    <tr>
+        <td>Devil Dog Concepts</td>
+        <td><a href="https://devildogconcepts.com/" target="_blank" id="devildogconcepts.com">devildogconcepts.com</a></td>
+        <td class="nowrap">US</td>
+        <td>2013</td>
+        <td>Tactical Gear</td>
+    </tr>
+    
+    <tr>
+        <td>DoubleStar</td>
+        <td><a href="https://doublestarusa.com/" target="_blank" id="doublestarusa.com">doublestarusa.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1978</td>
+        <td>Gun, Part</td>
+    </tr>
+    
+    <tr>
+        <td>DYTAC</td>
+        <td><a href="http://www.dytac.hk/" target="_blank" id="dytac.hk">dytac.hk</a></td>
+        <td class="nowrap">Hong Kong</td>
+        <td>2007</td>
+        <td>Gun</td>
+    </tr>
+    
+    <tr>
+        <td>Elite Force, Umarex</td>
+        <td><a href="https://www.eliteforceairsoft.com/" target="_blank" id="eliteforceairsoft.com">eliteforceairsoft.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Gun, Part</td>
+    </tr>
+    
+    <tr>
+        <td>EMG (Evike Manufacturing Group)</td>
+        <td><a href="https://www.emgarms.com/" target="_blank" id="emgarms.com">emgarms.com</a></td>
+        <td class="nowrap">US</td>
+        <td>2001</td>
+        <td>Gun, Part</td>
+    </tr>
+    
+    <tr>
+        <td>Enola Gaye</td>
+        <td><a href="https://enolagaye.com/" target="_blank" id="enolagaye.com">enolagaye.com</a></td>
+        <td class="nowrap">US</td>
+        <td>2011</td>
+        <td></td>
+    </tr>
+    
+    <tr>
+        <td>Evike</td>
+        <td><a href="https://www.evike.com/brands/15/Evike-Custom-Guns/" target="_blank" id="evike.com">evike.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Gun</td>
+    </tr>
+    
+    <tr>
+        <td>F4 Defense</td>
+        <td><a href="https://www.f4defense.com/" target="_blank" id="f4defense.com">f4defense.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Gun</td>
+    </tr>
+    
+    <tr>
+        <td>G&P</td>
+        <td><a href="http://www.gp-web.com/" target="_blank" id="gp-web.com">gp-web.com</a></td>
+        <td class="nowrap">Hong Kong</td>
+        <td>1995</td>
+        <td>Gun</td>
+    </tr>
+    
+    <tr>
+        <td>G&G</td>
+        <td><a href="https://www.guay2.com/" target="_blank" id="guay2.com">guay2.com</a></td>
+        <td class="nowrap">Taiwan</td>
+        <td>1986</td>
+        <td>Gun</td>
+    </tr>
+    
+    <tr>
+        <td>JAG, ECHO1</td>
+        <td><a href="https://jagprecision.com/" target="_blank" id="jagprecision.com">jagprecision.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Gun, Part</td>
+    </tr>
+    
+    <tr>
+        <td>Arcturus</td>
+        <td><a href="http://www.mos-manufacture.com/" target="_blank" id="mos-manufacture.com">mos-manufacture.com</a></td>
+        <td class="nowrap">Hong Kong</td>
+        <td>2015</td>
+        <td>Gun, Part</td>
+    </tr>
+    
+    <tr>
+        <td>Bone Yard</td>
+        <td><a href="https://www.salientarmsinternational.com/shop/proshop/brands/280/" target="_blank" id="salientarmsinternational.com">salientarmsinternational.com</a></td>
+        <td class="nowrap"></td>
+        <td></td>
+        <td>Gun</td>
+    </tr>
+    
+
+    </table>
+
+    <div class="footer small">
+
+        <p>88 Airsoft brands indexed</p>
+        <p>Last updated 9 May 2022 11:25</p>
+        <p>Side project</p>
+        <p>Interested to contribute?</p>
+        <p>Contact me: n1c [@] indexall.io</p>
+    
+    </div>
 
 </body>
 

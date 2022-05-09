@@ -16,13 +16,10 @@
 
     <meta name="robots" content="all, follow" />
 
-
-    <!-- These are the little icons that show up next to the title of the URL in the browser tab. For these to work, you must include a favicon.png file in the root of your website directory. This can also be favicon.jpg if you prefer, you just need to change the link in the href to favicon.jpg for it to work -->
     <link rel="shortcut icon" href="favicon.png">
     <link rel="icon" href="favicon.png" type="image/x-icon" />
 
-    <!-- Social Media stuff. This all makes your links look much nicer and more shareable on Facebook and Twitter -->
-    <!-- Facebook meta links - OG stands for OpenGraph by the way! -->
+    <!-- Facebook meta links -->
     <meta property="og:locale" content="en_GB" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="indeXall.io | List of Karting companies" />
@@ -37,1152 +34,964 @@
     <meta name="twitter:title" content="List of Karting brands | indeXall" />
     <meta name="twitter:image" content="https://indexall.io/indeXall.svg" />
 
-    <!-- Your CSS link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://indexall.io/indeXall.css" rel="stylesheet">
 
 </head>
 
 <body>
 
-<!-- <p style="text-align: left; font-family: 'Lato';">indexall.io</p> -->
-<!-- Inline indeXall logo -->
-<!-- <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" style="fill:#fff"/><path d="M462.05,191.91c46.72,1.2,42.92,68.54-8.48,150.41l-.59.93,38,44.49H453.05L436.17,368C385.51,437.43,317.62,489.46,275.9,488.4c-37.49-1-42.44-44.53-16.36-104h6.2c-17.5,39.46-15,67.1,10.06,67.78,33.49.9,95.05-46.81,140.13-107.88l-45.36-53.12H408.5l24.25,28.4c34.92-56.14,39.09-99.77,7.57-100.62-27.56-.74-74.13,31.44-114.89,76.89h-11c48.86-61,109.3-104.9,147.64-103.92Zm86.76,115.82H497.68a1.89,1.89,0,0,0-2.13,2.13v9.95a1.88,1.88,0,0,0,2.13,2.13h49.47a28,28,0,0,1,6.39.59,9.07,9.07,0,0,1,3.91,1.83,6.7,6.7,0,0,1,2,3.26,17.53,17.53,0,0,1,.59,4.85v2.25H511.88a31.58,31.58,0,0,0-8.7,1,13.49,13.49,0,0,0-5.62,3,11.07,11.07,0,0,0-3,4.92,22.44,22.44,0,0,0-.89,6.56v5.69a28.54,28.54,0,0,0,.89,7.57,11,11,0,0,0,3,5.21,13.62,13.62,0,0,0,5.62,3,32,32,0,0,0,8.7,1h56.34a18.47,18.47,0,0,0,4.26-.41,5.38,5.38,0,0,0,2.66-1.48,6,6,0,0,0,1.42-2.9,21.5,21.5,0,0,0,.42-4.68V331.76a37.32,37.32,0,0,0-1.42-10.95,16.19,16.19,0,0,0-4.68-7.45,20.06,20.06,0,0,0-8.7-4.26,55.88,55.88,0,0,0-13.37-1.37Zm7.81,52H516.73c-2.44,0-4.16-.49-5.14-1.48s-1.48-2.54-1.48-4.67v-2.49a5.85,5.85,0,0,1,1.48-4.32c1-1,2.7-1.48,5.14-1.48h43.32v10.42a4.9,4.9,0,0,1-.77,3.14,3.38,3.38,0,0,1-2.66.88ZM604,284a2.3,2.3,0,0,1,2.61,2.6v83.56a2.3,2.3,0,0,1-2.61,2.6h-11.6a2.3,2.3,0,0,1-2.6-2.6V286.55a2.3,2.3,0,0,1,2.6-2.6Zm32,0a2.3,2.3,0,0,1,2.6,2.6v83.56a2.3,2.3,0,0,1-2.6,2.6h-11.6a2.3,2.3,0,0,1-2.61-2.6V286.55a2.3,2.3,0,0,1,2.61-2.6ZM56.12,307.73c1.73,0,2.6.91,2.6,2.73v59.65a2.3,2.3,0,0,1-2.6,2.6H44.52a2.3,2.3,0,0,1-2.61-2.6V310.46q0-2.73,2.61-2.73Zm0-24a2.3,2.3,0,0,1,2.6,2.6v11.25c0,1.81-.87,2.72-2.6,2.72H44.52a2.41,2.41,0,0,1-2.73-2.72V286.31c0-1.73.91-2.6,2.73-2.6Zm79.41,24a55.76,55.76,0,0,1,13.37,1.37,20.06,20.06,0,0,1,8.7,4.26,16.19,16.19,0,0,1,4.68,7.45,37,37,0,0,1,1.42,10.95v38.35a2.3,2.3,0,0,1-2.6,2.6H149.5a2.3,2.3,0,0,1-2.61-2.6V335.78a34.3,34.3,0,0,0-.47-6.21,8,8,0,0,0-1.83-4,7.69,7.69,0,0,0-3.73-2.13,23.63,23.63,0,0,0-6.16-.65H103.22a25,25,0,0,0-6.27.65,8.48,8.48,0,0,0-4,2.13,8.24,8.24,0,0,0-2.07,4,28.19,28.19,0,0,0-.59,6.21v34.33a2.3,2.3,0,0,1-2.6,2.6H76.12c-1.82,0-2.72-.87-2.72-2.6V331.76a37,37,0,0,1,1.42-10.95,16.09,16.09,0,0,1,4.67-7.45,20,20,0,0,1,8.64-4.26,55.72,55.72,0,0,1,13.43-1.37Zm114.45,0h-44.5a55.66,55.66,0,0,0-13.43,1.37,20,20,0,0,0-8.64,4.26,16.19,16.19,0,0,0-4.68,7.45,37,37,0,0,0-1.42,10.95v17a36.94,36.94,0,0,0,1.42,10.95,16.27,16.27,0,0,0,4.68,7.46,19.76,19.76,0,0,0,8.64,4.2,58.18,58.18,0,0,0,13.43,1.3h33.14a58.4,58.4,0,0,0,13.37-1.3,19.79,19.79,0,0,0,8.7-4.2,16.27,16.27,0,0,0,4.68-7.46,37.27,37.27,0,0,0,1.42-10.95V286.55a2.3,2.3,0,0,0-2.61-2.6h-11.6a2.3,2.3,0,0,0-2.6,2.6v21.18Zm-13,50.78a26.06,26.06,0,0,0,6.39-.65,8.66,8.66,0,0,0,4-2.13,8.24,8.24,0,0,0,2.07-4,27.89,27.89,0,0,0,.59-6.27V321.94H207.14a25.06,25.06,0,0,0-6.28.65,8.44,8.44,0,0,0-4,2.13,8.07,8.07,0,0,0-2.07,4,27.57,27.57,0,0,0-.6,6.22v10.53a27.25,27.25,0,0,0,.6,6.27,8.07,8.07,0,0,0,2.07,4,8.62,8.62,0,0,0,4,2.13,25.54,25.54,0,0,0,6.28.65ZM341.7,307.73H307a55.75,55.75,0,0,0-13.44,1.37,20,20,0,0,0-8.64,4.26,16.17,16.17,0,0,0-4.67,7.45,37,37,0,0,0-1.42,10.95v17a36.94,36.94,0,0,0,1.42,10.95,16.25,16.25,0,0,0,4.67,7.46,19.76,19.76,0,0,0,8.64,4.2,58.27,58.27,0,0,0,13.44,1.3h51a1.88,1.88,0,0,0,2.13-2.13v-9.94a1.88,1.88,0,0,0-2.13-2.13H308.68c-5.12,0-8.58-.83-10.35-2.49s-2.67-4.34-2.67-8v-2.85h59.77a7.49,7.49,0,0,0,5.09-1.47q1.67-1.49,1.66-5.27V327.15a37.36,37.36,0,0,0-.95-9.06,12.79,12.79,0,0,0-3.25-6,13.34,13.34,0,0,0-6.27-3.31,41.66,41.66,0,0,0-10-1Zm-46,26.87H343.6a1.78,1.78,0,0,0,2-2v-5c0-2.45-.51-4.18-1.54-5.21s-2.92-1.54-5.68-1.54H308.68c-5.12,0-8.58.81-10.35,2.43s-2.67,4.32-2.67,8.11Z" style="fill:#231f20;fill-rule:evenodd"/></svg> -->
-
-<a href = "https://indexall.io" target = "_self"> 
-    <img src="https://indexall.io/indeXall.svg" alt="indeXall.io" width="100" height="100" /> 
- </a>
-<p></p>
-<h1>List of 115 Karting brands</h1>
-<p></p>
-
-<!-- <br>
-<button type="button" class="btn btn-primary btn-sm" onclick="tableToCSV()">
-    Download CSV
-</button>
-<br>
-<br> -->
-
-<table class="table table-hover table-sm">
-  <tr>
-    <th scope="col"></th>
-    <th scope="col">Website</th>
-    <th scope="col">Country</th>
-    <th scope="col">Est.</th>
-    <th scope="col">Products</th>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">7 Kart<h2></td> -->
-    <td>7 Kart</td>
-    <td><a href="http://7kart.co.uk/" target="_blank" id="7kart.co.uk">7kart.co.uk</a></td>
-    <td>UK</td>
-    <td>2002</td>
-    <td>Chassis, Kart (Chassis + Engine/Powerunit), Parts</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">AIM Technologies<h2></td> -->
-    <td>AIM Technologies</td>
-    <td><a href="https://www.aimtechnologies.com/kart/" target="_blank" id="aimtechnologies.com">aimtechnologies.com</a></td>
-    <td>UK</td>
-    <td></td>
-    <td>Tools</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Axiro <h2></td> -->
-    <td>Axiro </td>
-    <td><a href="https://www.aixro.co.uk/shop/sports-rotary-engines/" target="_blank" id="aixro.co.uk">aixro.co.uk</a></td>
-    <td>UK</td>
-    <td></td>
-    <td>Engine/Powerunit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Alpha Karting<h2></td> -->
-    <td>Alpha Karting</td>
-    <td><a href="https://www.alpha-karting.com/" target="_blank" id="alpha-karting.com">alpha-karting.com</a></td>
-    <td>France</td>
-    <td>1989</td>
-    <td>Chassis, Rental Kart</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">AlpineStars<h2></td> -->
-    <td>AlpineStars</td>
-    <td><a href="https://www.alpinestars.com/collections/karting?page=2" target="_blank" id="alpinestars.com">alpinestars.com</a></td>
-    <td>US</td>
-    <td>1963</td>
-    <td>PPE (Personal Protective Equipment)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Alutrail<h2></td> -->
-    <td>Alutrail</td>
-    <td><a href="http://www.alutrail.com/" target="_blank" id="alutrail.com">alutrail.com</a></td>
-    <td>US</td>
-    <td>1996</td>
-    <td>Transport</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">AMSOIL<h2></td> -->
-    <td>AMSOIL</td>
-    <td><a href="https://www.amsoil.com/c/racing/114/" target="_blank" id="amsoil.com">amsoil.com</a></td>
-    <td>US</td>
-    <td>1972</td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Anssems<h2></td> -->
-    <td>Anssems</td>
-    <td><a href="https://anssems.com/" target="_blank" id="anssems.com">anssems.com</a></td>
-    <td>Germany</td>
-    <td></td>
-    <td>Transport</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Arai Helmet<h2></td> -->
-    <td>Arai Helmet</td>
-    <td><a href="https://www.araihelmet.eu/en/collection/detail/sk-6" target="_blank" id="araihelmet.eu">araihelmet.eu</a></td>
-    <td>Netherlands</td>
-    <td></td>
-    <td>PPE (Personal Protective Equipment)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Bell Racing<h2></td> -->
-    <td>Bell Racing</td>
-    <td><a href="https://bellracing.eu/" target="_blank" id="bellracing.eu">bellracing.eu</a></td>
-    <td>Italy</td>
-    <td>1954</td>
-    <td>PPE (Personal Protective Equipment)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Bengio HST<h2></td> -->
-    <td>Bengio HST</td>
-    <td><a href="http://www.bengiohst.it/?lang=en" target="_blank" id="bengiohst.it">bengiohst.it</a></td>
-    <td>Italy</td>
-    <td></td>
-    <td>PPE (Personal Protective Equipment)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">BENIK KART<h2></td> -->
-    <td>BENIK KART</td>
-    <td><a href="http://www.benik-kart.com/" target="_blank" id="benik-kart.com">benik-kart.com</a></td>
-    <td>US</td>
-    <td>2013</td>
-    <td>Chassis, Parts, PPE (Personal Protective Equipment)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">B G Racing<h2></td> -->
-    <td>B G Racing</td>
-    <td><a href="https://www.bg-racing.co.uk" target="_blank" id="bg-racing.co.uk">bg-racing.co.uk</a></td>
-    <td>UK</td>
-    <td>1963</td>
-    <td>Tools</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">BigTex Trailers<h2></td> -->
-    <td>BigTex Trailers</td>
-    <td><a href="https://www.bigtextrailers.com/" target="_blank" id="bigtextrailers.com">bigtextrailers.com</a></td>
-    <td>US</td>
-    <td>1990</td>
-    <td>Transport</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">BirelART Racing Kart<h2></td> -->
-    <td>BirelART Racing Kart</td>
-    <td><a href="http://birelart.com/our-karts/kz/description" target="_blank" id="birelart.com">birelart.com</a></td>
-    <td>Italy</td>
-    <td>1974</td>
-    <td>Chassis, PPE (Personal Protective Equipment), Rental Kart</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">BIZKARTS<h2></td> -->
-    <td>BIZKARTS</td>
-    <td><a href="https://www.bizkarts.com/" target="_blank" id="bizkarts.com">bizkarts.com</a></td>
-    <td>UK</td>
-    <td>2017</td>
-    <td>Chassis, Kart (Chassis + Engine/Powerunit), Parts, PPE (Personal Protective Equipment), Rental Kart</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Blendzall<h2></td> -->
-    <td>Blendzall</td>
-    <td><a href="https://blendzall.com/" target="_blank" id="blendzall.com">blendzall.com</a></td>
-    <td>US</td>
-    <td>1959</td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Blue Shock Race<h2></td> -->
-    <td>Blue Shock Race</td>
-    <td><a href="http://blueshockrace.com/" target="_blank" id="blueshockrace.com">blueshockrace.com</a></td>
-    <td>Latvia</td>
-    <td>2014</td>
-    <td>Kart (Chassis + Engine/Powerunit), Rental Kart</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">BOSCH Motorsports<h2></td> -->
-    <td>BOSCH Motorsports</td>
-    <td><a href="https://www.bosch-motorsport.com/content/downloads/Raceparts/en-GB/66970635117998475.html" target="_blank" id="bosch-motorsport.com">bosch-motorsport.com</a></td>
-    <td>Germany</td>
-    <td></td>
-    <td>Engine/Powerunit, Parts</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">BRB Karts<h2></td> -->
-    <td>BRB Karts</td>
-    <td><a href="http://www.brbkarts.com/" target="_blank" id="brbkarts.com">brbkarts.com</a></td>
-    <td>Spain</td>
-    <td></td>
-    <td>Chassis</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">BRIGGS & STRATTON Racing Engine<h2></td> -->
-    <td>BRIGGS & STRATTON Racing Engine</td>
-    <td><a href="https://www.briggsracing.com/racing-engines" target="_blank" id="briggsracing.com">briggsracing.com</a></td>
-    <td>US</td>
-    <td>1991</td>
-    <td>Engine/Powerunit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Carmate Trailers<h2></td> -->
-    <td>Carmate Trailers</td>
-    <td><a href="https://carmate-trailers.com/" target="_blank" id="carmate-trailers.com">carmate-trailers.com</a></td>
-    <td>US</td>
-    <td>1974</td>
-    <td>Transport</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">CKR<h2></td> -->
-    <td>CKR</td>
-    <td><a href="https://www.ckrgokart.it/" target="_blank" id="ckrgokart.it">ckrgokart.it</a></td>
-    <td>Italy</td>
-    <td>2000</td>
-    <td>Chassis, Parts, PPE (Personal Protective Equipment), Tools</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">CL Charles Leclerc Kart<h2></td> -->
-    <td>CL Charles Leclerc Kart</td>
-    <td><a href="https://www.clkarting.com/" target="_blank" id="clkarting.com">clkarting.com</a></td>
-    <td>Italy</td>
-    <td></td>
-    <td>Chassis</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Comer TopKart<h2></td> -->
-    <td>Comer TopKart</td>
-    <td><a href="https://www.comer-topkart.it/" target="_blank" id="comer-topkart.it">comer-topkart.it</a></td>
-    <td>Italy</td>
-    <td>1980</td>
-    <td>Chassis, Engine/Powerunit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">CORSA Racing Kart<h2></td> -->
-    <td>CORSA Racing Kart</td>
-    <td><a href="https://www.corsaracingkart.com/index.php" target="_blank" id="corsaracingkart.com">corsaracingkart.com</a></td>
-    <td>US</td>
-    <td>2001</td>
-    <td>Chassis, Parts, PPE (Personal Protective Equipment), Tools</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">COYOTE Racing Chassis<h2></td> -->
-    <td>COYOTE Racing Chassis</td>
-    <td><a href="https://coyotekarts.com/" target="_blank" id="coyotekarts.com">coyotekarts.com</a></td>
-    <td>US</td>
-    <td>1976</td>
-    <td>Chassis, Kart (Chassis + Engine/Powerunit), Parts, PPE (Personal Protective Equipment)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Custom Race Wear<h2></td> -->
-    <td>Custom Race Wear</td>
-    <td><a href="https://www.customracewear.co.uk/" target="_blank" id="customracewear.co.uk">customracewear.co.uk</a></td>
-    <td>UK</td>
-    <td></td>
-    <td>PPE (Personal Protective Equipment)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">DFM Racing<h2></td> -->
-    <td>DFM Racing</td>
-    <td><a href="https://www.dfmracing.it/" target="_blank" id="dfmracing.it">dfmracing.it</a></td>
-    <td>Italy</td>
-    <td></td>
-    <td>Chassis</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">DR Racing Kart<h2></td> -->
-    <td>DR Racing Kart</td>
-    <td><a href="https://www.drracingkart.it/en" target="_blank" id="drracingkart.it">drracingkart.it</a></td>
-    <td>Italy</td>
-    <td>1996</td>
-    <td>Chassis, PPE (Personal Protective Equipment)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Eagle Kart System<h2></td> -->
-    <td>Eagle Kart System</td>
-    <td><a href="https://www.ekskart.com/" target="_blank" id="ekskart.com">ekskart.com</a></td>
-    <td>Italy</td>
-    <td></td>
-    <td>Chassis, Parts, Rental Kart</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Electric Karting<h2></td> -->
-    <td>Electric Karting</td>
-    <td><a href="https://www.electrickarting.com/" target="_blank" id="electrickarting.com">electrickarting.com</a></td>
-    <td>Belgium</td>
-    <td></td>
-    <td>Engine/Powerunit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Electric Motorsports<h2></td> -->
-    <td>Electric Motorsports</td>
-    <td><a href="https://www.electricmotorsport.com/applications/karting" target="_blank" id="electricmotorsport.com">electricmotorsport.com</a></td>
-    <td>US</td>
-    <td>2001</td>
-    <td>Engine/Powerunit, Parts</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Mach1 Kart<h2></td> -->
-    <td>Mach1 Kart</td>
-    <td><a href="https://en.mach1kart.com/" target="_blank" id="en.mach1kart.com">en.mach1kart.com</a></td>
-    <td>Germany</td>
-    <td>1969</td>
-    <td>Chassis, PPE (Personal Protective Equipment), Rental Kart</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Rimo Germany<h2></td> -->
-    <td>Rimo Germany</td>
-    <td><a href="https://en.rimo-germany.com/" target="_blank" id="en.rimo-germany.com">en.rimo-germany.com</a></td>
-    <td>Germany</td>
-    <td>1999</td>
-    <td>Chassis, Kart (Chassis + Engine/Powerunit), Parts</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Energy Racing Kart<h2></td> -->
-    <td>Energy Racing Kart</td>
-    <td><a href="http://www.energycorse.com/uk/index.asp" target="_blank" id="energycorse.com">energycorse.com</a></td>
-    <td>Italy</td>
-    <td>1997</td>
-    <td>Chassis, PPE (Personal Protective Equipment)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Honda Go Kart Engines<h2></td> -->
-    <td>Honda Go Kart Engines</td>
-    <td><a href="https://engines.honda.com/models/application/small-vehicles" target="_blank" id="engines.honda.com">engines.honda.com</a></td>
-    <td>Japan</td>
-    <td>1953</td>
-    <td>Engine/Powerunit, Parts</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">EVS<h2></td> -->
-    <td>EVS</td>
-    <td><a href="https://www.evs-sports.com/collections/race-collars" target="_blank" id="evs-sports.com">evs-sports.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>PPE (Personal Protective Equipment)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">EXPRIT Racing Kart<h2></td> -->
-    <td>EXPRIT Racing Kart</td>
-    <td><a href="http://www.expritkart.com/index_eng.php" target="_blank" id="expritkart.com">expritkart.com</a></td>
-    <td>Italy</td>
-    <td></td>
-    <td>Chassis, Parts, PPE (Personal Protective Equipment)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">FREEMRACING<h2></td> -->
-    <td>FREEMRACING</td>
-    <td><a href="http://www.freemracing.it/?lang=en" target="_blank" id="freemracing.it">freemracing.it</a></td>
-    <td>Italy</td>
-    <td>2001</td>
-    <td>PPE (Personal Protective Equipment)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">GATEL<h2></td> -->
-    <td>GATEL</td>
-    <td><a href="https://gatel.it/en/" target="_blank" id="gatel.it">gatel.it</a></td>
-    <td>Italy</td>
-    <td>1985</td>
-    <td>Tools</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">GP Raing Kart<h2></td> -->
-    <td>GP Raing Kart</td>
-    <td><a href="https://www.gpracingkarts.com/" target="_blank" id="gpracingkarts.com">gpracingkarts.com</a></td>
-    <td>Italy</td>
-    <td>1995</td>
-    <td>Chassis</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">HAASE<h2></td> -->
-    <td>HAASE</td>
-    <td><a href="http://www.haase.it/index.php?ln=en" target="_blank" id="haase.it">haase.it</a></td>
-    <td>Italy</td>
-    <td>1991</td>
-    <td>Chassis, Parts, PPE (Personal Protective Equipment), Tools</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Helmade<h2></td> -->
-    <td>Helmade</td>
-    <td><a href="https://www.helmade.com/en_us/" target="_blank" id="helmade.com">helmade.com</a></td>
-    <td>Germany</td>
-    <td>2015</td>
-    <td>PPE (Personal Protective Equipment)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Humbaur<h2></td> -->
-    <td>Humbaur</td>
-    <td><a href="https://www.humbaur.com/en/trailer/single-axle-trailers/" target="_blank" id="humbaur.com">humbaur.com</a></td>
-    <td></td>
-    <td></td>
-    <td>Transport</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">IAME <h2></td> -->
-    <td>IAME </td>
-    <td><a href="https://www.iamekarting.com/#" target="_blank" id="iamekarting.com">iamekarting.com</a></td>
-    <td>Italy</td>
-    <td>1968</td>
-    <td>Engine/Powerunit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">ID Engines<h2></td> -->
-    <td>ID Engines</td>
-    <td><a href="https://id-engines.com/" target="_blank" id="id-engines.com">id-engines.com</a></td>
-    <td>Netherlands</td>
-    <td></td>
-    <td>Engine/Powerunit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">iKartindy<h2></td> -->
-    <td>iKartindy</td>
-    <td><a href="http://ikartindy.com/" target="_blank" id="ikartindy.com">ikartindy.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Chassis, Kart (Chassis + Engine/Powerunit), Parts</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Impact<h2></td> -->
-    <td>Impact</td>
-    <td><a href="https://www.impactraceproducts.com/default.asp" target="_blank" id="impactraceproducts.com">impactraceproducts.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>PPE (Personal Protective Equipment)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">INTREPID<h2></td> -->
-    <td>INTREPID</td>
-    <td><a href="https://www.intrepid-kart.com/en" target="_blank" id="intrepid-kart.com">intrepid-kart.com</a></td>
-    <td>Italy</td>
-    <td></td>
-    <td>Chassis, Parts</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Invader Kart<h2></td> -->
-    <td>Invader Kart</td>
-    <td><a href="https://www.invaderkart.com/" target="_blank" id="invaderkart.com">invaderkart.com</a></td>
-    <td>US</td>
-    <td>1974</td>
-    <td>Chassis, Parts</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">J3 Competition - COMPKART<h2></td> -->
-    <td>J3 Competition - COMPKART</td>
-    <td><a href="https://www.j3competition.com/" target="_blank" id="j3competition.com">j3competition.com</a></td>
-    <td>US</td>
-    <td>2008</td>
-    <td>Chassis, Engine/Powerunit, Parts</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Jecko<h2></td> -->
-    <td>Jecko</td>
-    <td><a href="https://jecko.uk/" target="_blank" id="jecko.uk">jecko.uk</a></td>
-    <td>UK</td>
-    <td></td>
-    <td>PPE (Personal Protective Equipment)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">JM Pure Karting<h2></td> -->
-    <td>JM Pure Karting</td>
-    <td><a href="http://www.jmracing.co.uk/" target="_blank" id="jmracing.co.uk">jmracing.co.uk</a></td>
-    <td>UK</td>
-    <td>2003</td>
-    <td>Kart (Chassis + Engine/Powerunit)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">CRG<h2></td> -->
-    <td>CRG</td>
-    <td><a href="https://kartcrg.com/?lang=en" target="_blank" id="kartcrg.com">kartcrg.com</a></td>
-    <td>Italy</td>
-    <td>1986</td>
-    <td>Chassis, PPE (Personal Protective Equipment), Rental Kart, Tools</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">KART REPUBLIC<h2></td> -->
-    <td>KART REPUBLIC</td>
-    <td><a href="https://www.kartrepublic.com/" target="_blank" id="kartrepublic.com">kartrepublic.com</a></td>
-    <td>Italy</td>
-    <td></td>
-    <td>Chassis</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Kaufman Trailers<h2></td> -->
-    <td>Kaufman Trailers</td>
-    <td><a href="https://www.kaufmantrailers.com/" target="_blank" id="kaufmantrailers.com">kaufmantrailers.com</a></td>
-    <td>US</td>
-    <td>1987</td>
-    <td>Transport</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Kinetik Automotive<h2></td> -->
-    <td>Kinetik Automotive</td>
-    <td><a href="https://kinetikautomotive.com/karting/#karting-concept" target="_blank" id="kinetikautomotive.com">kinetikautomotive.com</a></td>
-    <td>Bulgaria</td>
-    <td></td>
-    <td>Kart (Chassis + Engine/Powerunit)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Klotz Lube<h2></td> -->
-    <td>Klotz Lube</td>
-    <td><a href="https://klotzlube.com/" target="_blank" id="klotzlube.com">klotzlube.com</a></td>
-    <td>US</td>
-    <td>1961</td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">KOSMIC Racing Kart<h2></td> -->
-    <td>KOSMIC Racing Kart</td>
-    <td><a href="http://www.kosmickart.com/marchio_eng.php" target="_blank" id="kosmickart.com">kosmickart.com</a></td>
-    <td>Italy</td>
-    <td>1996</td>
-    <td>Chassis, Parts, PPE (Personal Protective Equipment)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Kubica Racing Kart<h2></td> -->
-    <td>Kubica Racing Kart</td>
-    <td><a href="http://www.kubicaracingkart.com/" target="_blank" id="kubicaracingkart.com">kubicaracingkart.com</a></td>
-    <td>Italy</td>
-    <td></td>
-    <td>Chassis</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">LENZO KART<h2></td> -->
-    <td>LENZO KART</td>
-    <td><a href="http://www.lenzokart.com/eng/index.html" target="_blank" id="lenzokart.com">lenzokart.com</a></td>
-    <td>Italy</td>
-    <td></td>
-    <td>Chassis, Engine/Powerunit, Parts, PPE (Personal Protective Equipment)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Lion Kart<h2></td> -->
-    <td>Lion Kart</td>
-    <td><a href="https://lion-kart.com/" target="_blank" id="lion-kart.com">lion-kart.com</a></td>
-    <td>Serbia</td>
-    <td>2017</td>
-    <td>Chassis</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Longacre<h2></td> -->
-    <td>Longacre</td>
-    <td><a href="http://www.longacreracing.com/" target="_blank" id="longacreracing.com">longacreracing.com</a></td>
-    <td>US</td>
-    <td>1978</td>
-    <td>Tools</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Mad Croc Kart<h2></td> -->
-    <td>Mad Croc Kart</td>
-    <td><a href="https://madoldnut.com/collections/madcroc" target="_blank" id="madoldnut.com">madoldnut.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Chassis</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Maranello Racing Kart<h2></td> -->
-    <td>Maranello Racing Kart</td>
-    <td><a href="https://www.maranellokart.com/en" target="_blank" id="maranellokart.com">maranellokart.com</a></td>
-    <td>Italy</td>
-    <td>1999</td>
-    <td>Chassis, PPE (Personal Protective Equipment)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Margay Racing<h2></td> -->
-    <td>Margay Racing</td>
-    <td><a href="https://margay.com/" target="_blank" id="margay.com">margay.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Chassis, Kart (Chassis + Engine/Powerunit)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Mega Engine<h2></td> -->
-    <td>Mega Engine</td>
-    <td><a href="https://www.mega-engine.com/en/mega-kart/mega-engine-r01/products/mega-engine-r01/" target="_blank" id="mega-engine.com">mega-engine.com</a></td>
-    <td>Germany</td>
-    <td></td>
-    <td>Engine/Powerunit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Meswel<h2></td> -->
-    <td>Meswel</td>
-    <td><a href="https://www.meswel.com/" target="_blank" id="meswel.com">meswel.com</a></td>
-    <td>Netherlands</td>
-    <td></td>
-    <td>Engine/Powerunit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">MGM<h2></td> -->
-    <td>MGM</td>
-    <td><a href="https://mgmchassis.com/" target="_blank" id="mgmchassis.com">mgmchassis.com</a></td>
-    <td>US</td>
-    <td>2009</td>
-    <td>Chassis, Parts</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">MIR Race Line<h2></td> -->
-    <td>MIR Race Line</td>
-    <td><a href="https://mirraceline.com/en/product-category/karting-en-2/kart-suits/" target="_blank" id="mirraceline.com">mirraceline.com</a></td>
-    <td>Italy</td>
-    <td>1983</td>
-    <td>PPE (Personal Protective Equipment)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Modena Engines<h2></td> -->
-    <td>Modena Engines</td>
-    <td><a href="https://www.modenaengines.it/en/" target="_blank" id="modenaengines.it">modenaengines.it</a></td>
-    <td>Italy</td>
-    <td></td>
-    <td>Engine/Powerunit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Molecule Sports<h2></td> -->
-    <td>Molecule Sports</td>
-    <td><a href="https://www.moleculesports.com/motorsports/" target="_blank" id="moleculesports.com">moleculesports.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Motul<h2></td> -->
-    <td>Motul</td>
-    <td><a href="https://www.motul.com/us/en-US/products?facets%5Bproduct_type%5D=737&facets%5Brange%5D=46" target="_blank" id="motul.com">motul.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Nitro Kart<h2></td> -->
-    <td>Nitro Kart</td>
-    <td><a href="https://nitro-kart.myshopify.com/" target="_blank" id="nitro-kart.myshopify.com">nitro-kart.myshopify.com</a></td>
-    <td>US</td>
-    <td>2016</td>
-    <td>Chassis, PPE (Personal Protective Equipment)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">OK1 The Orange Kart<h2></td> -->
-    <td>OK1 The Orange Kart</td>
-    <td><a href="https://ok1karting.com/" target="_blank" id="ok1karting.com">ok1karting.com</a></td>
-    <td>Italy</td>
-    <td></td>
-    <td>Chassis, Rental Kart</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">OPPAMA<h2></td> -->
-    <td>OPPAMA</td>
-    <td><a href="https://oppama.eu/" target="_blank" id="oppama.eu">oppama.eu</a></td>
-    <td>Netherlands</td>
-    <td></td>
-    <td>Tools</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">OTL Electro Kart<h2></td> -->
-    <td>OTL Electro Kart</td>
-    <td><a href="https://otlkart.com/" target="_blank" id="otlkart.com">otlkart.com</a></td>
-    <td>Italy</td>
-    <td>1996</td>
-    <td>Kart (Chassis + Engine/Powerunit)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Parolin<h2></td> -->
-    <td>Parolin</td>
-    <td><a href="https://www.parolinstore.com/en/index.php" target="_blank" id="parolinstore.com">parolinstore.com</a></td>
-    <td>Italy</td>
-    <td>1986</td>
-    <td>Chassis, Engine/Powerunit, Parts, PPE (Personal Protective Equipment), Rental Kart</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Phantom Racing Chassis<h2></td> -->
-    <td>Phantom Racing Chassis</td>
-    <td><a href="https://phantomchassis.com/index.html" target="_blank" id="phantomchassis.com">phantomchassis.com</a></td>
-    <td>US</td>
-    <td>1989</td>
-    <td>Chassis, Parts, Tools</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">PMC KART<h2></td> -->
-    <td>PMC KART</td>
-    <td><a href="https://www.pmckart.com/" target="_blank" id="pmckart.com">pmckart.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Chassis, Parts</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Pongratz Trailers<h2></td> -->
-    <td>Pongratz Trailers</td>
-    <td><a href="https://pongratztrailers.com/en/" target="_blank" id="pongratztrailers.com">pongratztrailers.com</a></td>
-    <td>Austria</td>
-    <td>1976</td>
-    <td>Transport</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Praga<h2></td> -->
-    <td>Praga</td>
-    <td><a href="https://pragaglobal.com/karts/" target="_blank" id="pragaglobal.com">pragaglobal.com</a></td>
-    <td>Italy</td>
-    <td></td>
-    <td>Chassis, Rental Kart</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">PRD Race Engines<h2></td> -->
-    <td>PRD Race Engines</td>
-    <td><a href="https://www.prdengines.com/" target="_blank" id="prdengines.com">prdengines.com</a></td>
-    <td>Australia</td>
-    <td>1995</td>
-    <td>Engine/Powerunit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">PRISMA Electronics<h2></td> -->
-    <td>PRISMA Electronics</td>
-    <td><a href="https://www.prismaelectronics.com/en" target="_blank" id="prismaelectronics.com">prismaelectronics.com</a></td>
-    <td>Italy</td>
-    <td>2005</td>
-    <td>Tools</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">REDSPEED Racing Kart<h2></td> -->
-    <td>REDSPEED Racing Kart</td>
-    <td><a href="http://www.redspeedkart.com/index_eng.php" target="_blank" id="redspeedkart.com">redspeedkart.com</a></td>
-    <td>Italy</td>
-    <td></td>
-    <td>Chassis, Parts, PPE (Personal Protective Equipment)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Ricciardo Kart<h2></td> -->
-    <td>Ricciardo Kart</td>
-    <td><a href="http://www.ricciardokart.com/" target="_blank" id="ricciardokart.com">ricciardokart.com</a></td>
-    <td>Italy</td>
-    <td>2015</td>
-    <td>Chassis</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Rotax Kart<h2></td> -->
-    <td>Rotax Kart</td>
-    <td><a href="https://www.rotax-kart.com/Home" target="_blank" id="rotax-kart.com">rotax-kart.com</a></td>
-    <td>Germany</td>
-    <td>1980</td>
-    <td>Engine/Powerunit, Parts</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Semel Kart<h2></td> -->
-    <td>Semel Kart</td>
-    <td><a href="https://www.semelkart.it/en" target="_blank" id="semelkart.it">semelkart.it</a></td>
-    <td>Italy</td>
-    <td>1973</td>
-    <td>Tools</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">SHALLER<h2></td> -->
-    <td>SHALLER</td>
-    <td><a href="https://www.shaller.com/" target="_blank" id="shaller.com">shaller.com</a></td>
-    <td>US</td>
-    <td>1982</td>
-    <td>Kart (Chassis + Engine/Powerunit), Parts</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Rotax Clothing<h2></td> -->
-    <td>Rotax Clothing</td>
-    <td><a href="https://rotax.com/fanshop/start/" target="_blank" id="rotax.com">rotax.com</a></td>
-    <td>Germany</td>
-    <td></td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">SODIKart<h2></td> -->
-    <td>SODIKart</td>
-    <td><a href="https://www.sodikart.com/en-gb/" target="_blank" id="sodikart.com">sodikart.com</a></td>
-    <td>France</td>
-    <td></td>
-    <td>Kart (Chassis + Engine/Powerunit), Rental Kart</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Stone Kart<h2></td> -->
-    <td>Stone Kart</td>
-    <td><a href="http://www.stone-kart.eu/" target="_blank" id="stone-kart.eu">stone-kart.eu</a></td>
-    <td>Slovenia</td>
-    <td></td>
-    <td>Tools</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Swissauto<h2></td> -->
-    <td>Swissauto</td>
-    <td><a href="https://www.swissauto.com/e/motor/projekt_detail.jsp?ID_Display=20000I" target="_blank" id="swissauto.com">swissauto.com</a></td>
-    <td>Switzerland</td>
-    <td>2000</td>
-    <td>Engine/Powerunit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Synergy Kart<h2></td> -->
-    <td>Synergy Kart</td>
-    <td><a href="https://synergykart.com/" target="_blank" id="synergykart.com">synergykart.com</a></td>
-    <td>UK</td>
-    <td>2014</td>
-    <td>Chassis, Kart (Chassis + Engine/Powerunit), Parts</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Tal KO Racing<h2></td> -->
-    <td>Tal KO Racing</td>
-    <td><a href="https://www.tal-ko.com/" target="_blank" id="tal-ko.com">tal-ko.com</a></td>
-    <td>UK</td>
-    <td>1961</td>
-    <td>Chassis, Engine/Powerunit, Parts</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">TB Kart<h2></td> -->
-    <td>TB Kart</td>
-    <td><a href="https://www.tbkart.it/en/home-en/" target="_blank" id="tbkart.it">tbkart.it</a></td>
-    <td>Italy</td>
-    <td>1918</td>
-    <td>Chassis, Rental Kart</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Teng Tools<h2></td> -->
-    <td>Teng Tools</td>
-    <td><a href="https://tengtoolsusa.com/" target="_blank" id="tengtoolsusa.com">tengtoolsusa.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Tools</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Fullerton Kart<h2></td> -->
-    <td>Fullerton Kart</td>
-    <td><a href="https://terryfullerton.co.uk/?page_id=149" target="_blank" id="terryfullerton.co.uk">terryfullerton.co.uk</a></td>
-    <td>UK</td>
-    <td></td>
-    <td>Chassis</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">ATOMICA<h2></td> -->
-    <td>ATOMICA</td>
-    <td><a href="http://www.theracelab.ca/atomica-racing-kart/" target="_blank" id="theracelab.ca">theracelab.ca</a></td>
-    <td>Canada</td>
-    <td>1991</td>
-    <td>Chassis</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Thunder Struck Motors<h2></td> -->
-    <td>Thunder Struck Motors</td>
-    <td><a href="https://www.thunderstruck-ev.com/motorcycle-and-kart-kits/" target="_blank" id="thunderstruck-ev.com">thunderstruck-ev.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Engine/Powerunit, Parts</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Tillotson<h2></td> -->
-    <td>Tillotson</td>
-    <td><a href="https://tillotson.ie/products/racing/" target="_blank" id="tillotson.ie">tillotson.ie</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Engine/Powerunit, Kart (Chassis + Engine/Powerunit), Parts</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">TM Racing<h2></td> -->
-    <td>TM Racing</td>
-    <td><a href="https://www.tmracing.it/kart/" target="_blank" id="tmracing.it">tmracing.it</a></td>
-    <td>Italy</td>
-    <td>1976</td>
-    <td>Engine/Powerunit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">tomkart<h2></td> -->
-    <td>tomkart</td>
-    <td><a href="https://www.tomkart.ch/en" target="_blank" id="tomkart.ch">tomkart.ch</a></td>
-    <td>Switzerland</td>
-    <td>2011</td>
-    <td>Rental Kart</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Tony Kart<h2></td> -->
-    <td>Tony Kart</td>
-    <td><a href="https://www.tonykart.com" target="_blank" id="tonykart.com">tonykart.com</a></td>
-    <td>Italy</td>
-    <td>1958</td>
-    <td>Chassis, Parts, PPE (Personal Protective Equipment), Rental Kart</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Torini Kart Engines<h2></td> -->
-    <td>Torini Kart Engines</td>
-    <td><a href="http://www.torini.com.au/index.php" target="_blank" id="torini.com.au">torini.com.au</a></td>
-    <td>Australia</td>
-    <td>1991</td>
-    <td>Engine/Powerunit, Parts, Tools</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Trac Tak<h2></td> -->
-    <td>Trac Tak</td>
-    <td><a href="https://tracktac.com/store/index.php?route=common/home" target="_blank" id="tracktac.com">tracktac.com</a></td>
-    <td>US</td>
-    <td>1950</td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">UNIPRO<h2></td> -->
-    <td>UNIPRO</td>
-    <td><a href="https://uniprolaptimer.com/product-category/unigo/" target="_blank" id="uniprolaptimer.com">uniprolaptimer.com</a></td>
-    <td>Denmark</td>
-    <td>1986</td>
-    <td>Tools</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">US Cargo<h2></td> -->
-    <td>US Cargo</td>
-    <td><a href="https://www.uscargo.com/index" target="_blank" id="uscargo.com">uscargo.com</a></td>
-    <td>US</td>
-    <td>1994</td>
-    <td>Transport</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Valhalla Racing<h2></td> -->
-    <td>Valhalla Racing</td>
-    <td><a href="https://www.valhallaracing.com/" target="_blank" id="valhallaracing.com">valhallaracing.com</a></td>
-    <td>US</td>
-    <td>2001</td>
-    <td>PPE (Personal Protective Equipment)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">VEMME KART<h2></td> -->
-    <td>VEMME KART</td>
-    <td><a href="https://vemmekart.com/" target="_blank" id="vemmekart.com">vemmekart.com</a></td>
-    <td>Italy</td>
-    <td></td>
-    <td>Chassis, PPE (Personal Protective Equipment)</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">VORTEX Engines<h2></td> -->
-    <td>VORTEX Engines</td>
-    <td><a href="http://www.vortex-engines.com/motori-mosaico_en.php" target="_blank" id="vortex-engines.com">vortex-engines.com</a></td>
-    <td>Italy</td>
-    <td>1995</td>
-    <td>Engine/Powerunit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">WRIGHT KARTS<h2></td> -->
-    <td>WRIGHT KARTS</td>
-    <td><a href="https://www.wrightkarts.co.uk/" target="_blank" id="wrightkarts.co.uk">wrightkarts.co.uk</a></td>
-    <td>UK</td>
-    <td></td>
-    <td>Chassis, Engine/Powerunit, Parts, Tools</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Xenon Kart<h2></td> -->
-    <td>Xenon Kart</td>
-    <td><a href="http://xenonkart.com/" target="_blank" id="xenonkart.com">xenonkart.com</a></td>
-    <td>UK</td>
-    <td></td>
-    <td>Chassis</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Yamaha Kart Engine<h2></td> -->
-    <td>Yamaha Kart Engine</td>
-    <td><a href="https://www.yamahamotorsports.com/kart-engine/models/kt100" target="_blank" id="yamahamotorsports.com">yamahamotorsports.com</a></td>
-    <td>Japan</td>
-    <td></td>
-    <td>Engine/Powerunit, Parts</td>
-  </tr>
-
-
-</table>
-
-<br>
-
-    <!-- <script type="text/javascript">
-        function tableToCSV() {
-
-            // Variable to store the final csv data
-            var csv_data = [];
-
-            // Get each row data
-            var rows = document.getElementsByTagName('tr');
-            for (var i = 0; i < rows.length; i++) {
-
-                // Get each column data
-                var cols = rows[i].querySelectorAll('td,th');
-
-                // Stores each csv row data
-                var csvrow = [];
-                for (var j = 0; j < cols.length; j++) {
-
-                    // Get the text data of each cell
-                    // of a row and push it to csvrow
-                    csvrow.push(cols[j].innerHTML);
-                }
-
-                // Combine each column value with comma
-                csv_data.push(csvrow.join(","));
-            }
-
-            // Combine each row data with new line character
-            csv_data = csv_data.join('\n');
-
-            // Call this function to download csv file
-            downloadCSVFile(csv_data);
-
-        }
-
-        function downloadCSVFile(csv_data) {
-
-            // Create CSV file object and feed
-            // our csv_data into it
-            CSVFile = new Blob([csv_data], {
-                type: "text/csv"
-            });
-
-            // Create to temporary link to initiate
-            // download process
-            var temp_link = document.createElement('a');
-
-            // Download csv file
-            temp_link.download = ;
-            var url = window.URL.createObjectURL(CSVFile);
-            temp_link.href = url;
-
-            // This link should not be displayed
-            temp_link.style.display = "none";
-            document.body.appendChild(temp_link);
-
-            // Automatically click the link to
-            // trigger download
-            temp_link.click();
-            document.body.removeChild(temp_link);
-        }
-    </script> -->
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-<p></p>
-<p></p>
-<hr>
-<p style="text-align: left; font-family: 'Lato';">115 brands indexed</p>
-<p style="text-align: left; font-family: 'Lato';">Last updated 8 May 2022 23:37</p>
-<p style="text-align: left; font-family: 'Lato';">Side project</p>
-<p style="text-align: left; font-family: 'Lato';">Interested to contribute? Contact me: n1c [@] indexall.io</p>
+    <div class="header">
+        <a href = "https://indexall.io" target = "_self"> 
+            <img src="https://indexall.io/indeXall_white.svg" alt="indeXall.io" width="100" height="100" /> 
+         </a>
+    </div>
+    
+    
+    <h1 class="h1">List of 230 Archery brands</h1>
+
+    <table class="table table-hoverable table-bordered">
+        
+    <tr>
+        <th scope="col"></th>
+        <th scope="col">Website</th>
+        <th scope="col">Country</th>
+        <th scope="col">Est.</th>
+        <th scope="col">Products</th>
+    </tr>
+
+    
+    <tr>
+        <td>7 Kart</td>
+        <td><a href="http://7kart.co.uk/" target="_blank" id="7kart.co.uk">7kart.co.uk</a></td>
+        <td class="nowrap">UK</td>
+        <td>2002</td>
+        <td>Chassis, Kart (Chassis + Engine/Powerunit), Parts</td>
+    </tr>
+    
+    <tr>
+        <td>AIM Technologies</td>
+        <td><a href="https://www.aimtechnologies.com/kart/" target="_blank" id="aimtechnologies.com">aimtechnologies.com</a></td>
+        <td class="nowrap">UK</td>
+        <td></td>
+        <td>Tools</td>
+    </tr>
+    
+    <tr>
+        <td>Axiro </td>
+        <td><a href="https://www.aixro.co.uk/shop/sports-rotary-engines/" target="_blank" id="aixro.co.uk">aixro.co.uk</a></td>
+        <td class="nowrap">UK</td>
+        <td></td>
+        <td>Engine/Powerunit</td>
+    </tr>
+    
+    <tr>
+        <td>Alpha Karting</td>
+        <td><a href="https://www.alpha-karting.com/" target="_blank" id="alpha-karting.com">alpha-karting.com</a></td>
+        <td class="nowrap">France</td>
+        <td>1989</td>
+        <td>Chassis, Rental Kart</td>
+    </tr>
+    
+    <tr>
+        <td>AlpineStars</td>
+        <td><a href="https://www.alpinestars.com/collections/karting?page=2" target="_blank" id="alpinestars.com">alpinestars.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1963</td>
+        <td>PPE (Personal Protective Equipment)</td>
+    </tr>
+    
+    <tr>
+        <td>Alutrail</td>
+        <td><a href="http://www.alutrail.com/" target="_blank" id="alutrail.com">alutrail.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1996</td>
+        <td>Transport</td>
+    </tr>
+    
+    <tr>
+        <td>AMSOIL</td>
+        <td><a href="https://www.amsoil.com/c/racing/114/" target="_blank" id="amsoil.com">amsoil.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1972</td>
+        <td></td>
+    </tr>
+    
+    <tr>
+        <td>Anssems</td>
+        <td><a href="https://anssems.com/" target="_blank" id="anssems.com">anssems.com</a></td>
+        <td class="nowrap">Germany</td>
+        <td></td>
+        <td>Transport</td>
+    </tr>
+    
+    <tr>
+        <td>Arai Helmet</td>
+        <td><a href="https://www.araihelmet.eu/en/collection/detail/sk-6" target="_blank" id="araihelmet.eu">araihelmet.eu</a></td>
+        <td class="nowrap">Netherlands</td>
+        <td></td>
+        <td>PPE (Personal Protective Equipment)</td>
+    </tr>
+    
+    <tr>
+        <td>Bell Racing</td>
+        <td><a href="https://bellracing.eu/" target="_blank" id="bellracing.eu">bellracing.eu</a></td>
+        <td class="nowrap">Italy</td>
+        <td>1954</td>
+        <td>PPE (Personal Protective Equipment)</td>
+    </tr>
+    
+    <tr>
+        <td>Bengio HST</td>
+        <td><a href="http://www.bengiohst.it/?lang=en" target="_blank" id="bengiohst.it">bengiohst.it</a></td>
+        <td class="nowrap">Italy</td>
+        <td></td>
+        <td>PPE (Personal Protective Equipment)</td>
+    </tr>
+    
+    <tr>
+        <td>BENIK KART</td>
+        <td><a href="http://www.benik-kart.com/" target="_blank" id="benik-kart.com">benik-kart.com</a></td>
+        <td class="nowrap">US</td>
+        <td>2013</td>
+        <td>Chassis, Parts, PPE (Personal Protective Equipment)</td>
+    </tr>
+    
+    <tr>
+        <td>B G Racing</td>
+        <td><a href="https://www.bg-racing.co.uk" target="_blank" id="bg-racing.co.uk">bg-racing.co.uk</a></td>
+        <td class="nowrap">UK</td>
+        <td>1963</td>
+        <td>Tools</td>
+    </tr>
+    
+    <tr>
+        <td>BigTex Trailers</td>
+        <td><a href="https://www.bigtextrailers.com/" target="_blank" id="bigtextrailers.com">bigtextrailers.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1990</td>
+        <td>Transport</td>
+    </tr>
+    
+    <tr>
+        <td>BirelART Racing Kart</td>
+        <td><a href="http://birelart.com/our-karts/kz/description" target="_blank" id="birelart.com">birelart.com</a></td>
+        <td class="nowrap">Italy</td>
+        <td>1974</td>
+        <td>Chassis, PPE (Personal Protective Equipment), Rental Kart</td>
+    </tr>
+    
+    <tr>
+        <td>BIZKARTS</td>
+        <td><a href="https://www.bizkarts.com/" target="_blank" id="bizkarts.com">bizkarts.com</a></td>
+        <td class="nowrap">UK</td>
+        <td>2017</td>
+        <td>Chassis, Kart (Chassis + Engine/Powerunit), Parts, PPE (Personal Protective Equipment), Rental Kart</td>
+    </tr>
+    
+    <tr>
+        <td>Blendzall</td>
+        <td><a href="https://blendzall.com/" target="_blank" id="blendzall.com">blendzall.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1959</td>
+        <td></td>
+    </tr>
+    
+    <tr>
+        <td>Blue Shock Race</td>
+        <td><a href="http://blueshockrace.com/" target="_blank" id="blueshockrace.com">blueshockrace.com</a></td>
+        <td class="nowrap">Latvia</td>
+        <td>2014</td>
+        <td>Kart (Chassis + Engine/Powerunit), Rental Kart</td>
+    </tr>
+    
+    <tr>
+        <td>BOSCH Motorsports</td>
+        <td><a href="https://www.bosch-motorsport.com/content/downloads/Raceparts/en-GB/66970635117998475.html" target="_blank" id="bosch-motorsport.com">bosch-motorsport.com</a></td>
+        <td class="nowrap">Germany</td>
+        <td></td>
+        <td>Engine/Powerunit, Parts</td>
+    </tr>
+    
+    <tr>
+        <td>BRB Karts</td>
+        <td><a href="http://www.brbkarts.com/" target="_blank" id="brbkarts.com">brbkarts.com</a></td>
+        <td class="nowrap">Spain</td>
+        <td></td>
+        <td>Chassis</td>
+    </tr>
+    
+    <tr>
+        <td>BRIGGS & STRATTON Racing Engine</td>
+        <td><a href="https://www.briggsracing.com/racing-engines" target="_blank" id="briggsracing.com">briggsracing.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1991</td>
+        <td>Engine/Powerunit</td>
+    </tr>
+    
+    <tr>
+        <td>Carmate Trailers</td>
+        <td><a href="https://carmate-trailers.com/" target="_blank" id="carmate-trailers.com">carmate-trailers.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1974</td>
+        <td>Transport</td>
+    </tr>
+    
+    <tr>
+        <td>CKR</td>
+        <td><a href="https://www.ckrgokart.it/" target="_blank" id="ckrgokart.it">ckrgokart.it</a></td>
+        <td class="nowrap">Italy</td>
+        <td>2000</td>
+        <td>Chassis, Parts, PPE (Personal Protective Equipment), Tools</td>
+    </tr>
+    
+    <tr>
+        <td>CL Charles Leclerc Kart</td>
+        <td><a href="https://www.clkarting.com/" target="_blank" id="clkarting.com">clkarting.com</a></td>
+        <td class="nowrap">Italy</td>
+        <td></td>
+        <td>Chassis</td>
+    </tr>
+    
+    <tr>
+        <td>Comer TopKart</td>
+        <td><a href="https://www.comer-topkart.it/" target="_blank" id="comer-topkart.it">comer-topkart.it</a></td>
+        <td class="nowrap">Italy</td>
+        <td>1980</td>
+        <td>Chassis, Engine/Powerunit</td>
+    </tr>
+    
+    <tr>
+        <td>CORSA Racing Kart</td>
+        <td><a href="https://www.corsaracingkart.com/index.php" target="_blank" id="corsaracingkart.com">corsaracingkart.com</a></td>
+        <td class="nowrap">US</td>
+        <td>2001</td>
+        <td>Chassis, Parts, PPE (Personal Protective Equipment), Tools</td>
+    </tr>
+    
+    <tr>
+        <td>COYOTE Racing Chassis</td>
+        <td><a href="https://coyotekarts.com/" target="_blank" id="coyotekarts.com">coyotekarts.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1976</td>
+        <td>Chassis, Kart (Chassis + Engine/Powerunit), Parts, PPE (Personal Protective Equipment)</td>
+    </tr>
+    
+    <tr>
+        <td>Custom Race Wear</td>
+        <td><a href="https://www.customracewear.co.uk/" target="_blank" id="customracewear.co.uk">customracewear.co.uk</a></td>
+        <td class="nowrap">UK</td>
+        <td></td>
+        <td>PPE (Personal Protective Equipment)</td>
+    </tr>
+    
+    <tr>
+        <td>DFM Racing</td>
+        <td><a href="https://www.dfmracing.it/" target="_blank" id="dfmracing.it">dfmracing.it</a></td>
+        <td class="nowrap">Italy</td>
+        <td></td>
+        <td>Chassis</td>
+    </tr>
+    
+    <tr>
+        <td>DR Racing Kart</td>
+        <td><a href="https://www.drracingkart.it/en" target="_blank" id="drracingkart.it">drracingkart.it</a></td>
+        <td class="nowrap">Italy</td>
+        <td>1996</td>
+        <td>Chassis, PPE (Personal Protective Equipment)</td>
+    </tr>
+    
+    <tr>
+        <td>Eagle Kart System</td>
+        <td><a href="https://www.ekskart.com/" target="_blank" id="ekskart.com">ekskart.com</a></td>
+        <td class="nowrap">Italy</td>
+        <td></td>
+        <td>Chassis, Parts, Rental Kart</td>
+    </tr>
+    
+    <tr>
+        <td>Electric Karting</td>
+        <td><a href="https://www.electrickarting.com/" target="_blank" id="electrickarting.com">electrickarting.com</a></td>
+        <td class="nowrap">Belgium</td>
+        <td></td>
+        <td>Engine/Powerunit</td>
+    </tr>
+    
+    <tr>
+        <td>Electric Motorsports</td>
+        <td><a href="https://www.electricmotorsport.com/applications/karting" target="_blank" id="electricmotorsport.com">electricmotorsport.com</a></td>
+        <td class="nowrap">US</td>
+        <td>2001</td>
+        <td>Engine/Powerunit, Parts</td>
+    </tr>
+    
+    <tr>
+        <td>Mach1 Kart</td>
+        <td><a href="https://en.mach1kart.com/" target="_blank" id="en.mach1kart.com">en.mach1kart.com</a></td>
+        <td class="nowrap">Germany</td>
+        <td>1969</td>
+        <td>Chassis, PPE (Personal Protective Equipment), Rental Kart</td>
+    </tr>
+    
+    <tr>
+        <td>Rimo Germany</td>
+        <td><a href="https://en.rimo-germany.com/" target="_blank" id="en.rimo-germany.com">en.rimo-germany.com</a></td>
+        <td class="nowrap">Germany</td>
+        <td>1999</td>
+        <td>Chassis, Kart (Chassis + Engine/Powerunit), Parts</td>
+    </tr>
+    
+    <tr>
+        <td>Energy Racing Kart</td>
+        <td><a href="http://www.energycorse.com/uk/index.asp" target="_blank" id="energycorse.com">energycorse.com</a></td>
+        <td class="nowrap">Italy</td>
+        <td>1997</td>
+        <td>Chassis, PPE (Personal Protective Equipment)</td>
+    </tr>
+    
+    <tr>
+        <td>Honda Go Kart Engines</td>
+        <td><a href="https://engines.honda.com/models/application/small-vehicles" target="_blank" id="engines.honda.com">engines.honda.com</a></td>
+        <td class="nowrap">Japan</td>
+        <td>1953</td>
+        <td>Engine/Powerunit, Parts</td>
+    </tr>
+    
+    <tr>
+        <td>EVS</td>
+        <td><a href="https://www.evs-sports.com/collections/race-collars" target="_blank" id="evs-sports.com">evs-sports.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>PPE (Personal Protective Equipment)</td>
+    </tr>
+    
+    <tr>
+        <td>EXPRIT Racing Kart</td>
+        <td><a href="http://www.expritkart.com/index_eng.php" target="_blank" id="expritkart.com">expritkart.com</a></td>
+        <td class="nowrap">Italy</td>
+        <td></td>
+        <td>Chassis, Parts, PPE (Personal Protective Equipment)</td>
+    </tr>
+    
+    <tr>
+        <td>FREEMRACING</td>
+        <td><a href="http://www.freemracing.it/?lang=en" target="_blank" id="freemracing.it">freemracing.it</a></td>
+        <td class="nowrap">Italy</td>
+        <td>2001</td>
+        <td>PPE (Personal Protective Equipment)</td>
+    </tr>
+    
+    <tr>
+        <td>GATEL</td>
+        <td><a href="https://gatel.it/en/" target="_blank" id="gatel.it">gatel.it</a></td>
+        <td class="nowrap">Italy</td>
+        <td>1985</td>
+        <td>Tools</td>
+    </tr>
+    
+    <tr>
+        <td>GP Raing Kart</td>
+        <td><a href="https://www.gpracingkarts.com/" target="_blank" id="gpracingkarts.com">gpracingkarts.com</a></td>
+        <td class="nowrap">Italy</td>
+        <td>1995</td>
+        <td>Chassis</td>
+    </tr>
+    
+    <tr>
+        <td>HAASE</td>
+        <td><a href="http://www.haase.it/index.php?ln=en" target="_blank" id="haase.it">haase.it</a></td>
+        <td class="nowrap">Italy</td>
+        <td>1991</td>
+        <td>Chassis, Parts, PPE (Personal Protective Equipment), Tools</td>
+    </tr>
+    
+    <tr>
+        <td>Helmade</td>
+        <td><a href="https://www.helmade.com/en_us/" target="_blank" id="helmade.com">helmade.com</a></td>
+        <td class="nowrap">Germany</td>
+        <td>2015</td>
+        <td>PPE (Personal Protective Equipment)</td>
+    </tr>
+    
+    <tr>
+        <td>Humbaur</td>
+        <td><a href="https://www.humbaur.com/en/trailer/single-axle-trailers/" target="_blank" id="humbaur.com">humbaur.com</a></td>
+        <td class="nowrap"></td>
+        <td></td>
+        <td>Transport</td>
+    </tr>
+    
+    <tr>
+        <td>IAME </td>
+        <td><a href="https://www.iamekarting.com/#" target="_blank" id="iamekarting.com">iamekarting.com</a></td>
+        <td class="nowrap">Italy</td>
+        <td>1968</td>
+        <td>Engine/Powerunit</td>
+    </tr>
+    
+    <tr>
+        <td>ID Engines</td>
+        <td><a href="https://id-engines.com/" target="_blank" id="id-engines.com">id-engines.com</a></td>
+        <td class="nowrap">Netherlands</td>
+        <td></td>
+        <td>Engine/Powerunit</td>
+    </tr>
+    
+    <tr>
+        <td>iKartindy</td>
+        <td><a href="http://ikartindy.com/" target="_blank" id="ikartindy.com">ikartindy.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Chassis, Kart (Chassis + Engine/Powerunit), Parts</td>
+    </tr>
+    
+    <tr>
+        <td>Impact</td>
+        <td><a href="https://www.impactraceproducts.com/default.asp" target="_blank" id="impactraceproducts.com">impactraceproducts.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>PPE (Personal Protective Equipment)</td>
+    </tr>
+    
+    <tr>
+        <td>INTREPID</td>
+        <td><a href="https://www.intrepid-kart.com/en" target="_blank" id="intrepid-kart.com">intrepid-kart.com</a></td>
+        <td class="nowrap">Italy</td>
+        <td></td>
+        <td>Chassis, Parts</td>
+    </tr>
+    
+    <tr>
+        <td>Invader Kart</td>
+        <td><a href="https://www.invaderkart.com/" target="_blank" id="invaderkart.com">invaderkart.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1974</td>
+        <td>Chassis, Parts</td>
+    </tr>
+    
+    <tr>
+        <td>J3 Competition - COMPKART</td>
+        <td><a href="https://www.j3competition.com/" target="_blank" id="j3competition.com">j3competition.com</a></td>
+        <td class="nowrap">US</td>
+        <td>2008</td>
+        <td>Chassis, Engine/Powerunit, Parts</td>
+    </tr>
+    
+    <tr>
+        <td>Jecko</td>
+        <td><a href="https://jecko.uk/" target="_blank" id="jecko.uk">jecko.uk</a></td>
+        <td class="nowrap">UK</td>
+        <td></td>
+        <td>PPE (Personal Protective Equipment)</td>
+    </tr>
+    
+    <tr>
+        <td>JM Pure Karting</td>
+        <td><a href="http://www.jmracing.co.uk/" target="_blank" id="jmracing.co.uk">jmracing.co.uk</a></td>
+        <td class="nowrap">UK</td>
+        <td>2003</td>
+        <td>Kart (Chassis + Engine/Powerunit)</td>
+    </tr>
+    
+    <tr>
+        <td>CRG</td>
+        <td><a href="https://kartcrg.com/?lang=en" target="_blank" id="kartcrg.com">kartcrg.com</a></td>
+        <td class="nowrap">Italy</td>
+        <td>1986</td>
+        <td>Chassis, PPE (Personal Protective Equipment), Rental Kart, Tools</td>
+    </tr>
+    
+    <tr>
+        <td>KART REPUBLIC</td>
+        <td><a href="https://www.kartrepublic.com/" target="_blank" id="kartrepublic.com">kartrepublic.com</a></td>
+        <td class="nowrap">Italy</td>
+        <td></td>
+        <td>Chassis</td>
+    </tr>
+    
+    <tr>
+        <td>Kaufman Trailers</td>
+        <td><a href="https://www.kaufmantrailers.com/" target="_blank" id="kaufmantrailers.com">kaufmantrailers.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1987</td>
+        <td>Transport</td>
+    </tr>
+    
+    <tr>
+        <td>Kinetik Automotive</td>
+        <td><a href="https://kinetikautomotive.com/karting/#karting-concept" target="_blank" id="kinetikautomotive.com">kinetikautomotive.com</a></td>
+        <td class="nowrap">Bulgaria</td>
+        <td></td>
+        <td>Kart (Chassis + Engine/Powerunit)</td>
+    </tr>
+    
+    <tr>
+        <td>Klotz Lube</td>
+        <td><a href="https://klotzlube.com/" target="_blank" id="klotzlube.com">klotzlube.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1961</td>
+        <td></td>
+    </tr>
+    
+    <tr>
+        <td>KOSMIC Racing Kart</td>
+        <td><a href="http://www.kosmickart.com/marchio_eng.php" target="_blank" id="kosmickart.com">kosmickart.com</a></td>
+        <td class="nowrap">Italy</td>
+        <td>1996</td>
+        <td>Chassis, Parts, PPE (Personal Protective Equipment)</td>
+    </tr>
+    
+    <tr>
+        <td>Kubica Racing Kart</td>
+        <td><a href="http://www.kubicaracingkart.com/" target="_blank" id="kubicaracingkart.com">kubicaracingkart.com</a></td>
+        <td class="nowrap">Italy</td>
+        <td></td>
+        <td>Chassis</td>
+    </tr>
+    
+    <tr>
+        <td>LENZO KART</td>
+        <td><a href="http://www.lenzokart.com/eng/index.html" target="_blank" id="lenzokart.com">lenzokart.com</a></td>
+        <td class="nowrap">Italy</td>
+        <td></td>
+        <td>Chassis, Engine/Powerunit, Parts, PPE (Personal Protective Equipment)</td>
+    </tr>
+    
+    <tr>
+        <td>Lion Kart</td>
+        <td><a href="https://lion-kart.com/" target="_blank" id="lion-kart.com">lion-kart.com</a></td>
+        <td class="nowrap">Serbia</td>
+        <td>2017</td>
+        <td>Chassis</td>
+    </tr>
+    
+    <tr>
+        <td>Longacre</td>
+        <td><a href="http://www.longacreracing.com/" target="_blank" id="longacreracing.com">longacreracing.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1978</td>
+        <td>Tools</td>
+    </tr>
+    
+    <tr>
+        <td>Mad Croc Kart</td>
+        <td><a href="https://madoldnut.com/collections/madcroc" target="_blank" id="madoldnut.com">madoldnut.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Chassis</td>
+    </tr>
+    
+    <tr>
+        <td>Maranello Racing Kart</td>
+        <td><a href="https://www.maranellokart.com/en" target="_blank" id="maranellokart.com">maranellokart.com</a></td>
+        <td class="nowrap">Italy</td>
+        <td>1999</td>
+        <td>Chassis, PPE (Personal Protective Equipment)</td>
+    </tr>
+    
+    <tr>
+        <td>Margay Racing</td>
+        <td><a href="https://margay.com/" target="_blank" id="margay.com">margay.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Chassis, Kart (Chassis + Engine/Powerunit)</td>
+    </tr>
+    
+    <tr>
+        <td>Mega Engine</td>
+        <td><a href="https://www.mega-engine.com/en/mega-kart/mega-engine-r01/products/mega-engine-r01/" target="_blank" id="mega-engine.com">mega-engine.com</a></td>
+        <td class="nowrap">Germany</td>
+        <td></td>
+        <td>Engine/Powerunit</td>
+    </tr>
+    
+    <tr>
+        <td>Meswel</td>
+        <td><a href="https://www.meswel.com/" target="_blank" id="meswel.com">meswel.com</a></td>
+        <td class="nowrap">Netherlands</td>
+        <td></td>
+        <td>Engine/Powerunit</td>
+    </tr>
+    
+    <tr>
+        <td>MGM</td>
+        <td><a href="https://mgmchassis.com/" target="_blank" id="mgmchassis.com">mgmchassis.com</a></td>
+        <td class="nowrap">US</td>
+        <td>2009</td>
+        <td>Chassis, Parts</td>
+    </tr>
+    
+    <tr>
+        <td>MIR Race Line</td>
+        <td><a href="https://mirraceline.com/en/product-category/karting-en-2/kart-suits/" target="_blank" id="mirraceline.com">mirraceline.com</a></td>
+        <td class="nowrap">Italy</td>
+        <td>1983</td>
+        <td>PPE (Personal Protective Equipment)</td>
+    </tr>
+    
+    <tr>
+        <td>Modena Engines</td>
+        <td><a href="https://www.modenaengines.it/en/" target="_blank" id="modenaengines.it">modenaengines.it</a></td>
+        <td class="nowrap">Italy</td>
+        <td></td>
+        <td>Engine/Powerunit</td>
+    </tr>
+    
+    <tr>
+        <td>Molecule Sports</td>
+        <td><a href="https://www.moleculesports.com/motorsports/" target="_blank" id="moleculesports.com">moleculesports.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td></td>
+    </tr>
+    
+    <tr>
+        <td>Motul</td>
+        <td><a href="https://www.motul.com/us/en-US/products?facets%5Bproduct_type%5D=737&facets%5Brange%5D=46" target="_blank" id="motul.com">motul.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td></td>
+    </tr>
+    
+    <tr>
+        <td>Nitro Kart</td>
+        <td><a href="https://nitro-kart.myshopify.com/" target="_blank" id="nitro-kart.myshopify.com">nitro-kart.myshopify.com</a></td>
+        <td class="nowrap">US</td>
+        <td>2016</td>
+        <td>Chassis, PPE (Personal Protective Equipment)</td>
+    </tr>
+    
+    <tr>
+        <td>OK1 The Orange Kart</td>
+        <td><a href="https://ok1karting.com/" target="_blank" id="ok1karting.com">ok1karting.com</a></td>
+        <td class="nowrap">Italy</td>
+        <td></td>
+        <td>Chassis, Rental Kart</td>
+    </tr>
+    
+    <tr>
+        <td>OPPAMA</td>
+        <td><a href="https://oppama.eu/" target="_blank" id="oppama.eu">oppama.eu</a></td>
+        <td class="nowrap">Netherlands</td>
+        <td></td>
+        <td>Tools</td>
+    </tr>
+    
+    <tr>
+        <td>OTL Electro Kart</td>
+        <td><a href="https://otlkart.com/" target="_blank" id="otlkart.com">otlkart.com</a></td>
+        <td class="nowrap">Italy</td>
+        <td>1996</td>
+        <td>Kart (Chassis + Engine/Powerunit)</td>
+    </tr>
+    
+    <tr>
+        <td>Parolin</td>
+        <td><a href="https://www.parolinstore.com/en/index.php" target="_blank" id="parolinstore.com">parolinstore.com</a></td>
+        <td class="nowrap">Italy</td>
+        <td>1986</td>
+        <td>Chassis, Engine/Powerunit, Parts, PPE (Personal Protective Equipment), Rental Kart</td>
+    </tr>
+    
+    <tr>
+        <td>Phantom Racing Chassis</td>
+        <td><a href="https://phantomchassis.com/index.html" target="_blank" id="phantomchassis.com">phantomchassis.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1989</td>
+        <td>Chassis, Parts, Tools</td>
+    </tr>
+    
+    <tr>
+        <td>PMC KART</td>
+        <td><a href="https://www.pmckart.com/" target="_blank" id="pmckart.com">pmckart.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Chassis, Parts</td>
+    </tr>
+    
+    <tr>
+        <td>Pongratz Trailers</td>
+        <td><a href="https://pongratztrailers.com/en/" target="_blank" id="pongratztrailers.com">pongratztrailers.com</a></td>
+        <td class="nowrap">Austria</td>
+        <td>1976</td>
+        <td>Transport</td>
+    </tr>
+    
+    <tr>
+        <td>Praga</td>
+        <td><a href="https://pragaglobal.com/karts/" target="_blank" id="pragaglobal.com">pragaglobal.com</a></td>
+        <td class="nowrap">Italy</td>
+        <td></td>
+        <td>Chassis, Rental Kart</td>
+    </tr>
+    
+    <tr>
+        <td>PRD Race Engines</td>
+        <td><a href="https://www.prdengines.com/" target="_blank" id="prdengines.com">prdengines.com</a></td>
+        <td class="nowrap">Australia</td>
+        <td>1995</td>
+        <td>Engine/Powerunit</td>
+    </tr>
+    
+    <tr>
+        <td>PRISMA Electronics</td>
+        <td><a href="https://www.prismaelectronics.com/en" target="_blank" id="prismaelectronics.com">prismaelectronics.com</a></td>
+        <td class="nowrap">Italy</td>
+        <td>2005</td>
+        <td>Tools</td>
+    </tr>
+    
+    <tr>
+        <td>REDSPEED Racing Kart</td>
+        <td><a href="http://www.redspeedkart.com/index_eng.php" target="_blank" id="redspeedkart.com">redspeedkart.com</a></td>
+        <td class="nowrap">Italy</td>
+        <td></td>
+        <td>Chassis, Parts, PPE (Personal Protective Equipment)</td>
+    </tr>
+    
+    <tr>
+        <td>Ricciardo Kart</td>
+        <td><a href="http://www.ricciardokart.com/" target="_blank" id="ricciardokart.com">ricciardokart.com</a></td>
+        <td class="nowrap">Italy</td>
+        <td>2015</td>
+        <td>Chassis</td>
+    </tr>
+    
+    <tr>
+        <td>Rotax Kart</td>
+        <td><a href="https://www.rotax-kart.com/Home" target="_blank" id="rotax-kart.com">rotax-kart.com</a></td>
+        <td class="nowrap">Germany</td>
+        <td>1980</td>
+        <td>Engine/Powerunit, Parts</td>
+    </tr>
+    
+    <tr>
+        <td>Semel Kart</td>
+        <td><a href="https://www.semelkart.it/en" target="_blank" id="semelkart.it">semelkart.it</a></td>
+        <td class="nowrap">Italy</td>
+        <td>1973</td>
+        <td>Tools</td>
+    </tr>
+    
+    <tr>
+        <td>SHALLER</td>
+        <td><a href="https://www.shaller.com/" target="_blank" id="shaller.com">shaller.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1982</td>
+        <td>Kart (Chassis + Engine/Powerunit), Parts</td>
+    </tr>
+    
+    <tr>
+        <td>Rotax Clothing</td>
+        <td><a href="https://rotax.com/fanshop/start/" target="_blank" id="rotax.com">rotax.com</a></td>
+        <td class="nowrap">Germany</td>
+        <td></td>
+        <td></td>
+    </tr>
+    
+    <tr>
+        <td>SODIKart</td>
+        <td><a href="https://www.sodikart.com/en-gb/" target="_blank" id="sodikart.com">sodikart.com</a></td>
+        <td class="nowrap">France</td>
+        <td></td>
+        <td>Kart (Chassis + Engine/Powerunit), Rental Kart</td>
+    </tr>
+    
+    <tr>
+        <td>Stone Kart</td>
+        <td><a href="http://www.stone-kart.eu/" target="_blank" id="stone-kart.eu">stone-kart.eu</a></td>
+        <td class="nowrap">Slovenia</td>
+        <td></td>
+        <td>Tools</td>
+    </tr>
+    
+    <tr>
+        <td>Swissauto</td>
+        <td><a href="https://www.swissauto.com/e/motor/projekt_detail.jsp?ID_Display=20000I" target="_blank" id="swissauto.com">swissauto.com</a></td>
+        <td class="nowrap">Switzerland</td>
+        <td>2000</td>
+        <td>Engine/Powerunit</td>
+    </tr>
+    
+    <tr>
+        <td>Synergy Kart</td>
+        <td><a href="https://synergykart.com/" target="_blank" id="synergykart.com">synergykart.com</a></td>
+        <td class="nowrap">UK</td>
+        <td>2014</td>
+        <td>Chassis, Kart (Chassis + Engine/Powerunit), Parts</td>
+    </tr>
+    
+    <tr>
+        <td>Tal KO Racing</td>
+        <td><a href="https://www.tal-ko.com/" target="_blank" id="tal-ko.com">tal-ko.com</a></td>
+        <td class="nowrap">UK</td>
+        <td>1961</td>
+        <td>Chassis, Engine/Powerunit, Parts</td>
+    </tr>
+    
+    <tr>
+        <td>TB Kart</td>
+        <td><a href="https://www.tbkart.it/en/home-en/" target="_blank" id="tbkart.it">tbkart.it</a></td>
+        <td class="nowrap">Italy</td>
+        <td>1918</td>
+        <td>Chassis, Rental Kart</td>
+    </tr>
+    
+    <tr>
+        <td>Teng Tools</td>
+        <td><a href="https://tengtoolsusa.com/" target="_blank" id="tengtoolsusa.com">tengtoolsusa.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Tools</td>
+    </tr>
+    
+    <tr>
+        <td>Fullerton Kart</td>
+        <td><a href="https://terryfullerton.co.uk/?page_id=149" target="_blank" id="terryfullerton.co.uk">terryfullerton.co.uk</a></td>
+        <td class="nowrap">UK</td>
+        <td></td>
+        <td>Chassis</td>
+    </tr>
+    
+    <tr>
+        <td>ATOMICA</td>
+        <td><a href="http://www.theracelab.ca/atomica-racing-kart/" target="_blank" id="theracelab.ca">theracelab.ca</a></td>
+        <td class="nowrap">Canada</td>
+        <td>1991</td>
+        <td>Chassis</td>
+    </tr>
+    
+    <tr>
+        <td>Thunder Struck Motors</td>
+        <td><a href="https://www.thunderstruck-ev.com/motorcycle-and-kart-kits/" target="_blank" id="thunderstruck-ev.com">thunderstruck-ev.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Engine/Powerunit, Parts</td>
+    </tr>
+    
+    <tr>
+        <td>Tillotson</td>
+        <td><a href="https://tillotson.ie/products/racing/" target="_blank" id="tillotson.ie">tillotson.ie</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Engine/Powerunit, Kart (Chassis + Engine/Powerunit), Parts</td>
+    </tr>
+    
+    <tr>
+        <td>TM Racing</td>
+        <td><a href="https://www.tmracing.it/kart/" target="_blank" id="tmracing.it">tmracing.it</a></td>
+        <td class="nowrap">Italy</td>
+        <td>1976</td>
+        <td>Engine/Powerunit</td>
+    </tr>
+    
+    <tr>
+        <td>tomkart</td>
+        <td><a href="https://www.tomkart.ch/en" target="_blank" id="tomkart.ch">tomkart.ch</a></td>
+        <td class="nowrap">Switzerland</td>
+        <td>2011</td>
+        <td>Rental Kart</td>
+    </tr>
+    
+    <tr>
+        <td>Tony Kart</td>
+        <td><a href="https://www.tonykart.com" target="_blank" id="tonykart.com">tonykart.com</a></td>
+        <td class="nowrap">Italy</td>
+        <td>1958</td>
+        <td>Chassis, Parts, PPE (Personal Protective Equipment), Rental Kart</td>
+    </tr>
+    
+    <tr>
+        <td>Torini Kart Engines</td>
+        <td><a href="http://www.torini.com.au/index.php" target="_blank" id="torini.com.au">torini.com.au</a></td>
+        <td class="nowrap">Australia</td>
+        <td>1991</td>
+        <td>Engine/Powerunit, Parts, Tools</td>
+    </tr>
+    
+    <tr>
+        <td>Trac Tak</td>
+        <td><a href="https://tracktac.com/store/index.php?route=common/home" target="_blank" id="tracktac.com">tracktac.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1950</td>
+        <td></td>
+    </tr>
+    
+    <tr>
+        <td>UNIPRO</td>
+        <td><a href="https://uniprolaptimer.com/product-category/unigo/" target="_blank" id="uniprolaptimer.com">uniprolaptimer.com</a></td>
+        <td class="nowrap">Denmark</td>
+        <td>1986</td>
+        <td>Tools</td>
+    </tr>
+    
+    <tr>
+        <td>US Cargo</td>
+        <td><a href="https://www.uscargo.com/index" target="_blank" id="uscargo.com">uscargo.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1994</td>
+        <td>Transport</td>
+    </tr>
+    
+    <tr>
+        <td>Valhalla Racing</td>
+        <td><a href="https://www.valhallaracing.com/" target="_blank" id="valhallaracing.com">valhallaracing.com</a></td>
+        <td class="nowrap">US</td>
+        <td>2001</td>
+        <td>PPE (Personal Protective Equipment)</td>
+    </tr>
+    
+    <tr>
+        <td>VEMME KART</td>
+        <td><a href="https://vemmekart.com/" target="_blank" id="vemmekart.com">vemmekart.com</a></td>
+        <td class="nowrap">Italy</td>
+        <td></td>
+        <td>Chassis, PPE (Personal Protective Equipment)</td>
+    </tr>
+    
+    <tr>
+        <td>VORTEX Engines</td>
+        <td><a href="http://www.vortex-engines.com/motori-mosaico_en.php" target="_blank" id="vortex-engines.com">vortex-engines.com</a></td>
+        <td class="nowrap">Italy</td>
+        <td>1995</td>
+        <td>Engine/Powerunit</td>
+    </tr>
+    
+    <tr>
+        <td>WRIGHT KARTS</td>
+        <td><a href="https://www.wrightkarts.co.uk/" target="_blank" id="wrightkarts.co.uk">wrightkarts.co.uk</a></td>
+        <td class="nowrap">UK</td>
+        <td></td>
+        <td>Chassis, Engine/Powerunit, Parts, Tools</td>
+    </tr>
+    
+    <tr>
+        <td>Xenon Kart</td>
+        <td><a href="http://xenonkart.com/" target="_blank" id="xenonkart.com">xenonkart.com</a></td>
+        <td class="nowrap">UK</td>
+        <td></td>
+        <td>Chassis</td>
+    </tr>
+    
+    <tr>
+        <td>Yamaha Kart Engine</td>
+        <td><a href="https://www.yamahamotorsports.com/kart-engine/models/kt100" target="_blank" id="yamahamotorsports.com">yamahamotorsports.com</a></td>
+        <td class="nowrap">Japan</td>
+        <td></td>
+        <td>Engine/Powerunit, Parts</td>
+    </tr>
+    
+
+    </table>
+
+    <div class="footer small">
+
+        <p>115 Karting brands indexed</p>
+        <p>Last updated 9 May 2022 11:25</p>
+        <p>Side project</p>
+        <p>Interested to contribute?</p>
+        <p>Contact me: n1c [@] indexall.io</p>
+    
+    </div>
 
 </body>
 

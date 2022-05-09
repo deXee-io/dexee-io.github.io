@@ -16,13 +16,10 @@
 
     <meta name="robots" content="all, follow" />
 
-
-    <!-- These are the little icons that show up next to the title of the URL in the browser tab. For these to work, you must include a favicon.png file in the root of your website directory. This can also be favicon.jpg if you prefer, you just need to change the link in the href to favicon.jpg for it to work -->
     <link rel="shortcut icon" href="favicon.png">
     <link rel="icon" href="favicon.png" type="image/x-icon" />
 
-    <!-- Social Media stuff. This all makes your links look much nicer and more shareable on Facebook and Twitter -->
-    <!-- Facebook meta links - OG stands for OpenGraph by the way! -->
+    <!-- Facebook meta links -->
     <meta property="og:locale" content="en_GB" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="indeXall.io | List of Table Tennis companies" />
@@ -37,657 +34,524 @@
     <meta name="twitter:title" content="List of Table Tennis brands | indeXall" />
     <meta name="twitter:image" content="https://indexall.io/indeXall.svg" />
 
-    <!-- Your CSS link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://indexall.io/indeXall.css" rel="stylesheet">
 
 </head>
 
 <body>
 
-<!-- <p style="text-align: left; font-family: 'Lato';">indexall.io</p> -->
-<!-- Inline indeXall logo -->
-<!-- <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" style="fill:#fff"/><path d="M462.05,191.91c46.72,1.2,42.92,68.54-8.48,150.41l-.59.93,38,44.49H453.05L436.17,368C385.51,437.43,317.62,489.46,275.9,488.4c-37.49-1-42.44-44.53-16.36-104h6.2c-17.5,39.46-15,67.1,10.06,67.78,33.49.9,95.05-46.81,140.13-107.88l-45.36-53.12H408.5l24.25,28.4c34.92-56.14,39.09-99.77,7.57-100.62-27.56-.74-74.13,31.44-114.89,76.89h-11c48.86-61,109.3-104.9,147.64-103.92Zm86.76,115.82H497.68a1.89,1.89,0,0,0-2.13,2.13v9.95a1.88,1.88,0,0,0,2.13,2.13h49.47a28,28,0,0,1,6.39.59,9.07,9.07,0,0,1,3.91,1.83,6.7,6.7,0,0,1,2,3.26,17.53,17.53,0,0,1,.59,4.85v2.25H511.88a31.58,31.58,0,0,0-8.7,1,13.49,13.49,0,0,0-5.62,3,11.07,11.07,0,0,0-3,4.92,22.44,22.44,0,0,0-.89,6.56v5.69a28.54,28.54,0,0,0,.89,7.57,11,11,0,0,0,3,5.21,13.62,13.62,0,0,0,5.62,3,32,32,0,0,0,8.7,1h56.34a18.47,18.47,0,0,0,4.26-.41,5.38,5.38,0,0,0,2.66-1.48,6,6,0,0,0,1.42-2.9,21.5,21.5,0,0,0,.42-4.68V331.76a37.32,37.32,0,0,0-1.42-10.95,16.19,16.19,0,0,0-4.68-7.45,20.06,20.06,0,0,0-8.7-4.26,55.88,55.88,0,0,0-13.37-1.37Zm7.81,52H516.73c-2.44,0-4.16-.49-5.14-1.48s-1.48-2.54-1.48-4.67v-2.49a5.85,5.85,0,0,1,1.48-4.32c1-1,2.7-1.48,5.14-1.48h43.32v10.42a4.9,4.9,0,0,1-.77,3.14,3.38,3.38,0,0,1-2.66.88ZM604,284a2.3,2.3,0,0,1,2.61,2.6v83.56a2.3,2.3,0,0,1-2.61,2.6h-11.6a2.3,2.3,0,0,1-2.6-2.6V286.55a2.3,2.3,0,0,1,2.6-2.6Zm32,0a2.3,2.3,0,0,1,2.6,2.6v83.56a2.3,2.3,0,0,1-2.6,2.6h-11.6a2.3,2.3,0,0,1-2.61-2.6V286.55a2.3,2.3,0,0,1,2.61-2.6ZM56.12,307.73c1.73,0,2.6.91,2.6,2.73v59.65a2.3,2.3,0,0,1-2.6,2.6H44.52a2.3,2.3,0,0,1-2.61-2.6V310.46q0-2.73,2.61-2.73Zm0-24a2.3,2.3,0,0,1,2.6,2.6v11.25c0,1.81-.87,2.72-2.6,2.72H44.52a2.41,2.41,0,0,1-2.73-2.72V286.31c0-1.73.91-2.6,2.73-2.6Zm79.41,24a55.76,55.76,0,0,1,13.37,1.37,20.06,20.06,0,0,1,8.7,4.26,16.19,16.19,0,0,1,4.68,7.45,37,37,0,0,1,1.42,10.95v38.35a2.3,2.3,0,0,1-2.6,2.6H149.5a2.3,2.3,0,0,1-2.61-2.6V335.78a34.3,34.3,0,0,0-.47-6.21,8,8,0,0,0-1.83-4,7.69,7.69,0,0,0-3.73-2.13,23.63,23.63,0,0,0-6.16-.65H103.22a25,25,0,0,0-6.27.65,8.48,8.48,0,0,0-4,2.13,8.24,8.24,0,0,0-2.07,4,28.19,28.19,0,0,0-.59,6.21v34.33a2.3,2.3,0,0,1-2.6,2.6H76.12c-1.82,0-2.72-.87-2.72-2.6V331.76a37,37,0,0,1,1.42-10.95,16.09,16.09,0,0,1,4.67-7.45,20,20,0,0,1,8.64-4.26,55.72,55.72,0,0,1,13.43-1.37Zm114.45,0h-44.5a55.66,55.66,0,0,0-13.43,1.37,20,20,0,0,0-8.64,4.26,16.19,16.19,0,0,0-4.68,7.45,37,37,0,0,0-1.42,10.95v17a36.94,36.94,0,0,0,1.42,10.95,16.27,16.27,0,0,0,4.68,7.46,19.76,19.76,0,0,0,8.64,4.2,58.18,58.18,0,0,0,13.43,1.3h33.14a58.4,58.4,0,0,0,13.37-1.3,19.79,19.79,0,0,0,8.7-4.2,16.27,16.27,0,0,0,4.68-7.46,37.27,37.27,0,0,0,1.42-10.95V286.55a2.3,2.3,0,0,0-2.61-2.6h-11.6a2.3,2.3,0,0,0-2.6,2.6v21.18Zm-13,50.78a26.06,26.06,0,0,0,6.39-.65,8.66,8.66,0,0,0,4-2.13,8.24,8.24,0,0,0,2.07-4,27.89,27.89,0,0,0,.59-6.27V321.94H207.14a25.06,25.06,0,0,0-6.28.65,8.44,8.44,0,0,0-4,2.13,8.07,8.07,0,0,0-2.07,4,27.57,27.57,0,0,0-.6,6.22v10.53a27.25,27.25,0,0,0,.6,6.27,8.07,8.07,0,0,0,2.07,4,8.62,8.62,0,0,0,4,2.13,25.54,25.54,0,0,0,6.28.65ZM341.7,307.73H307a55.75,55.75,0,0,0-13.44,1.37,20,20,0,0,0-8.64,4.26,16.17,16.17,0,0,0-4.67,7.45,37,37,0,0,0-1.42,10.95v17a36.94,36.94,0,0,0,1.42,10.95,16.25,16.25,0,0,0,4.67,7.46,19.76,19.76,0,0,0,8.64,4.2,58.27,58.27,0,0,0,13.44,1.3h51a1.88,1.88,0,0,0,2.13-2.13v-9.94a1.88,1.88,0,0,0-2.13-2.13H308.68c-5.12,0-8.58-.83-10.35-2.49s-2.67-4.34-2.67-8v-2.85h59.77a7.49,7.49,0,0,0,5.09-1.47q1.67-1.49,1.66-5.27V327.15a37.36,37.36,0,0,0-.95-9.06,12.79,12.79,0,0,0-3.25-6,13.34,13.34,0,0,0-6.27-3.31,41.66,41.66,0,0,0-10-1Zm-46,26.87H343.6a1.78,1.78,0,0,0,2-2v-5c0-2.45-.51-4.18-1.54-5.21s-2.92-1.54-5.68-1.54H308.68c-5.12,0-8.58.81-10.35,2.43s-2.67,4.32-2.67,8.11Z" style="fill:#231f20;fill-rule:evenodd"/></svg> -->
-
-<a href = "https://indexall.io" target = "_self"> 
-    <img src="https://indexall.io/indeXall.svg" alt="indeXall.io" width="100" height="100" /> 
- </a>
-<p></p>
-<h1>List of 60 Table Tennis brands</h1>
-<p></p>
-
-<!-- <br>
-<button type="button" class="btn btn-primary btn-sm" onclick="tableToCSV()">
-    Download CSV
-</button>
-<br>
-<br> -->
-
-<table class="table table-hover table-sm">
-  <tr>
-    <th scope="col"></th>
-    <th scope="col">Website</th>
-    <th scope="col">Country</th>
-    <th scope="col">Est.</th>
-    <th scope="col">Products</th>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Andro<h2></td> -->
-    <td>Andro</td>
-    <td><a href="https://www.andro.de/produkte/" target="_blank" id="andro.de">andro.de</a></td>
-    <td>Germany</td>
-    <td></td>
-    <td>Balls, Bats & Blades, Rubbers, Tables & Nets</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Armstrong<h2></td> -->
-    <td>Armstrong</td>
-    <td><a href="https://armstrong.tokyo.jp/" target="_blank" id="armstrong.tokyo.jp">armstrong.tokyo.jp</a></td>
-    <td>Japan</td>
-    <td>1946</td>
-    <td>Bats & Blades, Rubbers</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Avallo AVX<h2></td> -->
-    <td>Avallo AVX</td>
-    <td><a href="http://www.avalloavx.com/" target="_blank" id="avalloavx.com">avalloavx.com</a></td>
-    <td>Malaysia</td>
-    <td></td>
-    <td>Bats & Blades, Rubbers, Tables & Nets</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">BBC<h2></td> -->
-    <td>BBC</td>
-    <td><a href="http://www.bladesbycharlie.com/" target="_blank" id="bladesbycharlie.com">bladesbycharlie.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Bats & Blades</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Cornilleau<h2></td> -->
-    <td>Cornilleau</td>
-    <td><a href="https://cornilleau.com/" target="_blank" id="cornilleau.com">cornilleau.com</a></td>
-    <td>France</td>
-    <td>1968</td>
-    <td>Balls, Bats & Blades, Rubbers, Tables & Nets</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Dandoy<h2></td> -->
-    <td>Dandoy</td>
-    <td><a href="http://www.dandoy-sports.com/" target="_blank" id="dandoy-sports.com">dandoy-sports.com</a></td>
-    <td>Belgium</td>
-    <td></td>
-    <td>Balls, Bats & Blades, Rubbers, Tables & Nets</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Quechua, Artengo<h2></td> -->
-    <td>Quechua, Artengo</td>
-    <td><a href="https://www.decathlon.com/collections/camp-hike" target="_blank" id="decathlon.com">decathlon.com</a></td>
-    <td>France</td>
-    <td>1976</td>
-    <td>Ball, Racquet, Shoe, Bats & Blades, Rubbers, Tables & Nets</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Der Materialspezialist<h2></td> -->
-    <td>Der Materialspezialist</td>
-    <td><a href="https://www.der-materialspezialist.com/" target="_blank" id="der-materialspezialist.com">der-materialspezialist.com</a></td>
-    <td>Germany</td>
-    <td>2010</td>
-    <td>Balls, Bats & Blades, Rubbers</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">DHS Double Happiness<h2></td> -->
-    <td>DHS Double Happiness</td>
-    <td><a href="http://www.dhs-tt.com/en" target="_blank" id="dhs-tt.com">dhs-tt.com</a></td>
-    <td>China</td>
-    <td>1927</td>
-    <td>Balls, Bats & Blades, Rubbers, Tables & Nets</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Dingo Swiss<h2></td> -->
-    <td>Dingo Swiss</td>
-    <td><a href="http://www.dingyitt.com/" target="_blank" id="dingyitt.com">dingyitt.com</a></td>
-    <td>Switzerland</td>
-    <td></td>
-    <td>Bats & Blades, Rubbers</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Donic-Schildkröt<h2></td> -->
-    <td>Donic-Schildkröt</td>
-    <td><a href="https://www.donic-schildkroet.com/en/home" target="_blank" id="donic-schildkroet.com">donic-schildkroet.com</a></td>
-    <td>Germany</td>
-    <td>1986</td>
-    <td>Balls, Bats & Blades, Rubbers, Tables & Nets</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">DONIC<h2></td> -->
-    <td>DONIC</td>
-    <td><a href="https://www.donic.com/" target="_blank" id="donic.com">donic.com</a></td>
-    <td>Germany</td>
-    <td></td>
-    <td>Balls, Bats & Blades, Rubbers, Tables & Nets</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Double Fish, Jinque<h2></td> -->
-    <td>Double Fish, Jinque</td>
-    <td><a href="https://www.doublefish.com/" target="_blank" id="doublefish.com">doublefish.com</a></td>
-    <td>China</td>
-    <td>1950</td>
-    <td>Balls, Bats & Blades, Rubbers, Tables & Nets, Racquets, Shuttlecocks</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Dr. Neubauer<h2></td> -->
-    <td>Dr. Neubauer</td>
-    <td><a href="https://www.drneubauer.com/" target="_blank" id="drneubauer.com">drneubauer.com</a></td>
-    <td>Germany</td>
-    <td>2002</td>
-    <td>Balls, Bats & Blades, Rubbers</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Eastpoint<h2></td> -->
-    <td>Eastpoint</td>
-    <td><a href="https://www.eastpointsports.com/" target="_blank" id="eastpointsports.com">eastpointsports.com</a></td>
-    <td>US</td>
-    <td>2009</td>
-    <td>Ball, Cue, Cue Table, Table, Bats & Blades, Tables & Nets</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Butterfly<h2></td> -->
-    <td>Butterfly</td>
-    <td><a href="https://en.butterfly.tt/" target="_blank" id="en.butterfly.tt">en.butterfly.tt</a></td>
-    <td>Japan</td>
-    <td>1950</td>
-    <td>Balls, Bats & Blades, Rubbers, Tables & Nets</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Expert Table Tennis<h2></td> -->
-    <td>Expert Table Tennis</td>
-    <td><a href="https://www.experttabletennis.com/" target="_blank" id="experttabletennis.com">experttabletennis.com</a></td>
-    <td>UK</td>
-    <td></td>
-    <td>Tables & Nets</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Gambler<h2></td> -->
-    <td>Gambler</td>
-    <td><a href="https://www.gamblertt.com/" target="_blank" id="gamblertt.com">gamblertt.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Balls, Bats & Blades, Rubbers, Tables & Nets</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">GEWO<h2></td> -->
-    <td>GEWO</td>
-    <td><a href="https://www.gewo-tt.de/" target="_blank" id="gewo-tt.de">gewo-tt.de</a></td>
-    <td>Germany</td>
-    <td>1956</td>
-    <td>Balls, Bats & Blades, Rubbers, Tables & Nets</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Giant Dragon<h2></td> -->
-    <td>Giant Dragon</td>
-    <td><a href="https://www.giant-dragon.com/" target="_blank" id="giant-dragon.com">giant-dragon.com</a></td>
-    <td>China</td>
-    <td>1991</td>
-    <td>Bats & Blades, Rubbers, Tables & Nets</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Gosen<h2></td> -->
-    <td>Gosen</td>
-    <td><a href="https://www.gosen.jp/eng" target="_blank" id="gosen.jp">gosen.jp</a></td>
-    <td>Japan</td>
-    <td>1951</td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Hallmark<h2></td> -->
-    <td>Hallmark</td>
-    <td><a href="http://www.hallmarktt.co.uk/" target="_blank" id="hallmarktt.co.uk">hallmarktt.co.uk</a></td>
-    <td>UK</td>
-    <td></td>
-    <td>Tables & Nets</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">JOOLA<h2></td> -->
-    <td>JOOLA</td>
-    <td><a href="https://joola.de/web2020/https://www.joola.shop/" target="_blank" id="joola.de">joola.de</a></td>
-    <td>Germany</td>
-    <td>1952</td>
-    <td>Balls, Bats & Blades, Rubbers, Tables & Nets</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Juic<h2></td> -->
-    <td>Juic</td>
-    <td><a href="https://www.juic.co.jp/" target="_blank" id="juic.co.jp">juic.co.jp</a></td>
-    <td>Japan</td>
-    <td>1970</td>
-    <td>Balls, Bats & Blades, Rubbers, Tables & Nets</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">KBS Table Tennis<h2></td> -->
-    <td>KBS Table Tennis</td>
-    <td><a href="https://www.kbsmasatenisi.com/" target="_blank" id="kbsmasatenisi.com">kbsmasatenisi.com</a></td>
-    <td>Turkey</td>
-    <td>1979</td>
-    <td>Balls, Bats & Blades, Rubbers, Tables & Nets</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Kettler<h2></td> -->
-    <td>Kettler</td>
-    <td><a href="https://www.kettler.co.uk/store/product-category/table-tennis-tables/" target="_blank" id="kettler.co.uk">kettler.co.uk</a></td>
-    <td>UK</td>
-    <td></td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Killerspin<h2></td> -->
-    <td>Killerspin</td>
-    <td><a href="https://www.killerspin.com/" target="_blank" id="killerspin.com">killerspin.com</a></td>
-    <td>US</td>
-    <td>2000</td>
-    <td>Bats & Blades, Rubbers, Tables & Nets</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Kinson<h2></td> -->
-    <td>Kinson</td>
-    <td><a href="https://www.kinsonusa.com/" target="_blank" id="kinsonusa.com">kinsonusa.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Balls</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Maillith <h2></td> -->
-    <td>Maillith </td>
-    <td><a href="https://www.maillith.de/" target="_blank" id="maillith.de">maillith.de</a></td>
-    <td>Germany</td>
-    <td></td>
-    <td>Tables & Nets</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Meteor<h2></td> -->
-    <td>Meteor</td>
-    <td><a href="https://meteorsport.eu/eng_n_SPORT_TABLE-TENNIS-1286.html" target="_blank" id="meteorsport.eu">meteorsport.eu</a></td>
-    <td>Poland</td>
-    <td>1992</td>
-    <td>Balls, Tables & Nets</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Newgy<h2></td> -->
-    <td>Newgy</td>
-    <td><a href="https://www.newgy.com/" target="_blank" id="newgy.com">newgy.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Balls, Bats & Blades, Tables & Nets</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Nittaku<h2></td> -->
-    <td>Nittaku</td>
-    <td><a href="https://www.nittaku.com/" target="_blank" id="nittaku.com">nittaku.com</a></td>
-    <td>Japan</td>
-    <td></td>
-    <td>Balls, Bats & Blades, Rubbers, Tables & Nets</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">OSP Blades<h2></td> -->
-    <td>OSP Blades</td>
-    <td><a href="https://ospblades.com/" target="_blank" id="ospblades.com">ospblades.com</a></td>
-    <td></td>
-    <td></td>
-    <td>Bats & Blades</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Oukei<h2></td> -->
-    <td>Oukei</td>
-    <td><a href="https://oukeiusa.com/shop/" target="_blank" id="oukeiusa.com">oukeiusa.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Tables & Nets</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Paddle Palace<h2></td> -->
-    <td>Paddle Palace</td>
-    <td><a href="https://www.paddlepalace.com/Paddle-Palace/products/141/" target="_blank" id="paddlepalace.com">paddlepalace.com</a></td>
-    <td>US</td>
-    <td>1973</td>
-    <td>Balls, Bats & Blades, Rubbers, Tables & Nets</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Palio<h2></td> -->
-    <td>Palio</td>
-    <td><a href="http://www.palio.co/" target="_blank" id="palio.co">palio.co</a></td>
-    <td>China</td>
-    <td></td>
-    <td>Bats & Blades</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Palioett<h2></td> -->
-    <td>Palioett</td>
-    <td><a href="https://palioett.com/" target="_blank" id="palioett.com">palioett.com</a></td>
-    <td>UK</td>
-    <td></td>
-    <td>Bats & Blades</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Re-Impact<h2></td> -->
-    <td>Re-Impact</td>
-    <td><a href="https://re-impact.de/" target="_blank" id="re-impact.de">re-impact.de</a></td>
-    <td>Germany</td>
-    <td></td>
-    <td>Bats & Blades</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">San-Ei<h2></td> -->
-    <td>San-Ei</td>
-    <td><a href="http://www.san-ei.global/" target="_blank" id="san-ei.global">san-ei.global</a></td>
-    <td>Japan</td>
-    <td></td>
-    <td>Balls, Tables & Nets</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Sanwei<h2></td> -->
-    <td>Sanwei</td>
-    <td><a href="https://sanweisport.com/english/" target="_blank" id="sanweisport.com">sanweisport.com</a></td>
-    <td>China</td>
-    <td>1993</td>
-    <td>Balls, Bats & Blades, Rubbers, Tables & Nets</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Sauer & Tröger<h2></td> -->
-    <td>Sauer & Tröger</td>
-    <td><a href="https://sauer-troeger.com/en/" target="_blank" id="sauer-troeger.com">sauer-troeger.com</a></td>
-    <td>Germany</td>
-    <td></td>
-    <td>Bats & Blades, Rubbers, Tables & Nets</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">SpinLord<h2></td> -->
-    <td>SpinLord</td>
-    <td><a href="https://spinlord-tt.de/" target="_blank" id="spinlord-tt.de">spinlord-tt.de</a></td>
-    <td>Germany</td>
-    <td></td>
-    <td>Balls, Bats & Blades</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Sponeta<h2></td> -->
-    <td>Sponeta</td>
-    <td><a href="https://www.sponeta.de/" target="_blank" id="sponeta.de">sponeta.de</a></td>
-    <td>Germany</td>
-    <td>1953</td>
-    <td>Balls, Bats & Blades, Rubbers, Tables & Nets</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Stag<h2></td> -->
-    <td>Stag</td>
-    <td><a href="https://stag.in/" target="_blank" id="stag.in">stag.in</a></td>
-    <td>India</td>
-    <td></td>
-    <td>Balls, Bats & Blades, Rubbers, Tables & Nets</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">STIGA<h2></td> -->
-    <td>STIGA</td>
-    <td><a href="https://www.stigasports.com/eu/" target="_blank" id="stigasports.com">stigasports.com</a></td>
-    <td>Sweden</td>
-    <td>1944</td>
-    <td>Balls, Bats & Blades, Rubbers, Tables & Nets</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Sunflex<h2></td> -->
-    <td>Sunflex</td>
-    <td><a href="https://www.sunflex-sport.com/en/products/table-tennis" target="_blank" id="sunflex-sport.com">sunflex-sport.com</a></td>
-    <td>Germany</td>
-    <td>1969</td>
-    <td>Balls, Bats & Blades, Rubbers, Tables & Nets</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Sword <h2></td> -->
-    <td>Sword </td>
-    <td><a href="http://www.swordtt.com/" target="_blank" id="swordtt.com">swordtt.com</a></td>
-    <td>China</td>
-    <td></td>
-    <td>Balls, Bats & Blades, Rubbers</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Table Tennis World<h2></td> -->
-    <td>Table Tennis World</td>
-    <td><a href="https://www.tabletennisworld.com.au/table-tennis-world-china-en" target="_blank" id="tabletennisworld.com.au">tabletennisworld.com.au</a></td>
-    <td>Australia</td>
-    <td></td>
-    <td>Balls, Bats & Blades, Rubbers, Tables & Nets</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">TIBHAR<h2></td> -->
-    <td>TIBHAR</td>
-    <td><a href="https://www.tibhar.com/" target="_blank" id="tibhar.com">tibhar.com</a></td>
-    <td>Germany</td>
-    <td></td>
-    <td>Balls, Bats & Blades, Rubbers, Tables & Nets</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Tinsue<h2></td> -->
-    <td>Tinsue</td>
-    <td><a href="http://www.tinsue.com/en/" target="_blank" id="tinsue.com">tinsue.com</a></td>
-    <td>China</td>
-    <td></td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">TSP Table Tennis<h2></td> -->
-    <td>TSP Table Tennis</td>
-    <td><a href="http://tsptabletennis.com/" target="_blank" id="tsptabletennis.com">tsptabletennis.com</a></td>
-    <td>Japan</td>
-    <td>1934</td>
-    <td>Bats & Blades, Rubbers, Tables & Nets</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">TT Revolution<h2></td> -->
-    <td>TT Revolution</td>
-    <td><a href="http://www.ttrevolution.com/" target="_blank" id="ttrevolution.com">ttrevolution.com</a></td>
-    <td>Romania</td>
-    <td></td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Tuttle Table Tennis<h2></td> -->
-    <td>Tuttle Table Tennis</td>
-    <td><a href="https://tuttle-tabletennis.com/" target="_blank" id="tuttle-tabletennis.com">tuttle-tabletennis.com</a></td>
-    <td>China</td>
-    <td>2017</td>
-    <td>Bats & Blades, Rubbers</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Uberpong<h2></td> -->
-    <td>Uberpong</td>
-    <td><a href="https://www.uberpong.com/" target="_blank" id="uberpong.com">uberpong.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Bats & Blades</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">VICTAS<h2></td> -->
-    <td>VICTAS</td>
-    <td><a href="https://www.victas.com/en_gb/" target="_blank" id="victas.com">victas.com</a></td>
-    <td>Japan</td>
-    <td>1931</td>
-    <td>Balls, Bats & Blades, Rubbers, Tables & Nets</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Vinqui<h2></td> -->
-    <td>Vinqui</td>
-    <td><a href="http://www.vinqui.com/" target="_blank" id="vinqui.com">vinqui.com</a></td>
-    <td>China</td>
-    <td></td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Xiom<h2></td> -->
-    <td>Xiom</td>
-    <td><a href="http://www.xiom.tt/" target="_blank" id="xiom.tt">xiom.tt</a></td>
-    <td>South Korea</td>
-    <td></td>
-    <td>Bats & Blades, Rubbers, Tables & Nets</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Xushaofa Sports<h2></td> -->
-    <td>Xushaofa Sports</td>
-    <td><a href="http://www.xushaofa-sports.com/" target="_blank" id="xushaofa-sports.com">xushaofa-sports.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Balls</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Yasaka<h2></td> -->
-    <td>Yasaka</td>
-    <td><a href="https://www.yasaka.se/" target="_blank" id="yasaka.se">yasaka.se</a></td>
-    <td>Japan</td>
-    <td>1963</td>
-    <td>Bats & Blades, Rubbers, Tables & Nets</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Yinhe<h2></td> -->
-    <td>Yinhe</td>
-    <td><a href="http://www.yinhe1986.cn/Products/ywENGLISHl.html" target="_blank" id="yinhe1986.cn">yinhe1986.cn</a></td>
-    <td>China</td>
-    <td></td>
-    <td>Balls, Bats & Blades, Rubbers, Tables & Nets</td>
-  </tr>
-
-
-</table>
-
-<br>
-
-    <!-- <script type="text/javascript">
-        function tableToCSV() {
-
-            // Variable to store the final csv data
-            var csv_data = [];
-
-            // Get each row data
-            var rows = document.getElementsByTagName('tr');
-            for (var i = 0; i < rows.length; i++) {
-
-                // Get each column data
-                var cols = rows[i].querySelectorAll('td,th');
-
-                // Stores each csv row data
-                var csvrow = [];
-                for (var j = 0; j < cols.length; j++) {
-
-                    // Get the text data of each cell
-                    // of a row and push it to csvrow
-                    csvrow.push(cols[j].innerHTML);
-                }
-
-                // Combine each column value with comma
-                csv_data.push(csvrow.join(","));
-            }
-
-            // Combine each row data with new line character
-            csv_data = csv_data.join('\n');
-
-            // Call this function to download csv file
-            downloadCSVFile(csv_data);
-
-        }
-
-        function downloadCSVFile(csv_data) {
-
-            // Create CSV file object and feed
-            // our csv_data into it
-            CSVFile = new Blob([csv_data], {
-                type: "text/csv"
-            });
-
-            // Create to temporary link to initiate
-            // download process
-            var temp_link = document.createElement('a');
-
-            // Download csv file
-            temp_link.download = ;
-            var url = window.URL.createObjectURL(CSVFile);
-            temp_link.href = url;
-
-            // This link should not be displayed
-            temp_link.style.display = "none";
-            document.body.appendChild(temp_link);
-
-            // Automatically click the link to
-            // trigger download
-            temp_link.click();
-            document.body.removeChild(temp_link);
-        }
-    </script> -->
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-<p></p>
-<p></p>
-<hr>
-<p style="text-align: left; font-family: 'Lato';">60 brands indexed</p>
-<p style="text-align: left; font-family: 'Lato';">Last updated 8 May 2022 23:37</p>
-<p style="text-align: left; font-family: 'Lato';">Side project</p>
-<p style="text-align: left; font-family: 'Lato';">Interested to contribute? Contact me: n1c [@] indexall.io</p>
+    <div class="header">
+        <a href = "https://indexall.io" target = "_self"> 
+            <img src="https://indexall.io/indeXall_white.svg" alt="indeXall.io" width="100" height="100" /> 
+         </a>
+    </div>
+    
+    
+    <h1 class="h1">List of 230 Archery brands</h1>
+
+    <table class="table table-hoverable table-bordered">
+        
+    <tr>
+        <th scope="col"></th>
+        <th scope="col">Website</th>
+        <th scope="col">Country</th>
+        <th scope="col">Est.</th>
+        <th scope="col">Products</th>
+    </tr>
+
+    
+    <tr>
+        <td>Andro</td>
+        <td><a href="https://www.andro.de/produkte/" target="_blank" id="andro.de">andro.de</a></td>
+        <td class="nowrap">Germany</td>
+        <td></td>
+        <td>Balls, Bats & Blades, Rubbers, Tables & Nets</td>
+    </tr>
+    
+    <tr>
+        <td>Armstrong</td>
+        <td><a href="https://armstrong.tokyo.jp/" target="_blank" id="armstrong.tokyo.jp">armstrong.tokyo.jp</a></td>
+        <td class="nowrap">Japan</td>
+        <td>1946</td>
+        <td>Bats & Blades, Rubbers</td>
+    </tr>
+    
+    <tr>
+        <td>Avallo AVX</td>
+        <td><a href="http://www.avalloavx.com/" target="_blank" id="avalloavx.com">avalloavx.com</a></td>
+        <td class="nowrap">Malaysia</td>
+        <td></td>
+        <td>Bats & Blades, Rubbers, Tables & Nets</td>
+    </tr>
+    
+    <tr>
+        <td>BBC</td>
+        <td><a href="http://www.bladesbycharlie.com/" target="_blank" id="bladesbycharlie.com">bladesbycharlie.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Bats & Blades</td>
+    </tr>
+    
+    <tr>
+        <td>Cornilleau</td>
+        <td><a href="https://cornilleau.com/" target="_blank" id="cornilleau.com">cornilleau.com</a></td>
+        <td class="nowrap">France</td>
+        <td>1968</td>
+        <td>Balls, Bats & Blades, Rubbers, Tables & Nets</td>
+    </tr>
+    
+    <tr>
+        <td>Dandoy</td>
+        <td><a href="http://www.dandoy-sports.com/" target="_blank" id="dandoy-sports.com">dandoy-sports.com</a></td>
+        <td class="nowrap">Belgium</td>
+        <td></td>
+        <td>Balls, Bats & Blades, Rubbers, Tables & Nets</td>
+    </tr>
+    
+    <tr>
+        <td>Quechua, Artengo</td>
+        <td><a href="https://www.decathlon.com/collections/camp-hike" target="_blank" id="decathlon.com">decathlon.com</a></td>
+        <td class="nowrap">France</td>
+        <td>1976</td>
+        <td>Ball, Racquet, Shoe, Bats & Blades, Rubbers, Tables & Nets</td>
+    </tr>
+    
+    <tr>
+        <td>Der Materialspezialist</td>
+        <td><a href="https://www.der-materialspezialist.com/" target="_blank" id="der-materialspezialist.com">der-materialspezialist.com</a></td>
+        <td class="nowrap">Germany</td>
+        <td>2010</td>
+        <td>Balls, Bats & Blades, Rubbers</td>
+    </tr>
+    
+    <tr>
+        <td>DHS Double Happiness</td>
+        <td><a href="http://www.dhs-tt.com/en" target="_blank" id="dhs-tt.com">dhs-tt.com</a></td>
+        <td class="nowrap">China</td>
+        <td>1927</td>
+        <td>Balls, Bats & Blades, Rubbers, Tables & Nets</td>
+    </tr>
+    
+    <tr>
+        <td>Dingo Swiss</td>
+        <td><a href="http://www.dingyitt.com/" target="_blank" id="dingyitt.com">dingyitt.com</a></td>
+        <td class="nowrap">Switzerland</td>
+        <td></td>
+        <td>Bats & Blades, Rubbers</td>
+    </tr>
+    
+    <tr>
+        <td>Donic-Schildkröt</td>
+        <td><a href="https://www.donic-schildkroet.com/en/home" target="_blank" id="donic-schildkroet.com">donic-schildkroet.com</a></td>
+        <td class="nowrap">Germany</td>
+        <td>1986</td>
+        <td>Balls, Bats & Blades, Rubbers, Tables & Nets</td>
+    </tr>
+    
+    <tr>
+        <td>DONIC</td>
+        <td><a href="https://www.donic.com/" target="_blank" id="donic.com">donic.com</a></td>
+        <td class="nowrap">Germany</td>
+        <td></td>
+        <td>Balls, Bats & Blades, Rubbers, Tables & Nets</td>
+    </tr>
+    
+    <tr>
+        <td>Double Fish, Jinque</td>
+        <td><a href="https://www.doublefish.com/" target="_blank" id="doublefish.com">doublefish.com</a></td>
+        <td class="nowrap">China</td>
+        <td>1950</td>
+        <td>Balls, Bats & Blades, Rubbers, Tables & Nets, Racquets, Shuttlecocks</td>
+    </tr>
+    
+    <tr>
+        <td>Dr. Neubauer</td>
+        <td><a href="https://www.drneubauer.com/" target="_blank" id="drneubauer.com">drneubauer.com</a></td>
+        <td class="nowrap">Germany</td>
+        <td>2002</td>
+        <td>Balls, Bats & Blades, Rubbers</td>
+    </tr>
+    
+    <tr>
+        <td>Eastpoint</td>
+        <td><a href="https://www.eastpointsports.com/" target="_blank" id="eastpointsports.com">eastpointsports.com</a></td>
+        <td class="nowrap">US</td>
+        <td>2009</td>
+        <td>Ball, Cue, Cue Table, Table, Bats & Blades, Tables & Nets</td>
+    </tr>
+    
+    <tr>
+        <td>Butterfly</td>
+        <td><a href="https://en.butterfly.tt/" target="_blank" id="en.butterfly.tt">en.butterfly.tt</a></td>
+        <td class="nowrap">Japan</td>
+        <td>1950</td>
+        <td>Balls, Bats & Blades, Rubbers, Tables & Nets</td>
+    </tr>
+    
+    <tr>
+        <td>Expert Table Tennis</td>
+        <td><a href="https://www.experttabletennis.com/" target="_blank" id="experttabletennis.com">experttabletennis.com</a></td>
+        <td class="nowrap">UK</td>
+        <td></td>
+        <td>Tables & Nets</td>
+    </tr>
+    
+    <tr>
+        <td>Gambler</td>
+        <td><a href="https://www.gamblertt.com/" target="_blank" id="gamblertt.com">gamblertt.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Balls, Bats & Blades, Rubbers, Tables & Nets</td>
+    </tr>
+    
+    <tr>
+        <td>GEWO</td>
+        <td><a href="https://www.gewo-tt.de/" target="_blank" id="gewo-tt.de">gewo-tt.de</a></td>
+        <td class="nowrap">Germany</td>
+        <td>1956</td>
+        <td>Balls, Bats & Blades, Rubbers, Tables & Nets</td>
+    </tr>
+    
+    <tr>
+        <td>Giant Dragon</td>
+        <td><a href="https://www.giant-dragon.com/" target="_blank" id="giant-dragon.com">giant-dragon.com</a></td>
+        <td class="nowrap">China</td>
+        <td>1991</td>
+        <td>Bats & Blades, Rubbers, Tables & Nets</td>
+    </tr>
+    
+    <tr>
+        <td>Gosen</td>
+        <td><a href="https://www.gosen.jp/eng" target="_blank" id="gosen.jp">gosen.jp</a></td>
+        <td class="nowrap">Japan</td>
+        <td>1951</td>
+        <td></td>
+    </tr>
+    
+    <tr>
+        <td>Hallmark</td>
+        <td><a href="http://www.hallmarktt.co.uk/" target="_blank" id="hallmarktt.co.uk">hallmarktt.co.uk</a></td>
+        <td class="nowrap">UK</td>
+        <td></td>
+        <td>Tables & Nets</td>
+    </tr>
+    
+    <tr>
+        <td>JOOLA</td>
+        <td><a href="https://joola.de/web2020/https://www.joola.shop/" target="_blank" id="joola.de">joola.de</a></td>
+        <td class="nowrap">Germany</td>
+        <td>1952</td>
+        <td>Balls, Bats & Blades, Rubbers, Tables & Nets</td>
+    </tr>
+    
+    <tr>
+        <td>Juic</td>
+        <td><a href="https://www.juic.co.jp/" target="_blank" id="juic.co.jp">juic.co.jp</a></td>
+        <td class="nowrap">Japan</td>
+        <td>1970</td>
+        <td>Balls, Bats & Blades, Rubbers, Tables & Nets</td>
+    </tr>
+    
+    <tr>
+        <td>KBS Table Tennis</td>
+        <td><a href="https://www.kbsmasatenisi.com/" target="_blank" id="kbsmasatenisi.com">kbsmasatenisi.com</a></td>
+        <td class="nowrap">Turkey</td>
+        <td>1979</td>
+        <td>Balls, Bats & Blades, Rubbers, Tables & Nets</td>
+    </tr>
+    
+    <tr>
+        <td>Kettler</td>
+        <td><a href="https://www.kettler.co.uk/store/product-category/table-tennis-tables/" target="_blank" id="kettler.co.uk">kettler.co.uk</a></td>
+        <td class="nowrap">UK</td>
+        <td></td>
+        <td></td>
+    </tr>
+    
+    <tr>
+        <td>Killerspin</td>
+        <td><a href="https://www.killerspin.com/" target="_blank" id="killerspin.com">killerspin.com</a></td>
+        <td class="nowrap">US</td>
+        <td>2000</td>
+        <td>Bats & Blades, Rubbers, Tables & Nets</td>
+    </tr>
+    
+    <tr>
+        <td>Kinson</td>
+        <td><a href="https://www.kinsonusa.com/" target="_blank" id="kinsonusa.com">kinsonusa.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Balls</td>
+    </tr>
+    
+    <tr>
+        <td>Maillith </td>
+        <td><a href="https://www.maillith.de/" target="_blank" id="maillith.de">maillith.de</a></td>
+        <td class="nowrap">Germany</td>
+        <td></td>
+        <td>Tables & Nets</td>
+    </tr>
+    
+    <tr>
+        <td>Meteor</td>
+        <td><a href="https://meteorsport.eu/eng_n_SPORT_TABLE-TENNIS-1286.html" target="_blank" id="meteorsport.eu">meteorsport.eu</a></td>
+        <td class="nowrap">Poland</td>
+        <td>1992</td>
+        <td>Balls, Tables & Nets</td>
+    </tr>
+    
+    <tr>
+        <td>Newgy</td>
+        <td><a href="https://www.newgy.com/" target="_blank" id="newgy.com">newgy.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Balls, Bats & Blades, Tables & Nets</td>
+    </tr>
+    
+    <tr>
+        <td>Nittaku</td>
+        <td><a href="https://www.nittaku.com/" target="_blank" id="nittaku.com">nittaku.com</a></td>
+        <td class="nowrap">Japan</td>
+        <td></td>
+        <td>Balls, Bats & Blades, Rubbers, Tables & Nets</td>
+    </tr>
+    
+    <tr>
+        <td>OSP Blades</td>
+        <td><a href="https://ospblades.com/" target="_blank" id="ospblades.com">ospblades.com</a></td>
+        <td class="nowrap"></td>
+        <td></td>
+        <td>Bats & Blades</td>
+    </tr>
+    
+    <tr>
+        <td>Oukei</td>
+        <td><a href="https://oukeiusa.com/shop/" target="_blank" id="oukeiusa.com">oukeiusa.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Tables & Nets</td>
+    </tr>
+    
+    <tr>
+        <td>Paddle Palace</td>
+        <td><a href="https://www.paddlepalace.com/Paddle-Palace/products/141/" target="_blank" id="paddlepalace.com">paddlepalace.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1973</td>
+        <td>Balls, Bats & Blades, Rubbers, Tables & Nets</td>
+    </tr>
+    
+    <tr>
+        <td>Palio</td>
+        <td><a href="http://www.palio.co/" target="_blank" id="palio.co">palio.co</a></td>
+        <td class="nowrap">China</td>
+        <td></td>
+        <td>Bats & Blades</td>
+    </tr>
+    
+    <tr>
+        <td>Palioett</td>
+        <td><a href="https://palioett.com/" target="_blank" id="palioett.com">palioett.com</a></td>
+        <td class="nowrap">UK</td>
+        <td></td>
+        <td>Bats & Blades</td>
+    </tr>
+    
+    <tr>
+        <td>Re-Impact</td>
+        <td><a href="https://re-impact.de/" target="_blank" id="re-impact.de">re-impact.de</a></td>
+        <td class="nowrap">Germany</td>
+        <td></td>
+        <td>Bats & Blades</td>
+    </tr>
+    
+    <tr>
+        <td>San-Ei</td>
+        <td><a href="http://www.san-ei.global/" target="_blank" id="san-ei.global">san-ei.global</a></td>
+        <td class="nowrap">Japan</td>
+        <td></td>
+        <td>Balls, Tables & Nets</td>
+    </tr>
+    
+    <tr>
+        <td>Sanwei</td>
+        <td><a href="https://sanweisport.com/english/" target="_blank" id="sanweisport.com">sanweisport.com</a></td>
+        <td class="nowrap">China</td>
+        <td>1993</td>
+        <td>Balls, Bats & Blades, Rubbers, Tables & Nets</td>
+    </tr>
+    
+    <tr>
+        <td>Sauer & Tröger</td>
+        <td><a href="https://sauer-troeger.com/en/" target="_blank" id="sauer-troeger.com">sauer-troeger.com</a></td>
+        <td class="nowrap">Germany</td>
+        <td></td>
+        <td>Bats & Blades, Rubbers, Tables & Nets</td>
+    </tr>
+    
+    <tr>
+        <td>SpinLord</td>
+        <td><a href="https://spinlord-tt.de/" target="_blank" id="spinlord-tt.de">spinlord-tt.de</a></td>
+        <td class="nowrap">Germany</td>
+        <td></td>
+        <td>Balls, Bats & Blades</td>
+    </tr>
+    
+    <tr>
+        <td>Sponeta</td>
+        <td><a href="https://www.sponeta.de/" target="_blank" id="sponeta.de">sponeta.de</a></td>
+        <td class="nowrap">Germany</td>
+        <td>1953</td>
+        <td>Balls, Bats & Blades, Rubbers, Tables & Nets</td>
+    </tr>
+    
+    <tr>
+        <td>Stag</td>
+        <td><a href="https://stag.in/" target="_blank" id="stag.in">stag.in</a></td>
+        <td class="nowrap">India</td>
+        <td></td>
+        <td>Balls, Bats & Blades, Rubbers, Tables & Nets</td>
+    </tr>
+    
+    <tr>
+        <td>STIGA</td>
+        <td><a href="https://www.stigasports.com/eu/" target="_blank" id="stigasports.com">stigasports.com</a></td>
+        <td class="nowrap">Sweden</td>
+        <td>1944</td>
+        <td>Balls, Bats & Blades, Rubbers, Tables & Nets</td>
+    </tr>
+    
+    <tr>
+        <td>Sunflex</td>
+        <td><a href="https://www.sunflex-sport.com/en/products/table-tennis" target="_blank" id="sunflex-sport.com">sunflex-sport.com</a></td>
+        <td class="nowrap">Germany</td>
+        <td>1969</td>
+        <td>Balls, Bats & Blades, Rubbers, Tables & Nets</td>
+    </tr>
+    
+    <tr>
+        <td>Sword </td>
+        <td><a href="http://www.swordtt.com/" target="_blank" id="swordtt.com">swordtt.com</a></td>
+        <td class="nowrap">China</td>
+        <td></td>
+        <td>Balls, Bats & Blades, Rubbers</td>
+    </tr>
+    
+    <tr>
+        <td>Table Tennis World</td>
+        <td><a href="https://www.tabletennisworld.com.au/table-tennis-world-china-en" target="_blank" id="tabletennisworld.com.au">tabletennisworld.com.au</a></td>
+        <td class="nowrap">Australia</td>
+        <td></td>
+        <td>Balls, Bats & Blades, Rubbers, Tables & Nets</td>
+    </tr>
+    
+    <tr>
+        <td>TIBHAR</td>
+        <td><a href="https://www.tibhar.com/" target="_blank" id="tibhar.com">tibhar.com</a></td>
+        <td class="nowrap">Germany</td>
+        <td></td>
+        <td>Balls, Bats & Blades, Rubbers, Tables & Nets</td>
+    </tr>
+    
+    <tr>
+        <td>Tinsue</td>
+        <td><a href="http://www.tinsue.com/en/" target="_blank" id="tinsue.com">tinsue.com</a></td>
+        <td class="nowrap">China</td>
+        <td></td>
+        <td></td>
+    </tr>
+    
+    <tr>
+        <td>TSP Table Tennis</td>
+        <td><a href="http://tsptabletennis.com/" target="_blank" id="tsptabletennis.com">tsptabletennis.com</a></td>
+        <td class="nowrap">Japan</td>
+        <td>1934</td>
+        <td>Bats & Blades, Rubbers, Tables & Nets</td>
+    </tr>
+    
+    <tr>
+        <td>TT Revolution</td>
+        <td><a href="http://www.ttrevolution.com/" target="_blank" id="ttrevolution.com">ttrevolution.com</a></td>
+        <td class="nowrap">Romania</td>
+        <td></td>
+        <td></td>
+    </tr>
+    
+    <tr>
+        <td>Tuttle Table Tennis</td>
+        <td><a href="https://tuttle-tabletennis.com/" target="_blank" id="tuttle-tabletennis.com">tuttle-tabletennis.com</a></td>
+        <td class="nowrap">China</td>
+        <td>2017</td>
+        <td>Bats & Blades, Rubbers</td>
+    </tr>
+    
+    <tr>
+        <td>Uberpong</td>
+        <td><a href="https://www.uberpong.com/" target="_blank" id="uberpong.com">uberpong.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Bats & Blades</td>
+    </tr>
+    
+    <tr>
+        <td>VICTAS</td>
+        <td><a href="https://www.victas.com/en_gb/" target="_blank" id="victas.com">victas.com</a></td>
+        <td class="nowrap">Japan</td>
+        <td>1931</td>
+        <td>Balls, Bats & Blades, Rubbers, Tables & Nets</td>
+    </tr>
+    
+    <tr>
+        <td>Vinqui</td>
+        <td><a href="http://www.vinqui.com/" target="_blank" id="vinqui.com">vinqui.com</a></td>
+        <td class="nowrap">China</td>
+        <td></td>
+        <td></td>
+    </tr>
+    
+    <tr>
+        <td>Xiom</td>
+        <td><a href="http://www.xiom.tt/" target="_blank" id="xiom.tt">xiom.tt</a></td>
+        <td class="nowrap">South Korea</td>
+        <td></td>
+        <td>Bats & Blades, Rubbers, Tables & Nets</td>
+    </tr>
+    
+    <tr>
+        <td>Xushaofa Sports</td>
+        <td><a href="http://www.xushaofa-sports.com/" target="_blank" id="xushaofa-sports.com">xushaofa-sports.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Balls</td>
+    </tr>
+    
+    <tr>
+        <td>Yasaka</td>
+        <td><a href="https://www.yasaka.se/" target="_blank" id="yasaka.se">yasaka.se</a></td>
+        <td class="nowrap">Japan</td>
+        <td>1963</td>
+        <td>Bats & Blades, Rubbers, Tables & Nets</td>
+    </tr>
+    
+    <tr>
+        <td>Yinhe</td>
+        <td><a href="http://www.yinhe1986.cn/Products/ywENGLISHl.html" target="_blank" id="yinhe1986.cn">yinhe1986.cn</a></td>
+        <td class="nowrap">China</td>
+        <td></td>
+        <td>Balls, Bats & Blades, Rubbers, Tables & Nets</td>
+    </tr>
+    
+
+    </table>
+
+    <div class="footer small">
+
+        <p>60 Table Tennis brands indexed</p>
+        <p>Last updated 9 May 2022 11:25</p>
+        <p>Side project</p>
+        <p>Interested to contribute?</p>
+        <p>Contact me: n1c [@] indexall.io</p>
+    
+    </div>
 
 </body>
 

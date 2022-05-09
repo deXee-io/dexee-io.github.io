@@ -16,13 +16,10 @@
 
     <meta name="robots" content="all, follow" />
 
-
-    <!-- These are the little icons that show up next to the title of the URL in the browser tab. For these to work, you must include a favicon.png file in the root of your website directory. This can also be favicon.jpg if you prefer, you just need to change the link in the href to favicon.jpg for it to work -->
     <link rel="shortcut icon" href="favicon.png">
     <link rel="icon" href="favicon.png" type="image/x-icon" />
 
-    <!-- Social Media stuff. This all makes your links look much nicer and more shareable on Facebook and Twitter -->
-    <!-- Facebook meta links - OG stands for OpenGraph by the way! -->
+    <!-- Facebook meta links -->
     <meta property="og:locale" content="en_GB" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="indeXall.io | List of Scuba Diving companies" />
@@ -37,873 +34,716 @@
     <meta name="twitter:title" content="List of Scuba Diving brands | indeXall" />
     <meta name="twitter:image" content="https://indexall.io/indeXall.svg" />
 
-    <!-- Your CSS link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://indexall.io/indeXall.css" rel="stylesheet">
 
 </head>
 
 <body>
 
-<!-- <p style="text-align: left; font-family: 'Lato';">indexall.io</p> -->
-<!-- Inline indeXall logo -->
-<!-- <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" style="fill:#fff"/><path d="M462.05,191.91c46.72,1.2,42.92,68.54-8.48,150.41l-.59.93,38,44.49H453.05L436.17,368C385.51,437.43,317.62,489.46,275.9,488.4c-37.49-1-42.44-44.53-16.36-104h6.2c-17.5,39.46-15,67.1,10.06,67.78,33.49.9,95.05-46.81,140.13-107.88l-45.36-53.12H408.5l24.25,28.4c34.92-56.14,39.09-99.77,7.57-100.62-27.56-.74-74.13,31.44-114.89,76.89h-11c48.86-61,109.3-104.9,147.64-103.92Zm86.76,115.82H497.68a1.89,1.89,0,0,0-2.13,2.13v9.95a1.88,1.88,0,0,0,2.13,2.13h49.47a28,28,0,0,1,6.39.59,9.07,9.07,0,0,1,3.91,1.83,6.7,6.7,0,0,1,2,3.26,17.53,17.53,0,0,1,.59,4.85v2.25H511.88a31.58,31.58,0,0,0-8.7,1,13.49,13.49,0,0,0-5.62,3,11.07,11.07,0,0,0-3,4.92,22.44,22.44,0,0,0-.89,6.56v5.69a28.54,28.54,0,0,0,.89,7.57,11,11,0,0,0,3,5.21,13.62,13.62,0,0,0,5.62,3,32,32,0,0,0,8.7,1h56.34a18.47,18.47,0,0,0,4.26-.41,5.38,5.38,0,0,0,2.66-1.48,6,6,0,0,0,1.42-2.9,21.5,21.5,0,0,0,.42-4.68V331.76a37.32,37.32,0,0,0-1.42-10.95,16.19,16.19,0,0,0-4.68-7.45,20.06,20.06,0,0,0-8.7-4.26,55.88,55.88,0,0,0-13.37-1.37Zm7.81,52H516.73c-2.44,0-4.16-.49-5.14-1.48s-1.48-2.54-1.48-4.67v-2.49a5.85,5.85,0,0,1,1.48-4.32c1-1,2.7-1.48,5.14-1.48h43.32v10.42a4.9,4.9,0,0,1-.77,3.14,3.38,3.38,0,0,1-2.66.88ZM604,284a2.3,2.3,0,0,1,2.61,2.6v83.56a2.3,2.3,0,0,1-2.61,2.6h-11.6a2.3,2.3,0,0,1-2.6-2.6V286.55a2.3,2.3,0,0,1,2.6-2.6Zm32,0a2.3,2.3,0,0,1,2.6,2.6v83.56a2.3,2.3,0,0,1-2.6,2.6h-11.6a2.3,2.3,0,0,1-2.61-2.6V286.55a2.3,2.3,0,0,1,2.61-2.6ZM56.12,307.73c1.73,0,2.6.91,2.6,2.73v59.65a2.3,2.3,0,0,1-2.6,2.6H44.52a2.3,2.3,0,0,1-2.61-2.6V310.46q0-2.73,2.61-2.73Zm0-24a2.3,2.3,0,0,1,2.6,2.6v11.25c0,1.81-.87,2.72-2.6,2.72H44.52a2.41,2.41,0,0,1-2.73-2.72V286.31c0-1.73.91-2.6,2.73-2.6Zm79.41,24a55.76,55.76,0,0,1,13.37,1.37,20.06,20.06,0,0,1,8.7,4.26,16.19,16.19,0,0,1,4.68,7.45,37,37,0,0,1,1.42,10.95v38.35a2.3,2.3,0,0,1-2.6,2.6H149.5a2.3,2.3,0,0,1-2.61-2.6V335.78a34.3,34.3,0,0,0-.47-6.21,8,8,0,0,0-1.83-4,7.69,7.69,0,0,0-3.73-2.13,23.63,23.63,0,0,0-6.16-.65H103.22a25,25,0,0,0-6.27.65,8.48,8.48,0,0,0-4,2.13,8.24,8.24,0,0,0-2.07,4,28.19,28.19,0,0,0-.59,6.21v34.33a2.3,2.3,0,0,1-2.6,2.6H76.12c-1.82,0-2.72-.87-2.72-2.6V331.76a37,37,0,0,1,1.42-10.95,16.09,16.09,0,0,1,4.67-7.45,20,20,0,0,1,8.64-4.26,55.72,55.72,0,0,1,13.43-1.37Zm114.45,0h-44.5a55.66,55.66,0,0,0-13.43,1.37,20,20,0,0,0-8.64,4.26,16.19,16.19,0,0,0-4.68,7.45,37,37,0,0,0-1.42,10.95v17a36.94,36.94,0,0,0,1.42,10.95,16.27,16.27,0,0,0,4.68,7.46,19.76,19.76,0,0,0,8.64,4.2,58.18,58.18,0,0,0,13.43,1.3h33.14a58.4,58.4,0,0,0,13.37-1.3,19.79,19.79,0,0,0,8.7-4.2,16.27,16.27,0,0,0,4.68-7.46,37.27,37.27,0,0,0,1.42-10.95V286.55a2.3,2.3,0,0,0-2.61-2.6h-11.6a2.3,2.3,0,0,0-2.6,2.6v21.18Zm-13,50.78a26.06,26.06,0,0,0,6.39-.65,8.66,8.66,0,0,0,4-2.13,8.24,8.24,0,0,0,2.07-4,27.89,27.89,0,0,0,.59-6.27V321.94H207.14a25.06,25.06,0,0,0-6.28.65,8.44,8.44,0,0,0-4,2.13,8.07,8.07,0,0,0-2.07,4,27.57,27.57,0,0,0-.6,6.22v10.53a27.25,27.25,0,0,0,.6,6.27,8.07,8.07,0,0,0,2.07,4,8.62,8.62,0,0,0,4,2.13,25.54,25.54,0,0,0,6.28.65ZM341.7,307.73H307a55.75,55.75,0,0,0-13.44,1.37,20,20,0,0,0-8.64,4.26,16.17,16.17,0,0,0-4.67,7.45,37,37,0,0,0-1.42,10.95v17a36.94,36.94,0,0,0,1.42,10.95,16.25,16.25,0,0,0,4.67,7.46,19.76,19.76,0,0,0,8.64,4.2,58.27,58.27,0,0,0,13.44,1.3h51a1.88,1.88,0,0,0,2.13-2.13v-9.94a1.88,1.88,0,0,0-2.13-2.13H308.68c-5.12,0-8.58-.83-10.35-2.49s-2.67-4.34-2.67-8v-2.85h59.77a7.49,7.49,0,0,0,5.09-1.47q1.67-1.49,1.66-5.27V327.15a37.36,37.36,0,0,0-.95-9.06,12.79,12.79,0,0,0-3.25-6,13.34,13.34,0,0,0-6.27-3.31,41.66,41.66,0,0,0-10-1Zm-46,26.87H343.6a1.78,1.78,0,0,0,2-2v-5c0-2.45-.51-4.18-1.54-5.21s-2.92-1.54-5.68-1.54H308.68c-5.12,0-8.58.81-10.35,2.43s-2.67,4.32-2.67,8.11Z" style="fill:#231f20;fill-rule:evenodd"/></svg> -->
-
-<a href = "https://indexall.io" target = "_self"> 
-    <img src="https://indexall.io/indeXall.svg" alt="indeXall.io" width="100" height="100" /> 
- </a>
-<p></p>
-<h1>List of 84 Scuba Diving brands</h1>
-<p></p>
-
-<!-- <br>
-<button type="button" class="btn btn-primary btn-sm" onclick="tableToCSV()">
-    Download CSV
-</button>
-<br>
-<br> -->
-
-<table class="table table-hover table-sm">
-  <tr>
-    <th scope="col"></th>
-    <th scope="col">Website</th>
-    <th scope="col">Country</th>
-    <th scope="col">Est.</th>
-    <th scope="col">Products</th>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">AKONA<h2></td> -->
-    <td>AKONA</td>
-    <td><a href="https://www.akona.com/" target="_blank" id="akona.com">akona.com</a></td>
-    <td>US</td>
-    <td>1950</td>
-    <td>Breathing Apparatus, Dive Boot, Fins, Mask, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">AP Diving<h2></td> -->
-    <td>AP Diving</td>
-    <td><a href="https://www.apdiving.com/" target="_blank" id="apdiving.com">apdiving.com</a></td>
-    <td>UK</td>
-    <td>1969</td>
-    <td>Buoyancy Control Device</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Apeks<h2></td> -->
-    <td>Apeks</td>
-    <td><a href="https://www.apeksdiving.com/" target="_blank" id="apeksdiving.com">apeksdiving.com</a></td>
-    <td>UK</td>
-    <td>1974</td>
-    <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Aqua Lung<h2></td> -->
-    <td>Aqua Lung</td>
-    <td><a href="http://www.aqualung.com/" target="_blank" id="aqualung.com">aqualung.com</a></td>
-    <td>France</td>
-    <td>1943</td>
-    <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Aqua Sphere<h2></td> -->
-    <td>Aqua Sphere</td>
-    <td><a href="https://www.aquasphereswim.com/" target="_blank" id="aquasphereswim.com">aquasphereswim.com</a></td>
-    <td>Italy</td>
-    <td>1998</td>
-    <td>Dive Boot, Fins, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Atomic Aquatics<h2></td> -->
-    <td>Atomic Aquatics</td>
-    <td><a href="https://www.atomicaquatics.com/" target="_blank" id="atomicaquatics.com">atomicaquatics.com</a></td>
-    <td>US</td>
-    <td>1996</td>
-    <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Fins, Mask</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">BARE<h2></td> -->
-    <td>BARE</td>
-    <td><a href="https://www.baresports.com/" target="_blank" id="baresports.com">baresports.com</a></td>
-    <td>US</td>
-    <td>1972</td>
-    <td>Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Beaver Sports<h2></td> -->
-    <td>Beaver Sports</td>
-    <td><a href="http://www.beaversports.co.uk/" target="_blank" id="beaversports.co.uk">beaversports.co.uk</a></td>
-    <td>UK</td>
-    <td>1982</td>
-    <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Beuchat<h2></td> -->
-    <td>Beuchat</td>
-    <td><a href="https://www.beuchat-diving.com/" target="_blank" id="beuchat-diving.com">beuchat-diving.com</a></td>
-    <td>France</td>
-    <td>1934</td>
-    <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Camaro<h2></td> -->
-    <td>Camaro</td>
-    <td><a href="https://www.camaro-watersports.com/" target="_blank" id="camaro-watersports.com">camaro-watersports.com</a></td>
-    <td>Austria</td>
-    <td>1969</td>
-    <td>Breathing Apparatus, Dive Boot, Fins, Mask, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Cressi<h2></td> -->
-    <td>Cressi</td>
-    <td><a href="https://www.cressi.com/" target="_blank" id="cressi.com">cressi.com</a></td>
-    <td>Italy</td>
-    <td>1946</td>
-    <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">De profundis<h2></td> -->
-    <td>De profundis</td>
-    <td><a href="https://deprofundis.es/" target="_blank" id="deprofundis.es">deprofundis.es</a></td>
-    <td>Spain</td>
-    <td>2000</td>
-    <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Dive360<h2></td> -->
-    <td>Dive360</td>
-    <td><a href="https://www.dive360.gr/" target="_blank" id="dive360.gr">dive360.gr</a></td>
-    <td>Greece</td>
-    <td></td>
-    <td>Belts and Weights, Breathing Apparatus, Fins, Mask</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">DUI<h2></td> -->
-    <td>DUI</td>
-    <td><a href="https://www.divedui.com/" target="_blank" id="divedui.com">divedui.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Belts and Weights, Dive Boot, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Dive Rite<h2></td> -->
-    <td>Dive Rite</td>
-    <td><a href="https://www.diverite.com/" target="_blank" id="diverite.com">diverite.com</a></td>
-    <td>US</td>
-    <td>1984</td>
-    <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Ocean Reef<h2></td> -->
-    <td>Ocean Reef</td>
-    <td><a href="http://diving.oceanreefgroup.com/" target="_blank" id="diving.oceanreefgroup.com">diving.oceanreefgroup.com</a></td>
-    <td>Italy</td>
-    <td>1940</td>
-    <td>Breathing Apparatus, Mask</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Hog<h2></td> -->
-    <td>Hog</td>
-    <td><a href="https://edge-gear.com/" target="_blank" id="edge-gear.com">edge-gear.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Epsealon<h2></td> -->
-    <td>Epsealon</td>
-    <td><a href="https://www.epsealon.com/" target="_blank" id="epsealon.com">epsealon.com</a></td>
-    <td>France</td>
-    <td></td>
-    <td>Belts and Weights, Breathing Apparatus, Dive Boot, Fins, Mask, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">FINNSUB<h2></td> -->
-    <td>FINNSUB</td>
-    <td><a href="https://www.finnsub.com/" target="_blank" id="finnsub.com">finnsub.com</a></td>
-    <td>Czech Republic</td>
-    <td>1998</td>
-    <td>Breathing Apparatus, Buoyancy Control Device</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Fourth Element<h2></td> -->
-    <td>Fourth Element</td>
-    <td><a href="http://www.fourthelement.com/" target="_blank" id="fourthelement.com">fourthelement.com</a></td>
-    <td>UK</td>
-    <td>2001</td>
-    <td>Dive Boot, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Genesis Scuba<h2></td> -->
-    <td>Genesis Scuba</td>
-    <td><a href="https://www.genesisscuba.com/" target="_blank" id="genesisscuba.com">genesisscuba.com</a></td>
-    <td>US</td>
-    <td>1996</td>
-    <td>Breathing Apparatus, Buoyancy Control Device, Fins, Gauges, Mask</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Gull<h2></td> -->
-    <td>Gull</td>
-    <td><a href="http://gull.kinugawa-net.co.jp/" target="_blank" id="gull.kinugawa-net.co.jp">gull.kinugawa-net.co.jp</a></td>
-    <td>Japan</td>
-    <td></td>
-    <td>Breathing Apparatus, Dive Boot, Fins, Mask, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">H2Odyssey<h2></td> -->
-    <td>H2Odyssey</td>
-    <td><a href="https://www.h2odyssey.com" target="_blank" id="h2odyssey.com">h2odyssey.com</a></td>
-    <td>US</td>
-    <td>2000</td>
-    <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Halcyon<h2></td> -->
-    <td>Halcyon</td>
-    <td><a href="https://www.halcyon.net/" target="_blank" id="halcyon.net">halcyon.net</a></td>
-    <td>US</td>
-    <td>1995</td>
-    <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Gauges, Mask, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">HammerHead Spearguns<h2></td> -->
-    <td>HammerHead Spearguns</td>
-    <td><a href="http://hammerheadwebstore.com/" target="_blank" id="hammerheadwebstore.com">hammerheadwebstore.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Belts and Weights, Breathing Apparatus, Dive Boot, Fins, Mask, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Henderson Aquatics<h2></td> -->
-    <td>Henderson Aquatics</td>
-    <td><a href="https://hendersonusa.com/" target="_blank" id="hendersonusa.com">hendersonusa.com</a></td>
-    <td>US</td>
-    <td>1974</td>
-    <td>Dive Boot, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Hollis<h2></td> -->
-    <td>Hollis</td>
-    <td><a href="https://www.hollis.com/" target="_blank" id="hollis.com">hollis.com</a></td>
-    <td>US</td>
-    <td>1972</td>
-    <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Imersion<h2></td> -->
-    <td>Imersion</td>
-    <td><a href="http://www.imersion.us/" target="_blank" id="imersion.us">imersion.us</a></td>
-    <td>France</td>
-    <td>1989</td>
-    <td>Belts and Weights, Breathing Apparatus, Dive Boot, Fins, Mask, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">INDIGO INDUSTRIES<h2></td> -->
-    <td>INDIGO INDUSTRIES</td>
-    <td><a href="https://www.indigo-industries.com/" target="_blank" id="indigo-industries.com">indigo-industries.com</a></td>
-    <td>US</td>
-    <td>2016</td>
-    <td>Breathing Apparatus, Buoyancy Control Device, Fins, Mask</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Innovative Scuba Concepts<h2></td> -->
-    <td>Innovative Scuba Concepts</td>
-    <td><a href="https://innovativescuba.com/" target="_blank" id="innovativescuba.com">innovativescuba.com</a></td>
-    <td>US</td>
-    <td>1988</td>
-    <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">IST SPORTS CORP<h2></td> -->
-    <td>IST SPORTS CORP</td>
-    <td><a href="https://www.istsports.com/" target="_blank" id="istsports.com">istsports.com</a></td>
-    <td>US</td>
-    <td>1976</td>
-    <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Kirby Morgan<h2></td> -->
-    <td>Kirby Morgan</td>
-    <td><a href="https://www.kirbymorgan.com/" target="_blank" id="kirbymorgan.com">kirbymorgan.com</a></td>
-    <td>US</td>
-    <td>1966</td>
-    <td>Breathing Apparatus, Mask</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Kraken Aquatics<h2></td> -->
-    <td>Kraken Aquatics</td>
-    <td><a href="https://www.krakenaquatics.com/" target="_blank" id="krakenaquatics.com">krakenaquatics.com</a></td>
-    <td>US</td>
-    <td>2015</td>
-    <td>Breathing Apparatus, Mask</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">LAVACORE INTERNATIONAL<h2></td> -->
-    <td>LAVACORE INTERNATIONAL</td>
-    <td><a href="https://www.lavacoreinternational.com/" target="_blank" id="lavacoreinternational.com">lavacoreinternational.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Dive Boot, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Mares<h2></td> -->
-    <td>Mares</td>
-    <td><a href="https://www.mares.com/" target="_blank" id="mares.com">mares.com</a></td>
-    <td>Italy</td>
-    <td>1949</td>
-    <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Maverick America<h2></td> -->
-    <td>Maverick America</td>
-    <td><a href="https://maverick-america.com/" target="_blank" id="maverick-america.com">maverick-america.com</a></td>
-    <td>US</td>
-    <td>2015</td>
-    <td>Belts and Weights, Breathing Apparatus, Dive Boot, Fins, Mask, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Phelps<h2></td> -->
-    <td>Phelps</td>
-    <td><a href="https://www.michaelphelps.com/" target="_blank" id="michaelphelps.com">michaelphelps.com</a></td>
-    <td>US</td>
-    <td>2014</td>
-    <td>Mask, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Northern Diver<h2></td> -->
-    <td>Northern Diver</td>
-    <td><a href="https://www.ndiver.com/" target="_blank" id="ndiver.com">ndiver.com</a></td>
-    <td>UK</td>
-    <td>1976</td>
-    <td>Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Mask, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">NeoSport Wetsuits<h2></td> -->
-    <td>NeoSport Wetsuits</td>
-    <td><a href="https://neosportusa.com/" target="_blank" id="neosportusa.com">neosportusa.com</a></td>
-    <td>US</td>
-    <td>1960</td>
-    <td>Dive Boot, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">OCEAN HUNTER<h2></td> -->
-    <td>OCEAN HUNTER</td>
-    <td><a href="https://www.oceanhunter.co.nz/" target="_blank" id="oceanhunter.co.nz">oceanhunter.co.nz</a></td>
-    <td>New Zealand</td>
-    <td></td>
-    <td>Belts and Weights, Fins, Mask</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Oceanic<h2></td> -->
-    <td>Oceanic</td>
-    <td><a href="https://www.oceanicworldwide.com/" target="_blank" id="oceanicworldwide.com">oceanicworldwide.com</a></td>
-    <td>US</td>
-    <td>1972</td>
-    <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Ocean Pro<h2></td> -->
-    <td>Ocean Pro</td>
-    <td><a href="https://www.oceanprosports.com/" target="_blank" id="oceanprosports.com">oceanprosports.com</a></td>
-    <td>Australia</td>
-    <td></td>
-    <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Ocean Technology Systems<h2></td> -->
-    <td>Ocean Technology Systems</td>
-    <td><a href="https://www.oceantechnologysystems.com/" target="_blank" id="oceantechnologysystems.com">oceantechnologysystems.com</a></td>
-    <td>US</td>
-    <td>1984</td>
-    <td>Mask</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">OCTOMASK<h2></td> -->
-    <td>OCTOMASK</td>
-    <td><a href="https://octomask.com/" target="_blank" id="octomask.com">octomask.com</a></td>
-    <td>US</td>
-    <td>2013</td>
-    <td>Mask</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Omer Breathless Emotions<h2></td> -->
-    <td>Omer Breathless Emotions</td>
-    <td><a href="http://www.omersub.com/" target="_blank" id="omersub.com">omersub.com</a></td>
-    <td>Italy</td>
-    <td>1970</td>
-    <td>Belts and Weights, Breathing Apparatus, Fins, Mask, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Ocean Management Systems<h2></td> -->
-    <td>Ocean Management Systems</td>
-    <td><a href="https://omsdive.com/" target="_blank" id="omsdive.com">omsdive.com</a></td>
-    <td>US</td>
-    <td>1991</td>
-    <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Fins, Gauges, Mask</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Phantom Aquatics<h2></td> -->
-    <td>Phantom Aquatics</td>
-    <td><a href="https://phantomaquatics.com/" target="_blank" id="phantomaquatics.com">phantomaquatics.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Breathing Apparatus, Dive Boot, Fins, Mask, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Picasso<h2></td> -->
-    <td>Picasso</td>
-    <td><a href="https://www.picasso.pt/" target="_blank" id="picasso.pt">picasso.pt</a></td>
-    <td>Portugal</td>
-    <td>1986</td>
-    <td>Belts and Weights, Breathing Apparatus, Dive Boot, Fins, Mask, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">PINNACLE AQUATICS<h2></td> -->
-    <td>PINNACLE AQUATICS</td>
-    <td><a href="http://www.pinnacleaquatics.com/" target="_blank" id="pinnacleaquatics.com">pinnacleaquatics.com</a></td>
-    <td>US</td>
-    <td>2003</td>
-    <td>Dive Boot, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Poseidon<h2></td> -->
-    <td>Poseidon</td>
-    <td><a href="http://www.poseidon.com/" target="_blank" id="poseidon.com">poseidon.com</a></td>
-    <td>Sweden</td>
-    <td>1958</td>
-    <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">PROMATE<h2></td> -->
-    <td>PROMATE</td>
-    <td><a href="https://promateusa.com/" target="_blank" id="promateusa.com">promateusa.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Reef Runner<h2></td> -->
-    <td>Reef Runner</td>
-    <td><a href="https://www.reefrunnergear.com/" target="_blank" id="reefrunnergear.com">reefrunnergear.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Fins</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Rob Allen<h2></td> -->
-    <td>Rob Allen</td>
-    <td><a href="https://roballendiving.com/" target="_blank" id="roballendiving.com">roballendiving.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Belts and Weights, Breathing Apparatus, Fins, Mask, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">SALVIMAR<h2></td> -->
-    <td>SALVIMAR</td>
-    <td><a href="https://www.salvimar.com/" target="_blank" id="salvimar.com">salvimar.com</a></td>
-    <td>Italy</td>
-    <td>1962</td>
-    <td>Breathing Apparatus, Dive Boot, Fins, Mask, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Santi<h2></td> -->
-    <td>Santi</td>
-    <td><a href="http://www.santidiving.com/" target="_blank" id="santidiving.com">santidiving.com</a></td>
-    <td>Poland</td>
-    <td></td>
-    <td>Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Scorpena<h2></td> -->
-    <td>Scorpena</td>
-    <td><a href="https://www.scorpena.com/" target="_blank" id="scorpena.com">scorpena.com</a></td>
-    <td>Latvia</td>
-    <td>1991</td>
-    <td>Belts and Weights, Breathing Apparatus, Dive Boot, Fins, Mask, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Aquatec<h2></td> -->
-    <td>Aquatec</td>
-    <td><a href="https://www.scuba-aquatec.com/" target="_blank" id="scuba-aquatec.com">scuba-aquatec.com</a></td>
-    <td>Taiwan</td>
-    <td>1983</td>
-    <td>Breathing Apparatus, Buoyancy Control Device, Fins, Mask, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">ScubaMax<h2></td> -->
-    <td>ScubaMax</td>
-    <td><a href="https://scubamax.us/" target="_blank" id="scubamax.us">scubamax.us</a></td>
-    <td>US</td>
-    <td>1995</td>
-    <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">ScubaPro<h2></td> -->
-    <td>ScubaPro</td>
-    <td><a href="https://www.scubapro.com/" target="_blank" id="scubapro.com">scubapro.com</a></td>
-    <td>US</td>
-    <td>1963</td>
-    <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Scubatech<h2></td> -->
-    <td>Scubatech</td>
-    <td><a href="http://www.scubatech.pl" target="_blank" id="scubatech.pl">scubatech.pl</a></td>
-    <td>Poland</td>
-    <td>2002</td>
-    <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Seac Sub<h2></td> -->
-    <td>Seac Sub</td>
-    <td><a href="https://seacsub.com/" target="_blank" id="seacsub.com">seacsub.com</a></td>
-    <td>Italy</td>
-    <td>1971</td>
-    <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">SeaDive<h2></td> -->
-    <td>SeaDive</td>
-    <td><a href="http://www.seadivemasks.com/" target="_blank" id="seadivemasks.com">seadivemasks.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Breathing Apparatus, Mask</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">SEASOFT SCUBA<h2></td> -->
-    <td>SEASOFT SCUBA</td>
-    <td><a href="https://www.seasoftscuba.com/" target="_blank" id="seasoftscuba.com">seasoftscuba.com</a></td>
-    <td>US</td>
-    <td>1985</td>
-    <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Mask, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Sharkskin<h2></td> -->
-    <td>Sharkskin</td>
-    <td><a href="https://sharkskin.com/" target="_blank" id="sharkskin.com">sharkskin.com</a></td>
-    <td>Australia</td>
-    <td></td>
-    <td>Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Shearwater<h2></td> -->
-    <td>Shearwater</td>
-    <td><a href="https://www.shearwater.com/" target="_blank" id="shearwater.com">shearwater.com</a></td>
-    <td>Canada</td>
-    <td>2004</td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Sherwood Scuba<h2></td> -->
-    <td>Sherwood Scuba</td>
-    <td><a href="https://www.sherwoodscuba.com/" target="_blank" id="sherwoodscuba.com">sherwoodscuba.com</a></td>
-    <td>US</td>
-    <td>1955</td>
-    <td>Breathing Apparatus, Buoyancy Control Device, Fins, Gauges, Mask</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">RIFFE<h2></td> -->
-    <td>RIFFE</td>
-    <td><a href="https://speargun.com/" target="_blank" id="speargun.com">speargun.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Belts and Weights, Breathing Apparatus, Dive Boot, Fins, Mask, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Spetton<h2></td> -->
-    <td>Spetton</td>
-    <td><a href="https://www.spettonusa.com/" target="_blank" id="spettonusa.com">spettonusa.com</a></td>
-    <td>US</td>
-    <td>2001</td>
-    <td>Belts and Weights, Breathing Apparatus, Dive Boot, Fins, Mask, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Stahlsac<h2></td> -->
-    <td>Stahlsac</td>
-    <td><a href="https://www.stahlsac.com/" target="_blank" id="stahlsac.com">stahlsac.com</a></td>
-    <td>US</td>
-    <td>1978</td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Stohlquist WaterWare<h2></td> -->
-    <td>Stohlquist WaterWare</td>
-    <td><a href="http://www.stohlquist.com/" target="_blank" id="stohlquist.com">stohlquist.com</a></td>
-    <td>US</td>
-    <td>1977</td>
-    <td>Dive Boot, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Subea<h2></td> -->
-    <td>Subea</td>
-    <td><a href="https://www.subea.com/" target="_blank" id="subea.com">subea.com</a></td>
-    <td>France</td>
-    <td></td>
-    <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Suunto<h2></td> -->
-    <td>Suunto</td>
-    <td><a href="https://www.suunto.com/" target="_blank" id="suunto.com">suunto.com</a></td>
-    <td>Finland</td>
-    <td>1936</td>
-    <td>Watch</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">TECLINE<h2></td> -->
-    <td>TECLINE</td>
-    <td><a href="https://teclinediving.eu/" target="_blank" id="teclinediving.eu">teclinediving.eu</a></td>
-    <td>Poland</td>
-    <td>2002</td>
-    <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Tilos<h2></td> -->
-    <td>Tilos</td>
-    <td><a href="https://www.tilos.com/" target="_blank" id="tilos.com">tilos.com</a></td>
-    <td>US</td>
-    <td>1991</td>
-    <td>Belts and Weights, Breathing Apparatus, Dive Boot, Fins, Mask, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">TUSA<h2></td> -->
-    <td>TUSA</td>
-    <td><a href="https://tusa.com/" target="_blank" id="tusa.com">tusa.com</a></td>
-    <td>Japan</td>
-    <td>1952</td>
-    <td>Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Typhoon<h2></td> -->
-    <td>Typhoon</td>
-    <td><a href="https://www.typhoon-int.co.uk/" target="_blank" id="typhoon-int.co.uk">typhoon-int.co.uk</a></td>
-    <td>UK</td>
-    <td>1947</td>
-    <td>Breathing Apparatus, Dive Boot, Fins, Mask, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Ursuit Oy<h2></td> -->
-    <td>Ursuit Oy</td>
-    <td><a href="https://www.ursuit.com/" target="_blank" id="ursuit.com">ursuit.com</a></td>
-    <td>Finland</td>
-    <td>1964</td>
-    <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">U.S. Divers<h2></td> -->
-    <td>U.S. Divers</td>
-    <td><a href="http://www.usdivers.com/" target="_blank" id="usdivers.com">usdivers.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Breathing Apparatus, Fins, Mask</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Unified Team Diving<h2></td> -->
-    <td>Unified Team Diving</td>
-    <td><a href="https://www.utdscubaequipment.com/" target="_blank" id="utdscubaequipment.com">utdscubaequipment.com</a></td>
-    <td>US</td>
-    <td>2000</td>
-    <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Waterproof Diving International<h2></td> -->
-    <td>Waterproof Diving International</td>
-    <td><a href="https://waterproof.eu/" target="_blank" id="waterproof.eu">waterproof.eu</a></td>
-    <td>Sweden</td>
-    <td>1960</td>
-    <td>Dive Boot, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Xcel<h2></td> -->
-    <td>Xcel</td>
-    <td><a href="https://xcelwetsuits.com/" target="_blank" id="xcelwetsuits.com">xcelwetsuits.com</a></td>
-    <td>US</td>
-    <td>1982</td>
-    <td>Dive Boot, Suit, Rashguard, Wetsuit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">XDEEP<h2></td> -->
-    <td>XDEEP</td>
-    <td><a href="https://www.xdeep.eu/" target="_blank" id="xdeep.eu">xdeep.eu</a></td>
-    <td>Poland</td>
-    <td>1998</td>
-    <td>Belts and Weights, Buoyancy Control Device, Fins, Mask</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">XS SCUBA<h2></td> -->
-    <td>XS SCUBA</td>
-    <td><a href="https://www.xsscuba.com/" target="_blank" id="xsscuba.com">xsscuba.com</a></td>
-    <td>US</td>
-    <td>2002</td>
-    <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Zeagle<h2></td> -->
-    <td>Zeagle</td>
-    <td><a href="https://www.zeagle.com/" target="_blank" id="zeagle.com">zeagle.com</a></td>
-    <td>US</td>
-    <td>1979</td>
-    <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask</td>
-  </tr>
-
-
-</table>
-
-<br>
-
-    <!-- <script type="text/javascript">
-        function tableToCSV() {
-
-            // Variable to store the final csv data
-            var csv_data = [];
-
-            // Get each row data
-            var rows = document.getElementsByTagName('tr');
-            for (var i = 0; i < rows.length; i++) {
-
-                // Get each column data
-                var cols = rows[i].querySelectorAll('td,th');
-
-                // Stores each csv row data
-                var csvrow = [];
-                for (var j = 0; j < cols.length; j++) {
-
-                    // Get the text data of each cell
-                    // of a row and push it to csvrow
-                    csvrow.push(cols[j].innerHTML);
-                }
-
-                // Combine each column value with comma
-                csv_data.push(csvrow.join(","));
-            }
-
-            // Combine each row data with new line character
-            csv_data = csv_data.join('\n');
-
-            // Call this function to download csv file
-            downloadCSVFile(csv_data);
-
-        }
-
-        function downloadCSVFile(csv_data) {
-
-            // Create CSV file object and feed
-            // our csv_data into it
-            CSVFile = new Blob([csv_data], {
-                type: "text/csv"
-            });
-
-            // Create to temporary link to initiate
-            // download process
-            var temp_link = document.createElement('a');
-
-            // Download csv file
-            temp_link.download = ;
-            var url = window.URL.createObjectURL(CSVFile);
-            temp_link.href = url;
-
-            // This link should not be displayed
-            temp_link.style.display = "none";
-            document.body.appendChild(temp_link);
-
-            // Automatically click the link to
-            // trigger download
-            temp_link.click();
-            document.body.removeChild(temp_link);
-        }
-    </script> -->
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-<p></p>
-<p></p>
-<hr>
-<p style="text-align: left; font-family: 'Lato';">84 brands indexed</p>
-<p style="text-align: left; font-family: 'Lato';">Last updated 8 May 2022 23:37</p>
-<p style="text-align: left; font-family: 'Lato';">Side project</p>
-<p style="text-align: left; font-family: 'Lato';">Interested to contribute? Contact me: n1c [@] indexall.io</p>
+    <div class="header">
+        <a href = "https://indexall.io" target = "_self"> 
+            <img src="https://indexall.io/indeXall_white.svg" alt="indeXall.io" width="100" height="100" /> 
+         </a>
+    </div>
+    
+    
+    <h1 class="h1">List of 230 Archery brands</h1>
+
+    <table class="table table-hoverable table-bordered">
+        
+    <tr>
+        <th scope="col"></th>
+        <th scope="col">Website</th>
+        <th scope="col">Country</th>
+        <th scope="col">Est.</th>
+        <th scope="col">Products</th>
+    </tr>
+
+    
+    <tr>
+        <td>AKONA</td>
+        <td><a href="https://www.akona.com/" target="_blank" id="akona.com">akona.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1950</td>
+        <td>Breathing Apparatus, Dive Boot, Fins, Mask, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>AP Diving</td>
+        <td><a href="https://www.apdiving.com/" target="_blank" id="apdiving.com">apdiving.com</a></td>
+        <td class="nowrap">UK</td>
+        <td>1969</td>
+        <td>Buoyancy Control Device</td>
+    </tr>
+    
+    <tr>
+        <td>Apeks</td>
+        <td><a href="https://www.apeksdiving.com/" target="_blank" id="apeksdiving.com">apeksdiving.com</a></td>
+        <td class="nowrap">UK</td>
+        <td>1974</td>
+        <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>Aqua Lung</td>
+        <td><a href="http://www.aqualung.com/" target="_blank" id="aqualung.com">aqualung.com</a></td>
+        <td class="nowrap">France</td>
+        <td>1943</td>
+        <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>Aqua Sphere</td>
+        <td><a href="https://www.aquasphereswim.com/" target="_blank" id="aquasphereswim.com">aquasphereswim.com</a></td>
+        <td class="nowrap">Italy</td>
+        <td>1998</td>
+        <td>Dive Boot, Fins, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>Atomic Aquatics</td>
+        <td><a href="https://www.atomicaquatics.com/" target="_blank" id="atomicaquatics.com">atomicaquatics.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1996</td>
+        <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Fins, Mask</td>
+    </tr>
+    
+    <tr>
+        <td>BARE</td>
+        <td><a href="https://www.baresports.com/" target="_blank" id="baresports.com">baresports.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1972</td>
+        <td>Suit</td>
+    </tr>
+    
+    <tr>
+        <td>Beaver Sports</td>
+        <td><a href="http://www.beaversports.co.uk/" target="_blank" id="beaversports.co.uk">beaversports.co.uk</a></td>
+        <td class="nowrap">UK</td>
+        <td>1982</td>
+        <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>Beuchat</td>
+        <td><a href="https://www.beuchat-diving.com/" target="_blank" id="beuchat-diving.com">beuchat-diving.com</a></td>
+        <td class="nowrap">France</td>
+        <td>1934</td>
+        <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>Camaro</td>
+        <td><a href="https://www.camaro-watersports.com/" target="_blank" id="camaro-watersports.com">camaro-watersports.com</a></td>
+        <td class="nowrap">Austria</td>
+        <td>1969</td>
+        <td>Breathing Apparatus, Dive Boot, Fins, Mask, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>Cressi</td>
+        <td><a href="https://www.cressi.com/" target="_blank" id="cressi.com">cressi.com</a></td>
+        <td class="nowrap">Italy</td>
+        <td>1946</td>
+        <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>De profundis</td>
+        <td><a href="https://deprofundis.es/" target="_blank" id="deprofundis.es">deprofundis.es</a></td>
+        <td class="nowrap">Spain</td>
+        <td>2000</td>
+        <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>Dive360</td>
+        <td><a href="https://www.dive360.gr/" target="_blank" id="dive360.gr">dive360.gr</a></td>
+        <td class="nowrap">Greece</td>
+        <td></td>
+        <td>Belts and Weights, Breathing Apparatus, Fins, Mask</td>
+    </tr>
+    
+    <tr>
+        <td>DUI</td>
+        <td><a href="https://www.divedui.com/" target="_blank" id="divedui.com">divedui.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Belts and Weights, Dive Boot, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>Dive Rite</td>
+        <td><a href="https://www.diverite.com/" target="_blank" id="diverite.com">diverite.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1984</td>
+        <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>Ocean Reef</td>
+        <td><a href="http://diving.oceanreefgroup.com/" target="_blank" id="diving.oceanreefgroup.com">diving.oceanreefgroup.com</a></td>
+        <td class="nowrap">Italy</td>
+        <td>1940</td>
+        <td>Breathing Apparatus, Mask</td>
+    </tr>
+    
+    <tr>
+        <td>Hog</td>
+        <td><a href="https://edge-gear.com/" target="_blank" id="edge-gear.com">edge-gear.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>Epsealon</td>
+        <td><a href="https://www.epsealon.com/" target="_blank" id="epsealon.com">epsealon.com</a></td>
+        <td class="nowrap">France</td>
+        <td></td>
+        <td>Belts and Weights, Breathing Apparatus, Dive Boot, Fins, Mask, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>FINNSUB</td>
+        <td><a href="https://www.finnsub.com/" target="_blank" id="finnsub.com">finnsub.com</a></td>
+        <td class="nowrap">Czech Republic</td>
+        <td>1998</td>
+        <td>Breathing Apparatus, Buoyancy Control Device</td>
+    </tr>
+    
+    <tr>
+        <td>Fourth Element</td>
+        <td><a href="http://www.fourthelement.com/" target="_blank" id="fourthelement.com">fourthelement.com</a></td>
+        <td class="nowrap">UK</td>
+        <td>2001</td>
+        <td>Dive Boot, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>Genesis Scuba</td>
+        <td><a href="https://www.genesisscuba.com/" target="_blank" id="genesisscuba.com">genesisscuba.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1996</td>
+        <td>Breathing Apparatus, Buoyancy Control Device, Fins, Gauges, Mask</td>
+    </tr>
+    
+    <tr>
+        <td>Gull</td>
+        <td><a href="http://gull.kinugawa-net.co.jp/" target="_blank" id="gull.kinugawa-net.co.jp">gull.kinugawa-net.co.jp</a></td>
+        <td class="nowrap">Japan</td>
+        <td></td>
+        <td>Breathing Apparatus, Dive Boot, Fins, Mask, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>H2Odyssey</td>
+        <td><a href="https://www.h2odyssey.com" target="_blank" id="h2odyssey.com">h2odyssey.com</a></td>
+        <td class="nowrap">US</td>
+        <td>2000</td>
+        <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>Halcyon</td>
+        <td><a href="https://www.halcyon.net/" target="_blank" id="halcyon.net">halcyon.net</a></td>
+        <td class="nowrap">US</td>
+        <td>1995</td>
+        <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Gauges, Mask, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>HammerHead Spearguns</td>
+        <td><a href="http://hammerheadwebstore.com/" target="_blank" id="hammerheadwebstore.com">hammerheadwebstore.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Belts and Weights, Breathing Apparatus, Dive Boot, Fins, Mask, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>Henderson Aquatics</td>
+        <td><a href="https://hendersonusa.com/" target="_blank" id="hendersonusa.com">hendersonusa.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1974</td>
+        <td>Dive Boot, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>Hollis</td>
+        <td><a href="https://www.hollis.com/" target="_blank" id="hollis.com">hollis.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1972</td>
+        <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>Imersion</td>
+        <td><a href="http://www.imersion.us/" target="_blank" id="imersion.us">imersion.us</a></td>
+        <td class="nowrap">France</td>
+        <td>1989</td>
+        <td>Belts and Weights, Breathing Apparatus, Dive Boot, Fins, Mask, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>INDIGO INDUSTRIES</td>
+        <td><a href="https://www.indigo-industries.com/" target="_blank" id="indigo-industries.com">indigo-industries.com</a></td>
+        <td class="nowrap">US</td>
+        <td>2016</td>
+        <td>Breathing Apparatus, Buoyancy Control Device, Fins, Mask</td>
+    </tr>
+    
+    <tr>
+        <td>Innovative Scuba Concepts</td>
+        <td><a href="https://innovativescuba.com/" target="_blank" id="innovativescuba.com">innovativescuba.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1988</td>
+        <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>IST SPORTS CORP</td>
+        <td><a href="https://www.istsports.com/" target="_blank" id="istsports.com">istsports.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1976</td>
+        <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>Kirby Morgan</td>
+        <td><a href="https://www.kirbymorgan.com/" target="_blank" id="kirbymorgan.com">kirbymorgan.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1966</td>
+        <td>Breathing Apparatus, Mask</td>
+    </tr>
+    
+    <tr>
+        <td>Kraken Aquatics</td>
+        <td><a href="https://www.krakenaquatics.com/" target="_blank" id="krakenaquatics.com">krakenaquatics.com</a></td>
+        <td class="nowrap">US</td>
+        <td>2015</td>
+        <td>Breathing Apparatus, Mask</td>
+    </tr>
+    
+    <tr>
+        <td>LAVACORE INTERNATIONAL</td>
+        <td><a href="https://www.lavacoreinternational.com/" target="_blank" id="lavacoreinternational.com">lavacoreinternational.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Dive Boot, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>Mares</td>
+        <td><a href="https://www.mares.com/" target="_blank" id="mares.com">mares.com</a></td>
+        <td class="nowrap">Italy</td>
+        <td>1949</td>
+        <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>Maverick America</td>
+        <td><a href="https://maverick-america.com/" target="_blank" id="maverick-america.com">maverick-america.com</a></td>
+        <td class="nowrap">US</td>
+        <td>2015</td>
+        <td>Belts and Weights, Breathing Apparatus, Dive Boot, Fins, Mask, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>Phelps</td>
+        <td><a href="https://www.michaelphelps.com/" target="_blank" id="michaelphelps.com">michaelphelps.com</a></td>
+        <td class="nowrap">US</td>
+        <td>2014</td>
+        <td>Mask, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>Northern Diver</td>
+        <td><a href="https://www.ndiver.com/" target="_blank" id="ndiver.com">ndiver.com</a></td>
+        <td class="nowrap">UK</td>
+        <td>1976</td>
+        <td>Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Mask, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>NeoSport Wetsuits</td>
+        <td><a href="https://neosportusa.com/" target="_blank" id="neosportusa.com">neosportusa.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1960</td>
+        <td>Dive Boot, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>OCEAN HUNTER</td>
+        <td><a href="https://www.oceanhunter.co.nz/" target="_blank" id="oceanhunter.co.nz">oceanhunter.co.nz</a></td>
+        <td class="nowrap">New Zealand</td>
+        <td></td>
+        <td>Belts and Weights, Fins, Mask</td>
+    </tr>
+    
+    <tr>
+        <td>Oceanic</td>
+        <td><a href="https://www.oceanicworldwide.com/" target="_blank" id="oceanicworldwide.com">oceanicworldwide.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1972</td>
+        <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>Ocean Pro</td>
+        <td><a href="https://www.oceanprosports.com/" target="_blank" id="oceanprosports.com">oceanprosports.com</a></td>
+        <td class="nowrap">Australia</td>
+        <td></td>
+        <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>Ocean Technology Systems</td>
+        <td><a href="https://www.oceantechnologysystems.com/" target="_blank" id="oceantechnologysystems.com">oceantechnologysystems.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1984</td>
+        <td>Mask</td>
+    </tr>
+    
+    <tr>
+        <td>OCTOMASK</td>
+        <td><a href="https://octomask.com/" target="_blank" id="octomask.com">octomask.com</a></td>
+        <td class="nowrap">US</td>
+        <td>2013</td>
+        <td>Mask</td>
+    </tr>
+    
+    <tr>
+        <td>Omer Breathless Emotions</td>
+        <td><a href="http://www.omersub.com/" target="_blank" id="omersub.com">omersub.com</a></td>
+        <td class="nowrap">Italy</td>
+        <td>1970</td>
+        <td>Belts and Weights, Breathing Apparatus, Fins, Mask, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>Ocean Management Systems</td>
+        <td><a href="https://omsdive.com/" target="_blank" id="omsdive.com">omsdive.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1991</td>
+        <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Fins, Gauges, Mask</td>
+    </tr>
+    
+    <tr>
+        <td>Phantom Aquatics</td>
+        <td><a href="https://phantomaquatics.com/" target="_blank" id="phantomaquatics.com">phantomaquatics.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Breathing Apparatus, Dive Boot, Fins, Mask, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>Picasso</td>
+        <td><a href="https://www.picasso.pt/" target="_blank" id="picasso.pt">picasso.pt</a></td>
+        <td class="nowrap">Portugal</td>
+        <td>1986</td>
+        <td>Belts and Weights, Breathing Apparatus, Dive Boot, Fins, Mask, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>PINNACLE AQUATICS</td>
+        <td><a href="http://www.pinnacleaquatics.com/" target="_blank" id="pinnacleaquatics.com">pinnacleaquatics.com</a></td>
+        <td class="nowrap">US</td>
+        <td>2003</td>
+        <td>Dive Boot, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>Poseidon</td>
+        <td><a href="http://www.poseidon.com/" target="_blank" id="poseidon.com">poseidon.com</a></td>
+        <td class="nowrap">Sweden</td>
+        <td>1958</td>
+        <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>PROMATE</td>
+        <td><a href="https://promateusa.com/" target="_blank" id="promateusa.com">promateusa.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>Reef Runner</td>
+        <td><a href="https://www.reefrunnergear.com/" target="_blank" id="reefrunnergear.com">reefrunnergear.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Fins</td>
+    </tr>
+    
+    <tr>
+        <td>Rob Allen</td>
+        <td><a href="https://roballendiving.com/" target="_blank" id="roballendiving.com">roballendiving.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Belts and Weights, Breathing Apparatus, Fins, Mask, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>SALVIMAR</td>
+        <td><a href="https://www.salvimar.com/" target="_blank" id="salvimar.com">salvimar.com</a></td>
+        <td class="nowrap">Italy</td>
+        <td>1962</td>
+        <td>Breathing Apparatus, Dive Boot, Fins, Mask, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>Santi</td>
+        <td><a href="http://www.santidiving.com/" target="_blank" id="santidiving.com">santidiving.com</a></td>
+        <td class="nowrap">Poland</td>
+        <td></td>
+        <td>Suit</td>
+    </tr>
+    
+    <tr>
+        <td>Scorpena</td>
+        <td><a href="https://www.scorpena.com/" target="_blank" id="scorpena.com">scorpena.com</a></td>
+        <td class="nowrap">Latvia</td>
+        <td>1991</td>
+        <td>Belts and Weights, Breathing Apparatus, Dive Boot, Fins, Mask, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>Aquatec</td>
+        <td><a href="https://www.scuba-aquatec.com/" target="_blank" id="scuba-aquatec.com">scuba-aquatec.com</a></td>
+        <td class="nowrap">Taiwan</td>
+        <td>1983</td>
+        <td>Breathing Apparatus, Buoyancy Control Device, Fins, Mask, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>ScubaMax</td>
+        <td><a href="https://scubamax.us/" target="_blank" id="scubamax.us">scubamax.us</a></td>
+        <td class="nowrap">US</td>
+        <td>1995</td>
+        <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>ScubaPro</td>
+        <td><a href="https://www.scubapro.com/" target="_blank" id="scubapro.com">scubapro.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1963</td>
+        <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>Scubatech</td>
+        <td><a href="http://www.scubatech.pl" target="_blank" id="scubatech.pl">scubatech.pl</a></td>
+        <td class="nowrap">Poland</td>
+        <td>2002</td>
+        <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>Seac Sub</td>
+        <td><a href="https://seacsub.com/" target="_blank" id="seacsub.com">seacsub.com</a></td>
+        <td class="nowrap">Italy</td>
+        <td>1971</td>
+        <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>SeaDive</td>
+        <td><a href="http://www.seadivemasks.com/" target="_blank" id="seadivemasks.com">seadivemasks.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Breathing Apparatus, Mask</td>
+    </tr>
+    
+    <tr>
+        <td>SEASOFT SCUBA</td>
+        <td><a href="https://www.seasoftscuba.com/" target="_blank" id="seasoftscuba.com">seasoftscuba.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1985</td>
+        <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Mask, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>Sharkskin</td>
+        <td><a href="https://sharkskin.com/" target="_blank" id="sharkskin.com">sharkskin.com</a></td>
+        <td class="nowrap">Australia</td>
+        <td></td>
+        <td>Suit</td>
+    </tr>
+    
+    <tr>
+        <td>Shearwater</td>
+        <td><a href="https://www.shearwater.com/" target="_blank" id="shearwater.com">shearwater.com</a></td>
+        <td class="nowrap">Canada</td>
+        <td>2004</td>
+        <td></td>
+    </tr>
+    
+    <tr>
+        <td>Sherwood Scuba</td>
+        <td><a href="https://www.sherwoodscuba.com/" target="_blank" id="sherwoodscuba.com">sherwoodscuba.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1955</td>
+        <td>Breathing Apparatus, Buoyancy Control Device, Fins, Gauges, Mask</td>
+    </tr>
+    
+    <tr>
+        <td>RIFFE</td>
+        <td><a href="https://speargun.com/" target="_blank" id="speargun.com">speargun.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Belts and Weights, Breathing Apparatus, Dive Boot, Fins, Mask, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>Spetton</td>
+        <td><a href="https://www.spettonusa.com/" target="_blank" id="spettonusa.com">spettonusa.com</a></td>
+        <td class="nowrap">US</td>
+        <td>2001</td>
+        <td>Belts and Weights, Breathing Apparatus, Dive Boot, Fins, Mask, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>Stahlsac</td>
+        <td><a href="https://www.stahlsac.com/" target="_blank" id="stahlsac.com">stahlsac.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1978</td>
+        <td></td>
+    </tr>
+    
+    <tr>
+        <td>Stohlquist WaterWare</td>
+        <td><a href="http://www.stohlquist.com/" target="_blank" id="stohlquist.com">stohlquist.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1977</td>
+        <td>Dive Boot, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>Subea</td>
+        <td><a href="https://www.subea.com/" target="_blank" id="subea.com">subea.com</a></td>
+        <td class="nowrap">France</td>
+        <td></td>
+        <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>Suunto</td>
+        <td><a href="https://www.suunto.com/" target="_blank" id="suunto.com">suunto.com</a></td>
+        <td class="nowrap">Finland</td>
+        <td>1936</td>
+        <td>Watch</td>
+    </tr>
+    
+    <tr>
+        <td>TECLINE</td>
+        <td><a href="https://teclinediving.eu/" target="_blank" id="teclinediving.eu">teclinediving.eu</a></td>
+        <td class="nowrap">Poland</td>
+        <td>2002</td>
+        <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>Tilos</td>
+        <td><a href="https://www.tilos.com/" target="_blank" id="tilos.com">tilos.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1991</td>
+        <td>Belts and Weights, Breathing Apparatus, Dive Boot, Fins, Mask, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>TUSA</td>
+        <td><a href="https://tusa.com/" target="_blank" id="tusa.com">tusa.com</a></td>
+        <td class="nowrap">Japan</td>
+        <td>1952</td>
+        <td>Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask</td>
+    </tr>
+    
+    <tr>
+        <td>Typhoon</td>
+        <td><a href="https://www.typhoon-int.co.uk/" target="_blank" id="typhoon-int.co.uk">typhoon-int.co.uk</a></td>
+        <td class="nowrap">UK</td>
+        <td>1947</td>
+        <td>Breathing Apparatus, Dive Boot, Fins, Mask, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>Ursuit Oy</td>
+        <td><a href="https://www.ursuit.com/" target="_blank" id="ursuit.com">ursuit.com</a></td>
+        <td class="nowrap">Finland</td>
+        <td>1964</td>
+        <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>U.S. Divers</td>
+        <td><a href="http://www.usdivers.com/" target="_blank" id="usdivers.com">usdivers.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Breathing Apparatus, Fins, Mask</td>
+    </tr>
+    
+    <tr>
+        <td>Unified Team Diving</td>
+        <td><a href="https://www.utdscubaequipment.com/" target="_blank" id="utdscubaequipment.com">utdscubaequipment.com</a></td>
+        <td class="nowrap">US</td>
+        <td>2000</td>
+        <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>Waterproof Diving International</td>
+        <td><a href="https://waterproof.eu/" target="_blank" id="waterproof.eu">waterproof.eu</a></td>
+        <td class="nowrap">Sweden</td>
+        <td>1960</td>
+        <td>Dive Boot, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>Xcel</td>
+        <td><a href="https://xcelwetsuits.com/" target="_blank" id="xcelwetsuits.com">xcelwetsuits.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1982</td>
+        <td>Dive Boot, Suit, Rashguard, Wetsuit</td>
+    </tr>
+    
+    <tr>
+        <td>XDEEP</td>
+        <td><a href="https://www.xdeep.eu/" target="_blank" id="xdeep.eu">xdeep.eu</a></td>
+        <td class="nowrap">Poland</td>
+        <td>1998</td>
+        <td>Belts and Weights, Buoyancy Control Device, Fins, Mask</td>
+    </tr>
+    
+    <tr>
+        <td>XS SCUBA</td>
+        <td><a href="https://www.xsscuba.com/" target="_blank" id="xsscuba.com">xsscuba.com</a></td>
+        <td class="nowrap">US</td>
+        <td>2002</td>
+        <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask, Suit</td>
+    </tr>
+    
+    <tr>
+        <td>Zeagle</td>
+        <td><a href="https://www.zeagle.com/" target="_blank" id="zeagle.com">zeagle.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1979</td>
+        <td>Belts and Weights, Breathing Apparatus, Buoyancy Control Device, Dive Boot, Fins, Gauges, Mask</td>
+    </tr>
+    
+
+    </table>
+
+    <div class="footer small">
+
+        <p>84 Scuba Diving brands indexed</p>
+        <p>Last updated 9 May 2022 11:25</p>
+        <p>Side project</p>
+        <p>Interested to contribute?</p>
+        <p>Contact me: n1c [@] indexall.io</p>
+    
+    </div>
 
 </body>
 

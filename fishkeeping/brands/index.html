@@ -16,13 +16,10 @@
 
     <meta name="robots" content="all, follow" />
 
-
-    <!-- These are the little icons that show up next to the title of the URL in the browser tab. For these to work, you must include a favicon.png file in the root of your website directory. This can also be favicon.jpg if you prefer, you just need to change the link in the href to favicon.jpg for it to work -->
     <link rel="shortcut icon" href="favicon.png">
     <link rel="icon" href="favicon.png" type="image/x-icon" />
 
-    <!-- Social Media stuff. This all makes your links look much nicer and more shareable on Facebook and Twitter -->
-    <!-- Facebook meta links - OG stands for OpenGraph by the way! -->
+    <!-- Facebook meta links -->
     <meta property="og:locale" content="en_GB" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="indeXall.io | List of Fishkeeping companies" />
@@ -37,414 +34,308 @@
     <meta name="twitter:title" content="List of Fishkeeping brands | indeXall" />
     <meta name="twitter:image" content="https://indexall.io/indeXall.svg" />
 
-    <!-- Your CSS link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://indexall.io/indeXall.css" rel="stylesheet">
 
 </head>
 
 <body>
 
-<!-- <p style="text-align: left; font-family: 'Lato';">indexall.io</p> -->
-<!-- Inline indeXall logo -->
-<!-- <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" style="fill:#fff"/><path d="M462.05,191.91c46.72,1.2,42.92,68.54-8.48,150.41l-.59.93,38,44.49H453.05L436.17,368C385.51,437.43,317.62,489.46,275.9,488.4c-37.49-1-42.44-44.53-16.36-104h6.2c-17.5,39.46-15,67.1,10.06,67.78,33.49.9,95.05-46.81,140.13-107.88l-45.36-53.12H408.5l24.25,28.4c34.92-56.14,39.09-99.77,7.57-100.62-27.56-.74-74.13,31.44-114.89,76.89h-11c48.86-61,109.3-104.9,147.64-103.92Zm86.76,115.82H497.68a1.89,1.89,0,0,0-2.13,2.13v9.95a1.88,1.88,0,0,0,2.13,2.13h49.47a28,28,0,0,1,6.39.59,9.07,9.07,0,0,1,3.91,1.83,6.7,6.7,0,0,1,2,3.26,17.53,17.53,0,0,1,.59,4.85v2.25H511.88a31.58,31.58,0,0,0-8.7,1,13.49,13.49,0,0,0-5.62,3,11.07,11.07,0,0,0-3,4.92,22.44,22.44,0,0,0-.89,6.56v5.69a28.54,28.54,0,0,0,.89,7.57,11,11,0,0,0,3,5.21,13.62,13.62,0,0,0,5.62,3,32,32,0,0,0,8.7,1h56.34a18.47,18.47,0,0,0,4.26-.41,5.38,5.38,0,0,0,2.66-1.48,6,6,0,0,0,1.42-2.9,21.5,21.5,0,0,0,.42-4.68V331.76a37.32,37.32,0,0,0-1.42-10.95,16.19,16.19,0,0,0-4.68-7.45,20.06,20.06,0,0,0-8.7-4.26,55.88,55.88,0,0,0-13.37-1.37Zm7.81,52H516.73c-2.44,0-4.16-.49-5.14-1.48s-1.48-2.54-1.48-4.67v-2.49a5.85,5.85,0,0,1,1.48-4.32c1-1,2.7-1.48,5.14-1.48h43.32v10.42a4.9,4.9,0,0,1-.77,3.14,3.38,3.38,0,0,1-2.66.88ZM604,284a2.3,2.3,0,0,1,2.61,2.6v83.56a2.3,2.3,0,0,1-2.61,2.6h-11.6a2.3,2.3,0,0,1-2.6-2.6V286.55a2.3,2.3,0,0,1,2.6-2.6Zm32,0a2.3,2.3,0,0,1,2.6,2.6v83.56a2.3,2.3,0,0,1-2.6,2.6h-11.6a2.3,2.3,0,0,1-2.61-2.6V286.55a2.3,2.3,0,0,1,2.61-2.6ZM56.12,307.73c1.73,0,2.6.91,2.6,2.73v59.65a2.3,2.3,0,0,1-2.6,2.6H44.52a2.3,2.3,0,0,1-2.61-2.6V310.46q0-2.73,2.61-2.73Zm0-24a2.3,2.3,0,0,1,2.6,2.6v11.25c0,1.81-.87,2.72-2.6,2.72H44.52a2.41,2.41,0,0,1-2.73-2.72V286.31c0-1.73.91-2.6,2.73-2.6Zm79.41,24a55.76,55.76,0,0,1,13.37,1.37,20.06,20.06,0,0,1,8.7,4.26,16.19,16.19,0,0,1,4.68,7.45,37,37,0,0,1,1.42,10.95v38.35a2.3,2.3,0,0,1-2.6,2.6H149.5a2.3,2.3,0,0,1-2.61-2.6V335.78a34.3,34.3,0,0,0-.47-6.21,8,8,0,0,0-1.83-4,7.69,7.69,0,0,0-3.73-2.13,23.63,23.63,0,0,0-6.16-.65H103.22a25,25,0,0,0-6.27.65,8.48,8.48,0,0,0-4,2.13,8.24,8.24,0,0,0-2.07,4,28.19,28.19,0,0,0-.59,6.21v34.33a2.3,2.3,0,0,1-2.6,2.6H76.12c-1.82,0-2.72-.87-2.72-2.6V331.76a37,37,0,0,1,1.42-10.95,16.09,16.09,0,0,1,4.67-7.45,20,20,0,0,1,8.64-4.26,55.72,55.72,0,0,1,13.43-1.37Zm114.45,0h-44.5a55.66,55.66,0,0,0-13.43,1.37,20,20,0,0,0-8.64,4.26,16.19,16.19,0,0,0-4.68,7.45,37,37,0,0,0-1.42,10.95v17a36.94,36.94,0,0,0,1.42,10.95,16.27,16.27,0,0,0,4.68,7.46,19.76,19.76,0,0,0,8.64,4.2,58.18,58.18,0,0,0,13.43,1.3h33.14a58.4,58.4,0,0,0,13.37-1.3,19.79,19.79,0,0,0,8.7-4.2,16.27,16.27,0,0,0,4.68-7.46,37.27,37.27,0,0,0,1.42-10.95V286.55a2.3,2.3,0,0,0-2.61-2.6h-11.6a2.3,2.3,0,0,0-2.6,2.6v21.18Zm-13,50.78a26.06,26.06,0,0,0,6.39-.65,8.66,8.66,0,0,0,4-2.13,8.24,8.24,0,0,0,2.07-4,27.89,27.89,0,0,0,.59-6.27V321.94H207.14a25.06,25.06,0,0,0-6.28.65,8.44,8.44,0,0,0-4,2.13,8.07,8.07,0,0,0-2.07,4,27.57,27.57,0,0,0-.6,6.22v10.53a27.25,27.25,0,0,0,.6,6.27,8.07,8.07,0,0,0,2.07,4,8.62,8.62,0,0,0,4,2.13,25.54,25.54,0,0,0,6.28.65ZM341.7,307.73H307a55.75,55.75,0,0,0-13.44,1.37,20,20,0,0,0-8.64,4.26,16.17,16.17,0,0,0-4.67,7.45,37,37,0,0,0-1.42,10.95v17a36.94,36.94,0,0,0,1.42,10.95,16.25,16.25,0,0,0,4.67,7.46,19.76,19.76,0,0,0,8.64,4.2,58.27,58.27,0,0,0,13.44,1.3h51a1.88,1.88,0,0,0,2.13-2.13v-9.94a1.88,1.88,0,0,0-2.13-2.13H308.68c-5.12,0-8.58-.83-10.35-2.49s-2.67-4.34-2.67-8v-2.85h59.77a7.49,7.49,0,0,0,5.09-1.47q1.67-1.49,1.66-5.27V327.15a37.36,37.36,0,0,0-.95-9.06,12.79,12.79,0,0,0-3.25-6,13.34,13.34,0,0,0-6.27-3.31,41.66,41.66,0,0,0-10-1Zm-46,26.87H343.6a1.78,1.78,0,0,0,2-2v-5c0-2.45-.51-4.18-1.54-5.21s-2.92-1.54-5.68-1.54H308.68c-5.12,0-8.58.81-10.35,2.43s-2.67,4.32-2.67,8.11Z" style="fill:#231f20;fill-rule:evenodd"/></svg> -->
+    <div class="header">
+        <a href = "https://indexall.io" target = "_self"> 
+            <img src="https://indexall.io/indeXall_white.svg" alt="indeXall.io" width="100" height="100" /> 
+         </a>
+    </div>
+    
+    
+    <h1 class="h1">List of 230 Archery brands</h1>
 
-<a href = "https://indexall.io" target = "_self"> 
-    <img src="https://indexall.io/indeXall.svg" alt="indeXall.io" width="100" height="100" /> 
- </a>
-<p></p>
-<h1>List of 33 Fishkeeping brands</h1>
-<p></p>
+    <table class="table table-hoverable table-bordered">
+        
+    <tr>
+        <th scope="col"></th>
+        <th scope="col">Website</th>
+        <th scope="col">Country</th>
+        <th scope="col">Est.</th>
+        <th scope="col">Products</th>
+    </tr>
 
-<!-- <br>
-<button type="button" class="btn btn-primary btn-sm" onclick="tableToCSV()">
-    Download CSV
-</button>
-<br>
-<br> -->
+    
+    <tr>
+        <td>AQUATOP</td>
+        <td><a href="https://www.aquatop.com/" target="_blank" id="aquatop.com">aquatop.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Decorations and Landscape, Light, Medicines and Additives, Other Aquarium Equipment, Tank</td>
+    </tr>
+    
+    <tr>
+        <td>Aqueon</td>
+        <td><a href="https://www.aqueon.com/" target="_blank" id="aqueon.com">aqueon.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1967</td>
+        <td>Decorations and Landscape, Light, Medicines and Additives, Other Aquarium Equipment, Tank</td>
+    </tr>
+    
+    <tr>
+        <td>biOrb</td>
+        <td><a href="https://www.biorb.com/" target="_blank" id="biorb.com">biorb.com</a></td>
+        <td class="nowrap">Germany</td>
+        <td></td>
+        <td>Other Aquarium Equipment, Tank</td>
+    </tr>
+    
+    <tr>
+        <td>Blue Life USA</td>
+        <td><a href="https://bluelifeusa.com/" target="_blank" id="bluelifeusa.com">bluelifeusa.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Medicines and Additives, Other Aquarium Equipment</td>
+    </tr>
+    
+    <tr>
+        <td>CaribSea</td>
+        <td><a href="https://caribsea.com/" target="_blank" id="caribsea.com">caribsea.com</a></td>
+        <td class="nowrap"></td>
+        <td>1972</td>
+        <td>Decorations and Landscape, Medicines and Additives, Substrate, Tank</td>
+    </tr>
+    
+    <tr>
+        <td>Coralife</td>
+        <td><a href="https://www.coralifeproducts.com/" target="_blank" id="coralifeproducts.com">coralifeproducts.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1988</td>
+        <td>Light, Medicines and Additives, Other Aquarium Equipment, Tank</td>
+    </tr>
+    
+    <tr>
+        <td>Dennerle</td>
+        <td><a href="https://dennerle.com/" target="_blank" id="dennerle.com">dennerle.com</a></td>
+        <td class="nowrap">Germany</td>
+        <td>1966</td>
+        <td>Light, Medicines and Additives, Other Aquarium Equipment, Tank</td>
+    </tr>
+    
+    <tr>
+        <td>EcoTech Marine</td>
+        <td><a href="https://ecotechmarine.com/" target="_blank" id="ecotechmarine.com">ecotechmarine.com</a></td>
+        <td class="nowrap">US</td>
+        <td>2003</td>
+        <td>Light, Other Aquarium Equipment</td>
+    </tr>
+    
+    <tr>
+        <td>EHEIM</td>
+        <td><a href="https://eheim.com/" target="_blank" id="eheim.com">eheim.com</a></td>
+        <td class="nowrap">Germany</td>
+        <td>2004</td>
+        <td>Light, Other Aquarium Equipment, Tank</td>
+    </tr>
+    
+    <tr>
+        <td>Finnex</td>
+        <td><a href="https://www.finnex.net/" target="_blank" id="finnex.net">finnex.net</a></td>
+        <td class="nowrap"></td>
+        <td>2001</td>
+        <td>Light, Other Aquarium Equipment</td>
+    </tr>
+    
+    <tr>
+        <td>Fluval</td>
+        <td><a href="https://fluvalaquatics.com/" target="_blank" id="fluvalaquatics.com">fluvalaquatics.com</a></td>
+        <td class="nowrap">Canada</td>
+        <td>1975</td>
+        <td>Light, Medicines and Additives, Other Aquarium Equipment, Tank</td>
+    </tr>
+    
+    <tr>
+        <td>Glofish</td>
+        <td><a href="https://www.glofish.com/" target="_blank" id="glofish.com">glofish.com</a></td>
+        <td class="nowrap">US</td>
+        <td>2001</td>
+        <td>Decorations and Landscape, Light, Medicines and Additives, Tank</td>
+    </tr>
+    
+    <tr>
+        <td>Hikari</td>
+        <td><a href="https://www.hikari.info/" target="_blank" id="hikari.info">hikari.info</a></td>
+        <td class="nowrap">Japan</td>
+        <td></td>
+        <td>Medicines and Additives</td>
+    </tr>
+    
+    <tr>
+        <td>Hydor</td>
+        <td><a href="https://www.hydor.com/" target="_blank" id="hydor.com">hydor.com</a></td>
+        <td class="nowrap">Italy</td>
+        <td>1984</td>
+        <td>Other Aquarium Equipment</td>
+    </tr>
+    
+    <tr>
+        <td>Innovative Marine</td>
+        <td><a href="https://www.innovative-marine.com/" target="_blank" id="innovative-marine.com">innovative-marine.com</a></td>
+        <td class="nowrap">US</td>
+        <td>2011</td>
+        <td>Light, Other Aquarium Equipment, Tank</td>
+    </tr>
+    
+    <tr>
+        <td>Instant Ocean</td>
+        <td><a href="http://www.instantocean.com/" target="_blank" id="instantocean.com">instantocean.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Medicines and Additives, Other Aquarium Equipment</td>
+    </tr>
+    
+    <tr>
+        <td>JBJ Aquariums</td>
+        <td><a href="https://www.jbjaquarium.com/" target="_blank" id="jbjaquarium.com">jbjaquarium.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Light, Other Aquarium Equipment, Tank</td>
+    </tr>
+    
+    <tr>
+        <td>KENT Marine</td>
+        <td><a href="https://www.kentmarine.com/" target="_blank" id="kentmarine.com">kentmarine.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Medicines and Additives, Other Aquarium Equipment</td>
+    </tr>
+    
+    <tr>
+        <td>Lifegard Aquatics</td>
+        <td><a href="http://www.lifegardaquatics.com/" target="_blank" id="lifegardaquatics.com">lifegardaquatics.com</a></td>
+        <td class="nowrap">US</td>
+        <td>2008</td>
+        <td>Decorations and Landscape, Light, Other Aquarium Equipment, Tank</td>
+    </tr>
+    
+    <tr>
+        <td>Marineland</td>
+        <td><a href="http://www.marineland.com/" target="_blank" id="marineland.com">marineland.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1968</td>
+        <td>Light, Medicines and Additives, Other Aquarium Equipment, Tank</td>
+    </tr>
+    
+    <tr>
+        <td>OASE</td>
+        <td><a href="https://www.oase.com/" target="_blank" id="oase.com">oase.com</a></td>
+        <td class="nowrap">Germany</td>
+        <td>1949</td>
+        <td>Other Aquarium Equipment, Tank</td>
+    </tr>
+    
+    <tr>
+        <td>Ocean Nutrition</td>
+        <td><a href="https://www.oceannutrition.com/" target="_blank" id="oceannutrition.com">oceannutrition.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Medicines and Additives</td>
+    </tr>
+    
+    <tr>
+        <td>Penn Plax</td>
+        <td><a href="https://www.penn-plax.com/" target="_blank" id="penn-plax.com">penn-plax.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1959</td>
+        <td>Medicines and Additives, Other Aquarium Equipment, Tank</td>
+    </tr>
+    
+    <tr>
+        <td>Pisces Pros</td>
+        <td><a href="https://piscespros.com/" target="_blank" id="piscespros.com">piscespros.com</a></td>
+        <td class="nowrap"></td>
+        <td></td>
+        <td>Medicines and Additives</td>
+    </tr>
+    
+    <tr>
+        <td>Pro Clear Aquatic Systems</td>
+        <td><a href="https://www.pro-clear.com/" target="_blank" id="pro-clear.com">pro-clear.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1996</td>
+        <td>Other Aquarium Equipment, Tank</td>
+    </tr>
+    
+    <tr>
+        <td>Red Sea</td>
+        <td><a href="https://www.redseafish.com/" target="_blank" id="redseafish.com">redseafish.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1992</td>
+        <td>Medicines and Additives, Other Aquarium Equipment, Tank</td>
+    </tr>
+    
+    <tr>
+        <td>Reef Octopus</td>
+        <td><a href="https://reefoctopus.com/" target="_blank" id="reefoctopus.com">reefoctopus.com</a></td>
+        <td class="nowrap">US</td>
+        <td></td>
+        <td>Medicines and Additives, Other Aquarium Equipment, Tank</td>
+    </tr>
+    
+    <tr>
+        <td>Seachem</td>
+        <td><a href="https://www.seachem.com/" target="_blank" id="seachem.com">seachem.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1980</td>
+        <td>Medicines and Additives, Other Aquarium Equipment, Substrate</td>
+    </tr>
+    
+    <tr>
+        <td>SICCE</td>
+        <td><a href="https://www.sicce.com/" target="_blank" id="sicce.com">sicce.com</a></td>
+        <td class="nowrap">Italy</td>
+        <td></td>
+        <td>Light, Other Aquarium Equipment</td>
+    </tr>
+    
+    <tr>
+        <td>Tetra</td>
+        <td><a href="http://www.tetra-fish.com/" target="_blank" id="tetra-fish.com">tetra-fish.com</a></td>
+        <td class="nowrap">Germany</td>
+        <td>1951</td>
+        <td>Medicines and Additives</td>
+    </tr>
+    
+    <tr>
+        <td>Tropic Marin</td>
+        <td><a href="https://www.tropic-marin.com/" target="_blank" id="tropic-marin.com">tropic-marin.com</a></td>
+        <td class="nowrap">Germany</td>
+        <td></td>
+        <td>Light, Other Aquarium Equipment</td>
+    </tr>
+    
+    <tr>
+        <td>TUNZE</td>
+        <td><a href="https://www.tunze.com/" target="_blank" id="tunze.com">tunze.com</a></td>
+        <td class="nowrap">Germany</td>
+        <td>1960</td>
+        <td>Other Aquarium Equipment</td>
+    </tr>
+    
+    <tr>
+        <td>AquaClear</td>
+        <td><a href="http://usa.hagen.com/aquaclear" target="_blank" id="usa.hagen.com">usa.hagen.com</a></td>
+        <td class="nowrap">US</td>
+        <td>1978</td>
+        <td>Other Aquarium Equipment</td>
+    </tr>
+    
 
-<table class="table table-hover table-sm">
-  <tr>
-    <th scope="col"></th>
-    <th scope="col">Website</th>
-    <th scope="col">Country</th>
-    <th scope="col">Est.</th>
-    <th scope="col">Products</th>
-  </tr>
+    </table>
 
-  <tr>
-    <!-- <td><h2 class="fs-7">AQUATOP<h2></td> -->
-    <td>AQUATOP</td>
-    <td><a href="https://www.aquatop.com/" target="_blank" id="aquatop.com">aquatop.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Decorations and Landscape, Light, Medicines and Additives, Other Aquarium Equipment, Tank</td>
-  </tr>
+    <div class="footer small">
 
-  <tr>
-    <!-- <td><h2 class="fs-7">Aqueon<h2></td> -->
-    <td>Aqueon</td>
-    <td><a href="https://www.aqueon.com/" target="_blank" id="aqueon.com">aqueon.com</a></td>
-    <td>US</td>
-    <td>1967</td>
-    <td>Decorations and Landscape, Light, Medicines and Additives, Other Aquarium Equipment, Tank</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">biOrb<h2></td> -->
-    <td>biOrb</td>
-    <td><a href="https://www.biorb.com/" target="_blank" id="biorb.com">biorb.com</a></td>
-    <td>Germany</td>
-    <td></td>
-    <td>Other Aquarium Equipment, Tank</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Blue Life USA<h2></td> -->
-    <td>Blue Life USA</td>
-    <td><a href="https://bluelifeusa.com/" target="_blank" id="bluelifeusa.com">bluelifeusa.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Medicines and Additives, Other Aquarium Equipment</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">CaribSea<h2></td> -->
-    <td>CaribSea</td>
-    <td><a href="https://caribsea.com/" target="_blank" id="caribsea.com">caribsea.com</a></td>
-    <td></td>
-    <td>1972</td>
-    <td>Decorations and Landscape, Medicines and Additives, Substrate, Tank</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Coralife<h2></td> -->
-    <td>Coralife</td>
-    <td><a href="https://www.coralifeproducts.com/" target="_blank" id="coralifeproducts.com">coralifeproducts.com</a></td>
-    <td>US</td>
-    <td>1988</td>
-    <td>Light, Medicines and Additives, Other Aquarium Equipment, Tank</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Dennerle<h2></td> -->
-    <td>Dennerle</td>
-    <td><a href="https://dennerle.com/" target="_blank" id="dennerle.com">dennerle.com</a></td>
-    <td>Germany</td>
-    <td>1966</td>
-    <td>Light, Medicines and Additives, Other Aquarium Equipment, Tank</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">EcoTech Marine<h2></td> -->
-    <td>EcoTech Marine</td>
-    <td><a href="https://ecotechmarine.com/" target="_blank" id="ecotechmarine.com">ecotechmarine.com</a></td>
-    <td>US</td>
-    <td>2003</td>
-    <td>Light, Other Aquarium Equipment</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">EHEIM<h2></td> -->
-    <td>EHEIM</td>
-    <td><a href="https://eheim.com/" target="_blank" id="eheim.com">eheim.com</a></td>
-    <td>Germany</td>
-    <td>2004</td>
-    <td>Light, Other Aquarium Equipment, Tank</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Finnex<h2></td> -->
-    <td>Finnex</td>
-    <td><a href="https://www.finnex.net/" target="_blank" id="finnex.net">finnex.net</a></td>
-    <td></td>
-    <td>2001</td>
-    <td>Light, Other Aquarium Equipment</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Fluval<h2></td> -->
-    <td>Fluval</td>
-    <td><a href="https://fluvalaquatics.com/" target="_blank" id="fluvalaquatics.com">fluvalaquatics.com</a></td>
-    <td>Canada</td>
-    <td>1975</td>
-    <td>Light, Medicines and Additives, Other Aquarium Equipment, Tank</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Glofish<h2></td> -->
-    <td>Glofish</td>
-    <td><a href="https://www.glofish.com/" target="_blank" id="glofish.com">glofish.com</a></td>
-    <td>US</td>
-    <td>2001</td>
-    <td>Decorations and Landscape, Light, Medicines and Additives, Tank</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Hikari<h2></td> -->
-    <td>Hikari</td>
-    <td><a href="https://www.hikari.info/" target="_blank" id="hikari.info">hikari.info</a></td>
-    <td>Japan</td>
-    <td></td>
-    <td>Medicines and Additives</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Hydor<h2></td> -->
-    <td>Hydor</td>
-    <td><a href="https://www.hydor.com/" target="_blank" id="hydor.com">hydor.com</a></td>
-    <td>Italy</td>
-    <td>1984</td>
-    <td>Other Aquarium Equipment</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Innovative Marine<h2></td> -->
-    <td>Innovative Marine</td>
-    <td><a href="https://www.innovative-marine.com/" target="_blank" id="innovative-marine.com">innovative-marine.com</a></td>
-    <td>US</td>
-    <td>2011</td>
-    <td>Light, Other Aquarium Equipment, Tank</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Instant Ocean<h2></td> -->
-    <td>Instant Ocean</td>
-    <td><a href="http://www.instantocean.com/" target="_blank" id="instantocean.com">instantocean.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Medicines and Additives, Other Aquarium Equipment</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">JBJ Aquariums<h2></td> -->
-    <td>JBJ Aquariums</td>
-    <td><a href="https://www.jbjaquarium.com/" target="_blank" id="jbjaquarium.com">jbjaquarium.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Light, Other Aquarium Equipment, Tank</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">KENT Marine<h2></td> -->
-    <td>KENT Marine</td>
-    <td><a href="https://www.kentmarine.com/" target="_blank" id="kentmarine.com">kentmarine.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Medicines and Additives, Other Aquarium Equipment</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Lifegard Aquatics<h2></td> -->
-    <td>Lifegard Aquatics</td>
-    <td><a href="http://www.lifegardaquatics.com/" target="_blank" id="lifegardaquatics.com">lifegardaquatics.com</a></td>
-    <td>US</td>
-    <td>2008</td>
-    <td>Decorations and Landscape, Light, Other Aquarium Equipment, Tank</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Marineland<h2></td> -->
-    <td>Marineland</td>
-    <td><a href="http://www.marineland.com/" target="_blank" id="marineland.com">marineland.com</a></td>
-    <td>US</td>
-    <td>1968</td>
-    <td>Light, Medicines and Additives, Other Aquarium Equipment, Tank</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">OASE<h2></td> -->
-    <td>OASE</td>
-    <td><a href="https://www.oase.com/" target="_blank" id="oase.com">oase.com</a></td>
-    <td>Germany</td>
-    <td>1949</td>
-    <td>Other Aquarium Equipment, Tank</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Ocean Nutrition<h2></td> -->
-    <td>Ocean Nutrition</td>
-    <td><a href="https://www.oceannutrition.com/" target="_blank" id="oceannutrition.com">oceannutrition.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Medicines and Additives</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Penn Plax<h2></td> -->
-    <td>Penn Plax</td>
-    <td><a href="https://www.penn-plax.com/" target="_blank" id="penn-plax.com">penn-plax.com</a></td>
-    <td>US</td>
-    <td>1959</td>
-    <td>Medicines and Additives, Other Aquarium Equipment, Tank</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Pisces Pros<h2></td> -->
-    <td>Pisces Pros</td>
-    <td><a href="https://piscespros.com/" target="_blank" id="piscespros.com">piscespros.com</a></td>
-    <td></td>
-    <td></td>
-    <td>Medicines and Additives</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Pro Clear Aquatic Systems<h2></td> -->
-    <td>Pro Clear Aquatic Systems</td>
-    <td><a href="https://www.pro-clear.com/" target="_blank" id="pro-clear.com">pro-clear.com</a></td>
-    <td>US</td>
-    <td>1996</td>
-    <td>Other Aquarium Equipment, Tank</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Red Sea<h2></td> -->
-    <td>Red Sea</td>
-    <td><a href="https://www.redseafish.com/" target="_blank" id="redseafish.com">redseafish.com</a></td>
-    <td>US</td>
-    <td>1992</td>
-    <td>Medicines and Additives, Other Aquarium Equipment, Tank</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Reef Octopus<h2></td> -->
-    <td>Reef Octopus</td>
-    <td><a href="https://reefoctopus.com/" target="_blank" id="reefoctopus.com">reefoctopus.com</a></td>
-    <td>US</td>
-    <td></td>
-    <td>Medicines and Additives, Other Aquarium Equipment, Tank</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Seachem<h2></td> -->
-    <td>Seachem</td>
-    <td><a href="https://www.seachem.com/" target="_blank" id="seachem.com">seachem.com</a></td>
-    <td>US</td>
-    <td>1980</td>
-    <td>Medicines and Additives, Other Aquarium Equipment, Substrate</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">SICCE<h2></td> -->
-    <td>SICCE</td>
-    <td><a href="https://www.sicce.com/" target="_blank" id="sicce.com">sicce.com</a></td>
-    <td>Italy</td>
-    <td></td>
-    <td>Light, Other Aquarium Equipment</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Tetra<h2></td> -->
-    <td>Tetra</td>
-    <td><a href="http://www.tetra-fish.com/" target="_blank" id="tetra-fish.com">tetra-fish.com</a></td>
-    <td>Germany</td>
-    <td>1951</td>
-    <td>Medicines and Additives</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">Tropic Marin<h2></td> -->
-    <td>Tropic Marin</td>
-    <td><a href="https://www.tropic-marin.com/" target="_blank" id="tropic-marin.com">tropic-marin.com</a></td>
-    <td>Germany</td>
-    <td></td>
-    <td>Light, Other Aquarium Equipment</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">TUNZE<h2></td> -->
-    <td>TUNZE</td>
-    <td><a href="https://www.tunze.com/" target="_blank" id="tunze.com">tunze.com</a></td>
-    <td>Germany</td>
-    <td>1960</td>
-    <td>Other Aquarium Equipment</td>
-  </tr>
-
-  <tr>
-    <!-- <td><h2 class="fs-7">AquaClear<h2></td> -->
-    <td>AquaClear</td>
-    <td><a href="http://usa.hagen.com/aquaclear" target="_blank" id="usa.hagen.com">usa.hagen.com</a></td>
-    <td>US</td>
-    <td>1978</td>
-    <td>Other Aquarium Equipment</td>
-  </tr>
-
-
-</table>
-
-<br>
-
-    <!-- <script type="text/javascript">
-        function tableToCSV() {
-
-            // Variable to store the final csv data
-            var csv_data = [];
-
-            // Get each row data
-            var rows = document.getElementsByTagName('tr');
-            for (var i = 0; i < rows.length; i++) {
-
-                // Get each column data
-                var cols = rows[i].querySelectorAll('td,th');
-
-                // Stores each csv row data
-                var csvrow = [];
-                for (var j = 0; j < cols.length; j++) {
-
-                    // Get the text data of each cell
-                    // of a row and push it to csvrow
-                    csvrow.push(cols[j].innerHTML);
-                }
-
-                // Combine each column value with comma
-                csv_data.push(csvrow.join(","));
-            }
-
-            // Combine each row data with new line character
-            csv_data = csv_data.join('\n');
-
-            // Call this function to download csv file
-            downloadCSVFile(csv_data);
-
-        }
-
-        function downloadCSVFile(csv_data) {
-
-            // Create CSV file object and feed
-            // our csv_data into it
-            CSVFile = new Blob([csv_data], {
-                type: "text/csv"
-            });
-
-            // Create to temporary link to initiate
-            // download process
-            var temp_link = document.createElement('a');
-
-            // Download csv file
-            temp_link.download = ;
-            var url = window.URL.createObjectURL(CSVFile);
-            temp_link.href = url;
-
-            // This link should not be displayed
-            temp_link.style.display = "none";
-            document.body.appendChild(temp_link);
-
-            // Automatically click the link to
-            // trigger download
-            temp_link.click();
-            document.body.removeChild(temp_link);
-        }
-    </script> -->
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-<p></p>
-<p></p>
-<hr>
-<p style="text-align: left; font-family: 'Lato';">33 brands indexed</p>
-<p style="text-align: left; font-family: 'Lato';">Last updated 8 May 2022 23:37</p>
-<p style="text-align: left; font-family: 'Lato';">Side project</p>
-<p style="text-align: left; font-family: 'Lato';">Interested to contribute? Contact me: n1c [@] indexall.io</p>
+        <p>33 Fishkeeping brands indexed</p>
+        <p>Last updated 9 May 2022 11:25</p>
+        <p>Side project</p>
+        <p>Interested to contribute?</p>
+        <p>Contact me: n1c [@] indexall.io</p>
+    
+    </div>
 
 </body>
 
