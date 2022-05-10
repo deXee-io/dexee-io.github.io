@@ -76,6 +76,26 @@ a:link, a:visited {
     text-decoration: underline;
   }
 
+.link_tag:link, .link_tag:visited {
+    background-color: black;
+    color: white;
+    padding-top: 0.3em;
+    padding-right: 0.6em;
+    padding-bottom: 0.3em;
+    padding-left: 0.6em;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.link_tag:hover, .link_tag:active {
+    background-color: black;
+    color: white;
+    text-decoration: underline;
+}
+
+
 /* hr {
   margin: 1rem 0;
   color: inherit;
@@ -241,14 +261,4 @@ strong {
 
 .small {
   font-size: 0.875em;
-}
-
-.a {
-  /* color: #0d6efd; */
-  color: #000000;
-  text-decoration: underline;
-}
-
-.a:hover {
-  color: #ffffff;
 }
