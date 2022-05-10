@@ -79,9 +79,9 @@ a:link, a:visited {
 .link_tag:link, .link_tag:visited {
     background-color: black;
     color: white;
-    padding-top: 0.3em;
+    padding-top: 0.2em;
     padding-right: 0.6em;
-    padding-bottom: 0.3em;
+    padding-bottom: 0.4em;
     padding-left: 0.6em;
     text-align: center;
     display: inline-block;
