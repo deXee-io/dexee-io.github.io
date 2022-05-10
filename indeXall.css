@@ -87,6 +87,7 @@ a:link, a:visited {
     display: inline-block;
     text-decoration: none;
     border-radius: 5px;
+    /* line-height: 5em; */
 }
 
 .link_tag:hover, .link_tag:active {
