@@ -76,9 +76,23 @@ a:link, a:visited {
     text-decoration: underline;
   }
 
-.link_tag:link, .link_tag:visited {
+.link_tag:link {
     background-color: black;
     color: white;
+    padding-top: 0.2em;
+    padding-right: 0.6em;
+    padding-bottom: 0.4em;
+    padding-left: 0.6em;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 5px;
+    /* line-height: 5em; */
+}
+
+.link_tag:visited {
+    background-color: black;
+    color: #da2222;
     padding-top: 0.2em;
     padding-right: 0.6em;
     padding-bottom: 0.4em;
