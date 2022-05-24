@@ -132,6 +132,27 @@ a:visited {
     text-decoration: underline;
 }
 
+.link_add:visited {
+    background-color: black;
+    color: #ffffff;
+    padding-top: 0.2em;
+    padding-right: 0.6em;
+    padding-bottom: 0.4em;
+    padding-left: 0.6em;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    /* line-height: 5em; */
+}
+
+.link_add:hover, .link_add:active {
+    background-color: black;
+    color: white;
+    text-decoration: underline;
+    font-family: 'Roboto';
+}
 
 /* hr {
   margin: 1rem 0;
