@@ -139,10 +139,10 @@ a:visited {
 .link_add:link {
     background-color: black;
     color: white;
-    padding-top: 0.2em;
-    padding-right: 0.6em;
-    padding-bottom: 0.4em;
-    padding-left: 0.6em;
+    padding-top: 0.5em;
+    padding-right: 1em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
     text-align: center;
     display: inline-block;
     text-decoration: none;
@@ -155,10 +155,10 @@ a:visited {
 .link_add:visited {
     background-color: black;
     color: #ffffff;
-    padding-top: 0.2em;
-    padding-right: 0.6em;
-    padding-bottom: 0.4em;
-    padding-left: 0.6em;
+    padding-top: 0.5em;
+    padding-right: 1em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
     text-align: center;
     display: inline-block;
     text-decoration: none;
