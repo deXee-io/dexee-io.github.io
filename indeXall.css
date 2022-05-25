@@ -140,6 +140,43 @@ a:visited {
     text-decoration: underline;
 }
 
+/* LINK FLAGS */
+
+.link_flag:link {
+    background-color: #ffffff;
+    /* color: white; */
+    padding-top: 0.2em;
+    padding-right: 0.6em;
+    padding-bottom: 0.4em;
+    padding-left: 0.6em;
+    text-align: left;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 3px solid #000000;
+    /* line-height: 5em; */
+}
+
+.link_flag:visited {
+    /* background-color: black;
+    color: #ffffff;
+    padding-top: 0.2em;
+    padding-right: 0.6em;
+    padding-bottom: 0.4em;
+    padding-left: 0.6em; */
+    text-align: left;
+    /* display: inline-block;
+    text-decoration: none;
+    border-radius: 5px; */
+    /* line-height: 5em; */
+}
+
+.link_flag:hover, .link_flag:active {
+    background-color: black;
+    color: white;
+    /* text-decoration: underline; */
+}
+
 /* ADD button */
 
 .link_add:link {
