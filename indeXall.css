@@ -335,7 +335,6 @@ h6 {
     /* width:100%; messes up with index page */
     display: table;
     max-width: 100%;
-    /* white-space: nowrap;  */
   }
 
 .table-bordered tr {
@@ -361,15 +360,6 @@ h6 {
     color: #ffffff;
 }
 
-/* .table tr {
-    white-space: nowrap;
-} */
-
-/* .td.fitwidth {
-    width: 1px;
-    white-space: nowrap;
-} */
-
 .table th {
     padding-left: 1rem;
     padding-top: 0.33rem;
@@ -380,8 +370,6 @@ h6 {
     vertical-align: top;
     font-weight: bold;
     font-size: 1.1rem;
-    /* white-space: nowrap;
-    width: 1px; */
 }
 
 .table td {
@@ -392,8 +380,6 @@ h6 {
     display: table-cell;
     text-align: left;
     vertical-align: top;
-    /* white-space: nowrap;
-    width: 1px; */
 }
 
 .nowrap {
@@ -404,13 +390,6 @@ ol,
 ul {
   padding-left: 2rem;
 }
-
-/* ol,
-ul,
-dl {
-  margin-top: 0;
-  margin-bottom: 1rem;
-} */
 
 ol ol,
 ul ul,
