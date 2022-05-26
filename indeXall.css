@@ -332,9 +332,9 @@ h6 {
     font-family: 'Lato';
     border-collapse: collapse;
     border-spacing: 0;
-    /* width:100%; */
+    width:100%;
     display: table;
-    /* max-width: 100%; */
+    max-width: 100%;
     /* white-space: nowrap;  */
   }
 
