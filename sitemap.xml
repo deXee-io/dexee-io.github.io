@@ -3404,6 +3404,12 @@
     </url>
     
     <url>
+        <loc>https://indexall.io/hi-fi/products/equalizer</loc>
+        <lastmod>2022-05-28</lastmod>
+        <priority>1.0</priority>        
+    </url>
+    
+    <url>
         <loc>https://indexall.io/hi-fi/products/turntable-decks</loc>
         <lastmod>2022-05-28</lastmod>
         <priority>1.0</priority>        
@@ -3441,6 +3447,18 @@
     
     <url>
         <loc>https://indexall.io/hi-fi/products/music-servers</loc>
+        <lastmod>2022-05-28</lastmod>
+        <priority>1.0</priority>        
+    </url>
+    
+    <url>
+        <loc>https://indexall.io/hi-fi/products/processors</loc>
+        <lastmod>2022-05-28</lastmod>
+        <priority>1.0</priority>        
+    </url>
+    
+    <url>
+        <loc>https://indexall.io/hi-fi/products/subwoofers</loc>
         <lastmod>2022-05-28</lastmod>
         <priority>1.0</priority>        
     </url>
@@ -7364,13 +7382,13 @@
     </url>
     
     <url>
-        <loc>https://indexall.io/home-cinema/brands/fr</loc>
+        <loc>https://indexall.io/home-cinema/brands/de</loc>
         <lastmod>2022-05-28</lastmod>
         <priority>1.0</priority>        
     </url>
     
     <url>
-        <loc>https://indexall.io/home-cinema/brands/de</loc>
+        <loc>https://indexall.io/home-cinema/brands/fr</loc>
         <lastmod>2022-05-28</lastmod>
         <priority>1.0</priority>        
     </url>
