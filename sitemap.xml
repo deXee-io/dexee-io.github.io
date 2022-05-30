@@ -62,6 +62,12 @@
     </url>
     
     <url>
+        <loc>https://indexall.io/djing</loc>
+        <lastmod>2022-05-30</lastmod>
+        <priority>1.0</priority>        
+    </url>
+    
+    <url>
         <loc>https://indexall.io/drawing</loc>
         <lastmod>2022-05-30</lastmod>
         <priority>1.0</priority>        
@@ -531,6 +537,12 @@
     
     <url>
         <loc>https://indexall.io/cubing/brands</loc>
+        <lastmod>2022-05-30</lastmod>
+        <priority>1.0</priority>        
+    </url>
+    
+    <url>
+        <loc>https://indexall.io/djing/brands</loc>
         <lastmod>2022-05-30</lastmod>
         <priority>1.0</priority>        
     </url>
@@ -3542,6 +3554,12 @@
     </url>
     
     <url>
+        <loc>https://indexall.io/hi-fi/products/bags-and-cases</loc>
+        <lastmod>2022-05-30</lastmod>
+        <priority>1.0</priority>        
+    </url>
+    
+    <url>
         <loc>https://indexall.io/hiking/products/watches</loc>
         <lastmod>2022-05-30</lastmod>
         <priority>1.0</priority>        
@@ -3735,6 +3753,18 @@
     
     <url>
         <loc>https://indexall.io/swimming/products/music-players</loc>
+        <lastmod>2022-05-30</lastmod>
+        <priority>1.0</priority>        
+    </url>
+    
+    <url>
+        <loc>https://indexall.io/djing/products/software</loc>
+        <lastmod>2022-05-30</lastmod>
+        <priority>1.0</priority>        
+    </url>
+    
+    <url>
+        <loc>https://indexall.io/djing/products/controllers</loc>
         <lastmod>2022-05-30</lastmod>
         <priority>1.0</priority>        
     </url>
@@ -7563,6 +7593,12 @@
     
     <url>
         <loc>https://indexall.io/swimming/brands/us</loc>
+        <lastmod>2022-05-30</lastmod>
+        <priority>1.0</priority>        
+    </url>
+    
+    <url>
+        <loc>https://indexall.io/djing/brands/fr</loc>
         <lastmod>2022-05-30</lastmod>
         <priority>1.0</priority>        
     </url>
