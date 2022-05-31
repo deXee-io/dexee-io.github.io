@@ -1490,6 +1490,12 @@
     </url>
     
     <url>
+        <loc>https://indexall.io/home-studio/products/power-conditioners</loc>
+        <lastmod>2022-05-31</lastmod>
+        <priority>1.0</priority>        
+    </url>
+    
+    <url>
         <loc>https://indexall.io/painting/products/paint-and-mediums</loc>
         <lastmod>2022-05-31</lastmod>
         <priority>1.0</priority>        
@@ -2438,6 +2444,30 @@
     </url>
     
     <url>
+        <loc>https://indexall.io/computer-gaming/products/speakerphones</loc>
+        <lastmod>2022-05-31</lastmod>
+        <priority>1.0</priority>        
+    </url>
+    
+    <url>
+        <loc>https://indexall.io/computer-gaming/products/amplifiers</loc>
+        <lastmod>2022-05-31</lastmod>
+        <priority>1.0</priority>        
+    </url>
+    
+    <url>
+        <loc>https://indexall.io/computer-gaming/products/cables</loc>
+        <lastmod>2022-05-31</lastmod>
+        <priority>1.0</priority>        
+    </url>
+    
+    <url>
+        <loc>https://indexall.io/computer-gaming/products/accessories</loc>
+        <lastmod>2022-05-31</lastmod>
+        <priority>1.0</priority>        
+    </url>
+    
+    <url>
         <loc>https://indexall.io/ski/products/equipment</loc>
         <lastmod>2022-05-31</lastmod>
         <priority>1.0</priority>        
@@ -3284,6 +3314,24 @@
     </url>
     
     <url>
+        <loc>https://indexall.io/home-office/products/amplifiers</loc>
+        <lastmod>2022-05-31</lastmod>
+        <priority>1.0</priority>        
+    </url>
+    
+    <url>
+        <loc>https://indexall.io/home-office/products/cables</loc>
+        <lastmod>2022-05-31</lastmod>
+        <priority>1.0</priority>        
+    </url>
+    
+    <url>
+        <loc>https://indexall.io/home-office/products/accessories</loc>
+        <lastmod>2022-05-31</lastmod>
+        <priority>1.0</priority>        
+    </url>
+    
+    <url>
         <loc>https://indexall.io/home-office/products/treadmills</loc>
         <lastmod>2022-05-31</lastmod>
         <priority>1.0</priority>        
@@ -3789,6 +3837,60 @@
     
     <url>
         <loc>https://indexall.io/home-cinema/products/acoustics</loc>
+        <lastmod>2022-05-31</lastmod>
+        <priority>1.0</priority>        
+    </url>
+    
+    <url>
+        <loc>https://indexall.io/home-cinema/products/subwoofers</loc>
+        <lastmod>2022-05-31</lastmod>
+        <priority>1.0</priority>        
+    </url>
+    
+    <url>
+        <loc>https://indexall.io/streaming/products/headsets</loc>
+        <lastmod>2022-05-31</lastmod>
+        <priority>1.0</priority>        
+    </url>
+    
+    <url>
+        <loc>https://indexall.io/streaming/products/speakerphones</loc>
+        <lastmod>2022-05-31</lastmod>
+        <priority>1.0</priority>        
+    </url>
+    
+    <url>
+        <loc>https://indexall.io/streaming/products/webcams</loc>
+        <lastmod>2022-05-31</lastmod>
+        <priority>1.0</priority>        
+    </url>
+    
+    <url>
+        <loc>https://indexall.io/streaming/products/earphones</loc>
+        <lastmod>2022-05-31</lastmod>
+        <priority>1.0</priority>        
+    </url>
+    
+    <url>
+        <loc>https://indexall.io/streaming/products/usb-microphones</loc>
+        <lastmod>2022-05-31</lastmod>
+        <priority>1.0</priority>        
+    </url>
+    
+    <url>
+        <loc>https://indexall.io/streaming/products/amplifiers</loc>
+        <lastmod>2022-05-31</lastmod>
+        <priority>1.0</priority>        
+    </url>
+    
+    <url>
+        <loc>https://indexall.io/streaming/products/cables</loc>
+        <lastmod>2022-05-31</lastmod>
+        <priority>1.0</priority>        
+    </url>
+    
+    <url>
+        <loc>https://indexall.io/streaming/products/accessories</loc>
         <lastmod>2022-05-31</lastmod>
         <priority>1.0</priority>        
     </url>
@@ -7731,6 +7833,12 @@
     
     <url>
         <loc>https://indexall.io/home-cinema/brands/pt</loc>
+        <lastmod>2022-05-31</lastmod>
+        <priority>1.0</priority>        
+    </url>
+    
+    <url>
+        <loc>https://indexall.io/streaming/brands/dk</loc>
         <lastmod>2022-05-31</lastmod>
         <priority>1.0</priority>        
     </url>
