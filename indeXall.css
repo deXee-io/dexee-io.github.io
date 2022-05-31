@@ -338,7 +338,9 @@ h6 {
   }
 
 .table-bordered tr {
-    border-bottom: 1px solid #ddd
+    border-bottom: 1px solid #ddd;
+    border-collapse: collapse;
+    display: block;
 }
 .table-striped tbody tr:nth-child(even) {
     background-color:#f1f1f1;
@@ -377,9 +379,10 @@ h6 {
     padding-top: 0.33rem;
     padding-right: 1rem;
     padding-bottom: 0.33rem;
-    display: table-cell;
+    /* display: table-cell; */
+    display: block;
     text-align: left;
-    vertical-align: top;
+    /* vertical-align: top; */
 }
 
 .nowrap {
