@@ -50,7 +50,8 @@
 
 .clickable_cell
 {
-    width: 100px;
+    font-family: 'Lato';
+    /* width: 100px; */
     /* background-color: white; */
     /* height: 100px; */
 }
@@ -333,18 +334,18 @@ h6 {
     border-collapse: collapse;
     border-spacing: 0;
     /* width:100%; messes up with index page */
-    display: table;
+    /* display: table; */
     max-width: 100%;
   }
 
 .table-bordered tr {
     border-bottom: 1px solid #ddd;
-    border-collapse: collapse;
-    display: block;
+    /* border-collapse: collapse; */
+    /* display: block; */
 }
 .table-striped tbody tr:nth-child(even) {
     background-color:#f1f1f1;
-    font-family: 'Lato';
+    /* font-family: 'Lato'; */
 }
 
 .table-hoverable tbody tr:hover {
@@ -367,7 +368,7 @@ h6 {
     padding-top: 0.33rem;
     padding-right: 1rem;
     padding-bottom: 0.33rem;
-    display: table-cell;
+    /* display: table-cell; */
     text-align: left;
     vertical-align: top;
     font-weight: bold;
@@ -380,7 +381,7 @@ h6 {
     padding-right: 1rem;
     padding-bottom: 0.33rem;
     /* display: table-cell; */
-    display: block;
+    /* display: block; # collapses rows */
     text-align: left;
     /* vertical-align: top; */
 }
