@@ -554,13 +554,13 @@
     </url>
     
     <url>
-        <loc>https://indexall.io/cubing/brands</loc>
+        <loc>https://indexall.io/djing/brands</loc>
         <lastmod>2022-05-31</lastmod>
         <priority>1.0</priority>        
     </url>
     
     <url>
-        <loc>https://indexall.io/djing/brands</loc>
+        <loc>https://indexall.io/cubing/brands</loc>
         <lastmod>2022-05-31</lastmod>
         <priority>1.0</priority>        
     </url>
@@ -3644,6 +3644,12 @@
     </url>
     
     <url>
+        <loc>https://indexall.io/hi-fi/products/reclockers</loc>
+        <lastmod>2022-05-31</lastmod>
+        <priority>1.0</priority>        
+    </url>
+    
+    <url>
         <loc>https://indexall.io/hi-fi/products/karaoke</loc>
         <lastmod>2022-05-31</lastmod>
         <priority>1.0</priority>        
@@ -3927,6 +3933,18 @@
     
     <url>
         <loc>https://indexall.io/swimming/products/music-players</loc>
+        <lastmod>2022-05-31</lastmod>
+        <priority>1.0</priority>        
+    </url>
+    
+    <url>
+        <loc>https://indexall.io/djing/products/speakers</loc>
+        <lastmod>2022-05-31</lastmod>
+        <priority>1.0</priority>        
+    </url>
+    
+    <url>
+        <loc>https://indexall.io/djing/products/subwoofers</loc>
         <lastmod>2022-05-31</lastmod>
         <priority>1.0</priority>        
     </url>
@@ -7845,6 +7863,12 @@
     
     <url>
         <loc>https://indexall.io/swimming/brands/us</loc>
+        <lastmod>2022-05-31</lastmod>
+        <priority>1.0</priority>        
+    </url>
+    
+    <url>
+        <loc>https://indexall.io/djing/brands/it</loc>
         <lastmod>2022-05-31</lastmod>
         <priority>1.0</priority>        
     </url>
