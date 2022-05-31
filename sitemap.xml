@@ -536,6 +536,12 @@
     </url>
     
     <url>
+        <loc>https://indexall.io/djing/brands</loc>
+        <lastmod>2022-05-31</lastmod>
+        <priority>1.0</priority>        
+    </url>
+    
+    <url>
         <loc>https://indexall.io/streaming/brands</loc>
         <lastmod>2022-05-31</lastmod>
         <priority>1.0</priority>        
@@ -549,12 +555,6 @@
     
     <url>
         <loc>https://indexall.io/swimming/brands</loc>
-        <lastmod>2022-05-31</lastmod>
-        <priority>1.0</priority>        
-    </url>
-    
-    <url>
-        <loc>https://indexall.io/djing/brands</loc>
         <lastmod>2022-05-31</lastmod>
         <priority>1.0</priority>        
     </url>
@@ -3578,6 +3578,24 @@
     </url>
     
     <url>
+        <loc>https://indexall.io/hi-fi/products/raspberry-pi</loc>
+        <lastmod>2022-05-31</lastmod>
+        <priority>1.0</priority>        
+    </url>
+    
+    <url>
+        <loc>https://indexall.io/hi-fi/products/subwoofers</loc>
+        <lastmod>2022-05-31</lastmod>
+        <priority>1.0</priority>        
+    </url>
+    
+    <url>
+        <loc>https://indexall.io/hi-fi/products/earphones</loc>
+        <lastmod>2022-05-31</lastmod>
+        <priority>1.0</priority>        
+    </url>
+    
+    <url>
         <loc>https://indexall.io/hi-fi/products/cartridges</loc>
         <lastmod>2022-05-31</lastmod>
         <priority>1.0</priority>        
@@ -3620,12 +3638,6 @@
     </url>
     
     <url>
-        <loc>https://indexall.io/hi-fi/products/subwoofers</loc>
-        <lastmod>2022-05-31</lastmod>
-        <priority>1.0</priority>        
-    </url>
-    
-    <url>
         <loc>https://indexall.io/hi-fi/products/acoustics</loc>
         <lastmod>2022-05-31</lastmod>
         <priority>1.0</priority>        
@@ -3633,12 +3645,6 @@
     
     <url>
         <loc>https://indexall.io/hi-fi/products/sacd-players</loc>
-        <lastmod>2022-05-31</lastmod>
-        <priority>1.0</priority>        
-    </url>
-    
-    <url>
-        <loc>https://indexall.io/hi-fi/products/earphones</loc>
         <lastmod>2022-05-31</lastmod>
         <priority>1.0</priority>        
     </url>
@@ -3758,6 +3764,18 @@
     </url>
     
     <url>
+        <loc>https://indexall.io/home-cinema/products/subwoofers</loc>
+        <lastmod>2022-05-31</lastmod>
+        <priority>1.0</priority>        
+    </url>
+    
+    <url>
+        <loc>https://indexall.io/home-cinema/products/earphones</loc>
+        <lastmod>2022-05-31</lastmod>
+        <priority>1.0</priority>        
+    </url>
+    
+    <url>
         <loc>https://indexall.io/home-cinema/products/cables</loc>
         <lastmod>2022-05-31</lastmod>
         <priority>1.0</priority>        
@@ -3848,12 +3866,6 @@
     </url>
     
     <url>
-        <loc>https://indexall.io/home-cinema/products/subwoofers</loc>
-        <lastmod>2022-05-31</lastmod>
-        <priority>1.0</priority>        
-    </url>
-    
-    <url>
         <loc>https://indexall.io/streaming/products/headsets</loc>
         <lastmod>2022-05-31</lastmod>
         <priority>1.0</priority>        
@@ -3938,6 +3950,12 @@
     </url>
     
     <url>
+        <loc>https://indexall.io/djing/products/controllers</loc>
+        <lastmod>2022-05-31</lastmod>
+        <priority>1.0</priority>        
+    </url>
+    
+    <url>
         <loc>https://indexall.io/djing/products/speakers</loc>
         <lastmod>2022-05-31</lastmod>
         <priority>1.0</priority>        
@@ -3951,12 +3969,6 @@
     
     <url>
         <loc>https://indexall.io/djing/products/software</loc>
-        <lastmod>2022-05-31</lastmod>
-        <priority>1.0</priority>        
-    </url>
-    
-    <url>
-        <loc>https://indexall.io/djing/products/controllers</loc>
         <lastmod>2022-05-31</lastmod>
         <priority>1.0</priority>        
     </url>
@@ -7814,6 +7826,12 @@
     </url>
     
     <url>
+        <loc>https://indexall.io/home-cinema/brands/uk</loc>
+        <lastmod>2022-05-31</lastmod>
+        <priority>1.0</priority>        
+    </url>
+    
+    <url>
         <loc>https://indexall.io/home-cinema/brands/fr</loc>
         <lastmod>2022-05-31</lastmod>
         <priority>1.0</priority>        
@@ -7821,12 +7839,6 @@
     
     <url>
         <loc>https://indexall.io/home-cinema/brands/dk</loc>
-        <lastmod>2022-05-31</lastmod>
-        <priority>1.0</priority>        
-    </url>
-    
-    <url>
-        <loc>https://indexall.io/home-cinema/brands/uk</loc>
         <lastmod>2022-05-31</lastmod>
         <priority>1.0</priority>        
     </url>
@@ -7863,6 +7875,12 @@
     
     <url>
         <loc>https://indexall.io/swimming/brands/us</loc>
+        <lastmod>2022-05-31</lastmod>
+        <priority>1.0</priority>        
+    </url>
+    
+    <url>
+        <loc>https://indexall.io/djing/brands/us</loc>
         <lastmod>2022-05-31</lastmod>
         <priority>1.0</priority>        
     </url>
