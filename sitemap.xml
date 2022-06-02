@@ -3800,7 +3800,25 @@
     </url>
     
     <url>
+        <loc>https://indexall.io/home-cinema/products/dac</loc>
+        <lastmod>2022-06-02</lastmod>
+        <priority>1.0</priority>        
+    </url>
+    
+    <url>
         <loc>https://indexall.io/home-cinema/products/amplifiers</loc>
+        <lastmod>2022-06-02</lastmod>
+        <priority>1.0</priority>        
+    </url>
+    
+    <url>
+        <loc>https://indexall.io/home-cinema/products/accessories</loc>
+        <lastmod>2022-06-02</lastmod>
+        <priority>1.0</priority>        
+    </url>
+    
+    <url>
+        <loc>https://indexall.io/home-cinema/products/av-processors</loc>
         <lastmod>2022-06-02</lastmod>
         <priority>1.0</priority>        
     </url>
@@ -3813,12 +3831,6 @@
     
     <url>
         <loc>https://indexall.io/home-cinema/products/av-receivers</loc>
-        <lastmod>2022-06-02</lastmod>
-        <priority>1.0</priority>        
-    </url>
-    
-    <url>
-        <loc>https://indexall.io/home-cinema/products/av-processors</loc>
         <lastmod>2022-06-02</lastmod>
         <priority>1.0</priority>        
     </url>
@@ -3854,12 +3866,6 @@
     </url>
     
     <url>
-        <loc>https://indexall.io/home-cinema/products/accessories</loc>
-        <lastmod>2022-06-02</lastmod>
-        <priority>1.0</priority>        
-    </url>
-    
-    <url>
         <loc>https://indexall.io/home-cinema/products/reclockers</loc>
         <lastmod>2022-06-02</lastmod>
         <priority>1.0</priority>        
@@ -3885,12 +3891,6 @@
     
     <url>
         <loc>https://indexall.io/home-cinema/products/processors</loc>
-        <lastmod>2022-06-02</lastmod>
-        <priority>1.0</priority>        
-    </url>
-    
-    <url>
-        <loc>https://indexall.io/home-cinema/products/dac</loc>
         <lastmod>2022-06-02</lastmod>
         <priority>1.0</priority>        
     </url>
@@ -7916,13 +7916,13 @@
     </url>
     
     <url>
-        <loc>https://indexall.io/home-cinema/brands/dk</loc>
+        <loc>https://indexall.io/home-cinema/brands/uk</loc>
         <lastmod>2022-06-02</lastmod>
         <priority>1.0</priority>        
     </url>
     
     <url>
-        <loc>https://indexall.io/home-cinema/brands/uk</loc>
+        <loc>https://indexall.io/home-cinema/brands/dk</loc>
         <lastmod>2022-06-02</lastmod>
         <priority>1.0</priority>        
     </url>
