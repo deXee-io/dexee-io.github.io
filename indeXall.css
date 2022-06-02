@@ -304,15 +304,22 @@ h6 {
     color: #ffffff;
 }
 
-.table-hoverable div tr:hover {
+/* .table-hoverable tr:hover div {
     background-color:#000000;
     color: #ffffff;
-}
+} */
 
-.table-hoverable a tr:hover {
+/* .table-hoverable tr:hover a {
     background-color:#000000;
     color: #ffffff;
-}
+} */
+
+tr:hover td:nth-child(2) a{
+    color:white;
+  }
+  tr:hover td:nth-child(3) a img{
+    filter: invert(100%) sepia(0%) saturate(7499%) hue-rotate(230deg) brightness(99%) contrast(103%);
+  }
 
 .table th {
     padding-left: 1rem;
