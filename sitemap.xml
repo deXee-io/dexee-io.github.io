@@ -3596,6 +3596,18 @@
     </url>
     
     <url>
+        <loc>https://indexall.io/hi-fi/products/processors</loc>
+        <lastmod>2022-06-02</lastmod>
+        <priority>1.0</priority>        
+    </url>
+    
+    <url>
+        <loc>https://indexall.io/hi-fi/products/sacd-players</loc>
+        <lastmod>2022-06-02</lastmod>
+        <priority>1.0</priority>        
+    </url>
+    
+    <url>
         <loc>https://indexall.io/hi-fi/products/furniture</loc>
         <lastmod>2022-06-02</lastmod>
         <priority>1.0</priority>        
@@ -3656,19 +3668,7 @@
     </url>
     
     <url>
-        <loc>https://indexall.io/hi-fi/products/processors</loc>
-        <lastmod>2022-06-02</lastmod>
-        <priority>1.0</priority>        
-    </url>
-    
-    <url>
         <loc>https://indexall.io/hi-fi/products/acoustics</loc>
-        <lastmod>2022-06-02</lastmod>
-        <priority>1.0</priority>        
-    </url>
-    
-    <url>
-        <loc>https://indexall.io/hi-fi/products/sacd-players</loc>
         <lastmod>2022-06-02</lastmod>
         <priority>1.0</priority>        
     </url>
@@ -7809,6 +7809,12 @@
     
     <url>
         <loc>https://indexall.io/hi-fi/brands/si</loc>
+        <lastmod>2022-06-02</lastmod>
+        <priority>1.0</priority>        
+    </url>
+    
+    <url>
+        <loc>https://indexall.io/hi-fi/brands/ro</loc>
         <lastmod>2022-06-02</lastmod>
         <priority>1.0</priority>        
     </url>
