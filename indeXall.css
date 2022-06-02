@@ -323,6 +323,10 @@ tr:hover td:nth-child(2) a{
 tr:hover td:nth-child(3) a img{
 filter: invert(100%) sepia(0%) saturate(7499%) hue-rotate(230deg) brightness(99%) contrast(103%);
 }
+/* This will target img that are not in <a> tags */
+tr:hover td:nth-child(3) img{
+filter: invert(73%) sepia(11%) saturate(14%) hue-rotate(329deg) brightness(91%) contrast(88%);
+}
 
 .table th {
     padding-left: 1rem;
